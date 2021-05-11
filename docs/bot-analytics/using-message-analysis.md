@@ -87,13 +87,12 @@ However, if you are interested in exact match only, then you can enclose your ph
 
 ![search body](https://user-images.githubusercontent.com/75118325/114306207-c7d31b00-9af8-11eb-8a43-dc75f02d9596.gif)
 
-
 ### Select Nodes
-The next filter option is `Select Nodes`. This option allows you to filter by the bot builder nodes the message or conversation uses.
+The next filter option is `Select Nodes`. This option allows you to filter by the nodes (static and output nodes).
 
 This is a dropdown field. You can click on the field and the dropdown options should show the different nodes in the bot. You can pick one of the nodes from the list and the table will be filtered to only data relevant to that node.
 
-![Select Nodes](assets/message-analysis-select-nodes.png)
+![image](https://user-images.githubusercontent.com/75118325/117749180-ef6bef00-b22e-11eb-954b-cff96f703f54.png)
 
 ### Conv ID
 The next filter is `Conv ID`. This filter lets you see data related to a particular conversation. You can enter the conversation id of the conversation you want to view the data for in the input field and click on the magnifying glass icon to filter the data.
@@ -138,7 +137,7 @@ A key component in Haptik’s conversational experience is SMART ASSIST. The obj
 
 This option lets you see those messages that triggered the Smart Assist layer.
 
-![SA Filter](assets/sa1.png)
+![image](https://user-images.githubusercontent.com/75118325/117749258-0a3e6380-b22f-11eb-8e46-5aed8e2dee86.png)
 
 ### User ID
 This option lets you filter the data based on the user id. This can be helpful to understand the messages/conversations of a partcular user.
