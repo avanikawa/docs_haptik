@@ -86,11 +86,15 @@ module.exports = () => (
         },
         {
           title: 'Support',
-          url: '/other/sla',
+          url: '/other/support',
         },
         {
           title: 'Help',
           url: '/other/supportbot',
+        },
+        {
+          title: 'SLA',
+          url: '/other/sla',
         },
         {
           title: 'Chat Link',
