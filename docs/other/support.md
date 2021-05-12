@@ -2,30 +2,28 @@
 title: Haptik's Support Options
 ---
 
-If you have questions or run into technical issues while using Haptik, you can access our guides and tutorials for self-guided instructions and troubleshooting tips. We also provide additional support via bot or email. The issues could be of varied types from product usage, to technical support to other things.
+Haptik Support provides you with everything which will help you achieve your outcomes and find success. It is mix of tools and technology, people, and resources designed to proactively help you find quick solutions, optimize performance, lower costs, and innovate faster. We save time for your team by helping you to move faster and focus on your core business. We are determined to make our customers successful on their Haptik journey and address requests that range from answering best practices questions, guidance on configuration, all the way to break-fix and problem resolution.
+
+We focus on helping you achieve the outcomes you need to make your business successful. It is our approach to Support that sets Haptik apart.
+
+We’re here to help to -
+- Find the right solution for you
+- Connect you with helpful resources
+
+We aim to provide best in class support. Haptik Guidance and the Customer Success Team is always there to help you during your journey with Haptik. Along with that, we also have a dedicated Support team to help you with any questions on the platform or the deployed solution.
 
 In this article, you'll learn how to contact our Support team and find resources to help you with your Haptik account.
 
-### Access the guides and tutorials
+## How to contact technical support?
 
-Use our comprehensive documentation to self-guide through features and keep moving forward without any wait.
+To get help, you can follow either of this approach -
 
-To access the guides and tutorials, click [**here**](https://docs.haptik.ai/).
+- Send us an email at **support@haptik.ai**
+- Reach out through our [**Help section**](https://docs.haptik.ai/other/supportbot) on the platform. It will capture every detail of the issue along with the severity. You can read more about how to make best use of Help section [**here**](https://docs.haptik.ai/other/supportbot).
 
-### How to contact technical support?
-
-To get help, you must be logged in and go through our [**HELP section**](https://docs.haptik.ai/other/supportbot) or send us an email at **support@haptik.ai**. When you log in to your account, we’re able to personalize your support experience.
-
-To contact our support team, follow these steps -
-
-- After you've logged in, find the [**HELP section**](https://docs.haptik.ai/other/supportbot) in any screen of the platform.
-- All you need to do is fill out the required fields and submit your question/issue. We’ll get back to you soon.
-
-Support Bot captures every detail of the issue along with the severity.
+Once your ticket is successfully created, Haptik Support team would be on top of it to provide you timely updates and a quick resolution.
 
 ## Severity & Response Time
-
-Technical support is provided by Haptik during the subscription period and is not available as a separate offering.
 
 <table>
   <th>Severity</th>
@@ -74,26 +72,12 @@ Technical support is provided by Haptik during the subscription period and is no
   
  </table>
  
-## Uptime
+ > Note: Once Haptik Support Team receives the ticket with all the details, they would validate the severity and the resolution would depend on priority decided by the team. 
 
-We guarantee that 99.9% of the time the Covered Service will successfully receive and respond to API requests on the production environment.
+## Access the guides and tutorials
 
-The following definitions apply to the SLA:
+If you don't like calling or emailing people and want to try and find answers yourself, we have a very comprehensive documentation. If you run into technical issues while using Haptik, you can access our guides and tutorials for self-guided instructions and troubleshooting tips. These issues could be of varied types from product usage, to technical support to other things.
 
-- **"Covered Service"** means Haptik's end user chat experience. Conversation Studio, Analytics and other development tools are not covered under this SLA.
-- **"Downtime"** means more than a 5% Error Rate. Downtime is measured based on server side Error Rate.
-- **"Downtime Period"** means a period of one or more consecutive minutes of Downtime. Partial minutes or Intermittent Downtime for a period of less than one minute will not be counted towards any Downtime Periods.
-- **"Error Rate"** means the number of Valid Requests that result in a response with HTTP Status 500 and Code "Internal Error" divided by the total number of Valid Requests during that period.
-- **"Monthly Uptime Percentage"** means total number of minutes in a month, minus the number of minutes of Downtime suffered from all Downtime Periods in a month, divided by the total number of minutes in a month.
-- **"Valid Requests"** are requests that conform to the Documentation, and that would normally result in a non-error response.
+You can access the documentation [**here**](https://docs.haptik.ai/). You can also use the search feature on top to find the exact section you are looking for.
 
-## SLA Exclusions
-
-The SLA does not apply to
-
-1. Factors outside our reasonable control (for example, natural disaster, war, acts of terrorism, riots, government action, or a network or device failure external to our data centers, including at your site or between your site and our data center);
-2. The result from the use of services, hardware, or software not provided by us, including, but not limited to, issues resulting from inadequate bandwidth or related to third-party software or services;
-3. Caused by your use of a Service after we advised you to modify your use of the Service, if you did not modify your use as advised;
-4. Features designated Alpha or Beta (unless stated otherwise in the associated Documentation);
-5. The result from your failure to adhere to any required configurations, use supported platforms, follow any policies for acceptable use, or your use of the Service in a manner inconsistent with the features and functionality of the Service;
-6. The event of a scheduled maintenance window (intimation of which, will be provided in advance).
+![Screenshot 2021-05-12 at 4 32 03 PM](https://user-images.githubusercontent.com/55389979/117964733-98097400-b33f-11eb-89f5-e7362b7abd48.png)
