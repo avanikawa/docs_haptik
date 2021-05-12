@@ -1,5 +1,5 @@
 ---
-title: Haptik's Support Options
+title: Need Help?
 ---
 
 Haptik Support provides you with everything which will help you achieve your outcomes and find success. It is mix of tools and technology, people, and resources designed to proactively help you find quick solutions, optimize performance, lower costs, and innovate faster. We save time for your team by helping you to move faster and focus on your core business. We are determined to make our customers successful on their Haptik journey and address requests that range from answering best practices questions, guidance on configuration, all the way to break-fix and problem resolution.
@@ -20,6 +20,16 @@ To get help, you can follow either of this approach -
 
 - Send us an email at **support@haptik.ai**
 - Reach out through our [**Help section**](https://docs.haptik.ai/other/supportbot) on the platform. It will capture every detail of the issue along with the severity. You can read more about how to make best use of Help section [**here**](https://docs.haptik.ai/other/supportbot).
+
+### Where can you access **Help section**?
+
+You can access the Help Section from all tool pages, i.e. from Home Page, Conversation Studio, Smart Agent Chat, Intelligent Analytics, and Admin Tools on the left sidebar. 
+
+![SupportBot1](assets/PS1.png)
+
+You can click on the icon highlighted in the below diagram to open.
+
+![SupportBot1](assets/PS5.png)
 
 Once your ticket is successfully created, Haptik Support team would be on top of it to provide you timely updates and a quick resolution.
 
@@ -72,8 +82,6 @@ Once your ticket is successfully created, Haptik Support team would be on top of
   
  </table>
  
- > Note: Once Haptik Support Team receives the ticket with all the details, they would validate the severity and the resolution would depend on priority decided by the team. 
-
 ## Access the guides and tutorials
 
 If you don't like calling or emailing people and want to try and find answers yourself, we have a very comprehensive documentation. If you run into technical issues while using Haptik, you can access our guides and tutorials for self-guided instructions and troubleshooting tips. These issues could be of varied types from product usage, to technical support to other things.
