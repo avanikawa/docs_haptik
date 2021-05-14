@@ -35,7 +35,7 @@ maven {
 Add the following in module `build.gradle` for eg: `build.gradle (Module: app)`
 
 ```groovy
-implementation 'ai.haptik.android.sdk:haptiklib-xdk:7.0.1-70284'
+implementation 'ai.haptik.android.sdk:haptiklib-xdk:7.0.2-70383'
 ```
 
 ## Target Android SDK 28
