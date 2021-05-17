@@ -2,15 +2,11 @@
 title: Need Help?
 ---
 
-Haptik Support provides you with everything which will help you achieve your outcomes and find success. It is mix of tools and technology, people, and resources designed to proactively help you find quick solutions, optimize performance, lower costs, and innovate faster. We save time for your team by helping you to move faster and focus on your core business. We are determined to make our customers successful on their Haptik journey and address requests that range from answering best practices questions, guidance on configuration, all the way to break-fix and problem resolution.
+Haptik Support provides you with everything to help you achieve your outcomes and find success. It is a mix of tools, technology, people, and resources designed to proactively help you find quick solutions, optimize performance, lower costs, and innovate faster. We aim to provide best in class support by answering best practices questions, guidance on configuration, all the way to break-fix and problem resolution. We are determined to make our customers successful on their Haptik journey.
 
 We focus on helping you achieve the outcomes you need to make your business successful. It is our approach to Support that sets Haptik apart.
 
-We’re here to help to -
-- Find the right solution for you
-- Connect you with helpful resources
-
-We aim to provide best in class support. Haptik Guidance and the Customer Success Team is always there to help you during your journey with Haptik. Along with that, we also have a dedicated Support team to help you with any questions on the platform or the deployed solution.
+Haptik Guidance and the Customer Success Team is always there to help you during your journey with Haptik. Along with that, we also have a dedicated Support team to help you with any questions on the platform or the deployed solution.
 
 In this article, you'll learn how to contact our Support team and find resources to help you with your Haptik account.
 
@@ -22,19 +18,7 @@ To get help, you can follow either of this approach -
 - Send us an email at **support@haptik.ai**
 - Reach out through our [**Help section**](https://docs.haptik.ai/other/supportbot) on the platform. It will capture every detail of the issue along with the severity. You can read more about how to make best use of Help section [**here**](https://docs.haptik.ai/other/supportbot).
 
-### Where can you access **Help section**?
-
-You can access the Help Section from all tool pages, i.e. from Home Page, Conversation Studio, Smart Agent Chat, Intelligent Analytics, and Admin Tools on the left sidebar. 
-
-![SupportBot1](assets/PS1.png)
-
-You can click on the icon highlighted in the below diagram to open.
-
-![SupportBot1](assets/PS5.png)
-
-Once your ticket is successfully created, Haptik Support team would be on top of it to provide you timely updates and a quick resolution.
-
-## Severity & Response Time
+## Severity vs Response Time Table
 
 <table>
   <th>Severity</th>
@@ -82,6 +66,18 @@ Once your ticket is successfully created, Haptik Support team would be on top of
   </tr>
   
  </table>
+ 
+## Where can you access **Help section**?
+
+You can access the Help Section from all tool pages, i.e. from Home Page, Conversation Studio, Smart Agent Chat, Intelligent Analytics, and Admin Tools on the left sidebar. 
+
+![SupportBot1](assets/PS1.png)
+
+You can click on the icon highlighted in the below diagram to open.
+
+![SupportBot1](assets/PS5.png)
+
+Once your ticket is successfully created, Haptik Support team would be on top of it to provide you timely updates and a quick resolution.
  
 ## Access the guides and tutorials
 
