@@ -1,5 +1,5 @@
 ---
-title: Help
+title: How to use Help section?
 ---
 
 Haptik Platform has multiple tools like Conversation Studio, Smart Agent Chat, Intelligent Analytics, and Admin Tools. All of these tools have numerous features that help us create complex and sophisticated Conversational AI solutions like IVA.
