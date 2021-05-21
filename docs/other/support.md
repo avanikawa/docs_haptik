@@ -63,7 +63,7 @@ In this article, you'll learn how to contact our Support team and find resources
 
 To get help, you can follow either of this approach -
 
-- Reach out to your Haptik SPOC
+- Reach out to your Customer Success Manager
 - Send us an email at **support@haptik.ai**
 - Reach out through our [**Help section**](https://docs.haptik.ai/other/supportbot) on the platform. It will capture every detail of the issue along with the severity. You can read more about how to access Help section [**here**](https://docs.haptik.ai/other/supportbot).
  
