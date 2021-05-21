@@ -4,6 +4,11 @@ title: Setting up Shopify
 
 In this guide, you will be able to complete the configuration required to integrate Shopify with Haptik.
 
+What you'll need - 
+
+- A Shopify account, register yourself a partner using the Shopify account. Read [**here**](https://help.shopify.com/en/partners/faq/partner-program#how-do-i-become-a-shopify-partner) to know more about becoming a partner on Shopify.
+- Access to Haptik Platform
+
 ## Step 1: Register as a partner
 
 Navigate to [**https://www.shopify.com/partners**](https://www.shopify.com/partners). Register your business as a partner on Shopify.
@@ -32,6 +37,10 @@ Here, provide the -
 
 ![image](https://user-images.githubusercontent.com/75118325/117385390-a2241080-af02-11eb-9021-c505b0b0ed5a.png)
 
+You can check the new app in the **Apps** section.
+
+![image](https://user-images.githubusercontent.com/75118325/119133312-5ec8b680-ba59-11eb-98a2-214e0a90748d.png)
+
 ## Step 4: Providing the keys on Haptik Platform
 
 When you open the newly created app, you will find the **API key** and **API Secret Key**
@@ -40,11 +49,19 @@ When you open the newly created app, you will find the **API key** and **API Sec
 
 Copy these keys and provide it on the **Platform Deployments** section of the Business Manager on Conversation Studio tool.
 
+## Step 5: Authenticate the App
+
 Once the keys are provided, click on **Generate Link** button
 
 ![image](https://user-images.githubusercontent.com/75118325/117387110-d816c400-af05-11eb-9e27-f8d1aa9c3240.png)
 
-Provide your domain name. This domain name can be generated from the **Store** section.
+Provide your domain name. This domain name gets created when you create your store on Shopify. 
+
+> The domain name can be found from the **Stores** section.
+
+For example, if the store name is `haptik`, then the domain name will be `haptik.shopify.com`
+
+You can read more about Shopify domains, [**here**](https://help.shopify.com/en/manual/online-store/domains).
 
 ![image](https://user-images.githubusercontent.com/75118325/117389588-3645a600-af0a-11eb-90b9-cae5abc115a1.png)
 
