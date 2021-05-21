@@ -1,5 +1,5 @@
 ---
-title: Bot Agent Handover
+title: Transfer Chats to Smart Agent Chat
 ---
 
 A user always talks to a Business. The user can use one of the many device platforms (Haptik SDKs, Messenger, Jio, etc.) to communicate with the Business.
