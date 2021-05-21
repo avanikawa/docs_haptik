@@ -10,14 +10,6 @@ Haptik Guidance and the Customer Success Team is always there to help you during
 
 In this article, you'll learn how to contact our Support team and find resources to help you with your Haptik account.
 
-## How to contact technical support?
-
-To get help, you can follow either of this approach -
-
-- Reach out to your Haptik SPOC
-- Send us an email at **support@haptik.ai**
-- Reach out through our [**Help section**](https://docs.haptik.ai/other/supportbot) on the platform. It will capture every detail of the issue along with the severity. You can read more about how to make best use of Help section [**here**](https://docs.haptik.ai/other/supportbot).
-
 ## Severity vs Response Time Table
 
 <table>
@@ -67,22 +59,16 @@ To get help, you can follow either of this approach -
   
  </table>
  
-## Where can you access **Help section**?
+## How to contact technical support?
 
-You can access the Help Section from all tool pages, i.e. from Home Page, Conversation Studio, Smart Agent Chat, Intelligent Analytics, and Admin Tools on the left sidebar. 
+To get help, you can follow either of this approach -
 
-![SupportBot1](assets/PS1.png)
-
-You can click on the icon highlighted in the below diagram to open.
-
-![SupportBot1](assets/PS5.png)
-
-Once your ticket is successfully created, Haptik Support team would be on top of it to provide you timely updates and a quick resolution.
+- Reach out to your Haptik SPOC
+- Send us an email at **support@haptik.ai**
+- Reach out through our [**Help section**](https://docs.haptik.ai/other/supportbot) on the platform. It will capture every detail of the issue along with the severity. You can read more about how to access Help section [**here**](https://docs.haptik.ai/other/supportbot).
  
-## Access the guides and tutorials
+## How to access the Knowledge Base?
 
 If you don't like calling or emailing people and want to try and find answers yourself, we have a very comprehensive documentation. If you run into technical issues while using Haptik, you can access our guides and tutorials for self-guided instructions and troubleshooting tips. These issues could be of varied types from product usage, to technical support to other things.
 
 You can access the documentation [**here**](https://docs.haptik.ai/). You can also use the search feature on top to find the exact section you are looking for.
-
-![Screenshot 2021-05-12 at 4 32 03 PM](https://user-images.githubusercontent.com/55389979/117964733-98097400-b33f-11eb-89f5-e7362b7abd48.png)
