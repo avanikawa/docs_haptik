@@ -6,7 +6,7 @@ A user always talks to a Business. The user can use one of the many device platf
 
     On the Business side, any replies could be sent automatically by a
     1. Bot (Gogo) or
-    2. by an Expert/Agent from Athena.
+    2. by an Expert/Agent from Smart Agent Chat.
 
 To keep the transition from Bot to Agent smooth for best user experience, we allow multiple different ways a chat can be transferred from a Bot to a Human.
 
