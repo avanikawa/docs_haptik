@@ -2,42 +2,77 @@
 title: Setup Zendesk and Sunshine Conversation
 ---
 
+Zendesk and Sunshine Conversation provide powerful asynchronous conversations which is the ideal solution to integration with an Intelligent Virtual Assistant.
+The following setup will help you configure Haptik IVA within Zendesk and Sunshine Conversation ecosystem. Once the process is complete, your agents can start conversing with the users using the Zendesk Platform.
 
-The following setup will help you configure Zendesk and Sunshine Conversation. Once the process is complete, your agents can start conversing with the users using the Zendesk Platform.
+**What you'll need -** 
+* **Zendesk** license
+* **Sunshine Conversations** license
+  * While buying Sunshine license, **reach out to Zendesk support** for connecting your Sunshine account with the Zendesk account. Zendesk will create an app within your Sunshine account and link it as well.
+* Access to the **Haptik** Platform
 
-## Sunshine Conversation + Haptik Configuration
+> Ensure on the Sunshine Conversations account, if you are able to see the app created by Zendesk. This app will **Zendesk** as a prefix.
 
-### Step 1: Create a New Bot on Haptik Platform
+![image](https://user-images.githubusercontent.com/75118325/119676057-2fe88100-be5b-11eb-86bf-b15e731ed63b.png)
+
+## Setup Zendesk and Sunshine Conversation
+
+### Step 1: Build a New Bot on Haptik Platform
 
 Firstly, you will have to create a new bot on the Haptik Platform. This bot will be connected to Zendesk + Sunshine Integration. 
 
 To know more about how to create a new bot on Haptik Platform, click [**here**](https://docs.haptik.ai/bot-builder/basic/making-first-bot).
 
-### Step 2: Log in to the Sunshine Account
+> Whenever there needs to be a transfer from bot to a human agent, on the bot, add Bot Says containing the text `chat with an agent`. When the bot encounter this bot response, the chat will be handed over to a live agent on Zendesk.
+> 
+> ![image](https://user-images.githubusercontent.com/75118325/116491235-0d446600-a8b7-11eb-9ddd-4bdf7ff0af08.png)
 
-Login to [**Sunshine account**](https://app.smooch.io/) and create a new app by clicking on **Create new app**.
+### Step 2: Complete the OAuth process
 
-![image](https://user-images.githubusercontent.com/75118325/116486451-48d93300-a8ab-11eb-9a16-9056e0af4ef2.png)
+Haptik will provide you with an authentication link that will complete the process of connecting your Haptik IVA with Sunshine Conversation.
 
-### Step 3: Complete the OAuth process
-
-Haptik will provide you with an authentication link that will complete the process of connecting the Haptik Platform with Sunshine Conversation.
-
-The authentication link will be in this format - 
+To generate authentication link, reach out to your Haptik SPOC with a request to create the authentication link. Your SPOC will respond back with the link. The link will be in this format - 
 
 `https://app.smooch.io/oauth/authorize?client_id=haptik&response_type=code&state=<state_code>`
 
-Once you click on the authentication link and the OAuth process is completed, you will get the following screen - 
+Once you click on the link and the OAuth process is completed, you will get the following screen - 
 
 ![image](https://user-images.githubusercontent.com/75118325/116486922-5ba03780-a8ac-11eb-99a2-18941a976659.png)
 
-The authentication will provide some keys and these keys will be populated in the **Platform Deployment** section of the bots Business Manager on Haptik Platform.
+Once the OAuth is successfully completed, the highlighted keys get auto populated in the **Business Manager** section of Conversation Studio tool on Haptik Platform.
 
-![image](https://user-images.githubusercontent.com/75118325/116489178-efc0cd80-a8b1-11eb-9bbc-4d35f8582ac7.png)
+![image](https://user-images.githubusercontent.com/75118325/119683787-907abc80-be61-11eb-8cb5-c81056a38ae7.png)
 
-### Step 4: Channel Integration on Sunshine Conversation
+You can then provide the **App Key** and **App Secret** key, which can be found in the **Sunshine App**.
 
-In this step, you can select the preferred channel you want to deplo the bot on.
+> Provide these details in the production environment of Haptik Platform. 
+
+> On Sunshine App, you will be able to see an app create by **Zendesk**.
+> 
+> The app name will have Zendesk as a prefix.
+> 
+> ![image](https://user-images.githubusercontent.com/75118325/119684333-0da63180-be62-11eb-830e-69469203578e.png)
+> 
+> Once you click on the app name, navigate to **Settings** tab
+> 
+> ![image](https://user-images.githubusercontent.com/75118325/119684564-3b8b7600-be62-11eb-805d-0e2fa81f721d.png)
+> 
+> On scrolling down, you can find the **App ID** and **API Keys**
+> 
+> ![image](https://user-images.githubusercontent.com/75118325/119684857-79889a00-be62-11eb-96d2-bc0adc037c7c.png)
+> 
+> Provide the **App ID** as **App Key** and **API Keys** as **App Secret**
+> 
+
+As the authentication is complete, you will now be able to see **Haptik** as one of the intergration within your **Sunshine App**.
+
+> _You should be seeing **Zendesk** and **Haptik** on this screen_
+>
+> ![image](https://user-images.githubusercontent.com/75118325/119686182-b43f0200-be63-11eb-8b32-dad5ea421f90.png)
+
+### Step 3: Channel Integration on Sunshine Conversation
+
+In this step, you can select the preferred channel you want to deploy the bot on.
 
 Click on **Connect Channels** within your newly created app.
 
@@ -45,45 +80,114 @@ Click on **Connect Channels** within your newly created app.
 
 _You can add multiple channels within the Sunshine app._
 
-Once the configuration between Sunshine Conversation and Haptik is completed, you can now proceed to configure Sunshine Conversation and Zendesk.
-
-> By now you have connected your channel to the bot and you can test the bot by sending messages from your channel connected in your Sunshine app.
-
-## Sunshine Conversation + Zendesk Configuration
+### Step 4: Sunshine Switchboard Configuration
 
 > Currently, Haptik will have to complete the Sunshine Conversation and Zendesk Configuration.
+
+Whenever there is a human assistant involved, there needs to be a decision maker which passes the control between different parties. The decision maker will correctly route control to the widget either from a bot or a live agent. Switchboard is the decision maker.
 
 Switchboard enables businesses to build a seamless integration between the chatbot solution and other Sunshine Conversations integrations, including the Zendesk Suite - enabling shared customers to take full advantage of the joint solution.
 
 Switchboard delivers dedicated API endpoints to help your software pass, offer, and accept control of a given conversation and manage the flow of messages between a customer and various business systems.
 
-![image](https://user-images.githubusercontent.com/75118325/116488694-a15eff00-a8b0-11eb-9f9e-abd7387027c2.png)
+Switchboard API configuration can be done by calling the open APIs provided by Sunshine.
 
-We need to call Switchboard APIs to complete this Configuration. There are 3 APIs to be called - 
-1. Create Switchboard
-2. Enable Switchboard
-3. Add Haptik to Switchboard
+The following is an overview of the switchboard setup process. Each step is covered with their cURL requests below:
 
-To call the above APIs, the you need to create an **App Key** and **App Secret** from an Oauth configured app in the Sunshine Conversations.
+**1. Create the switchboard**
 
-Open the Sunshine app and select **Settings**
+Switchboards are created with an empty post body. They begin in a disabled state by default so as to not interfere with the delivery of messages while it is being configured.
 
-![image](https://user-images.githubusercontent.com/75118325/117115948-61fe4a00-adab-11eb-97ea-19ef333bc643.png)
+```
+POST /v2/apps/:app_id/switchboards
 
-Scroll down to API Keys section.
+curl $SUNSHINE_CONV_ROOT/v2/apps/:app_id/switchboards \
+     -X POST \
+     -u app_keyid:app_secretkey
+```
 
-For the first time you will be able to see a button **Generate API Keys**. Click on the button and the keys will get generated
+**2. Create the bot `switchboardIntegration`, specifying the existing custom integration or partner integration to be wrapped**
 
-![image](https://user-images.githubusercontent.com/75118325/117116223-b9041f00-adab-11eb-8da4-fffbaffa2b67.png)
+```
+curl $SUNSHINE_CONV_ROOT/v2/apps/:app_id/switchboards/:switchboard_id/switchboardIntegrations \
+     -X POST \
+     -d '{"name": "bot", "integrationType": "CLIENT_ID", "deliverStandbyEvents": false}' \
+     -H 'content-type: application/json' \
+     -u app_keyid:app_secretkey
+```
 
-Provide the above keys in the **Platform Deployment** section of the Business Manager on Conversation Studio tool.
+**3. Create the **agent** `switchboardIntegration`, specifying the existing custom integration or partner integration to be wrapped, AND the **bot’s** `switchboardIntegrationId` as `nextSwitchboardIntegration`**
 
-![image](https://user-images.githubusercontent.com/75118325/117116509-15ffd500-adac-11eb-8bb6-6c4fda08a4ae.png)
+```
+curl $SUNSHINE_CONV_ROOT/v2/apps/:app_id/switchboards/:switchboard_id/switchboardIntegrations/:switchboard_integration_id \
+     -X PATCH \
+     -d '{"nextSwitchboardIntegrationId": "ZENDESK_AW_SWITCHBOARD_INTEGRATION_ID"}' \
+     -H 'content-type: application/json' \
+     -u app_keyid:appsecretkey
+```
 
-### Connect to an agent
+**4. Update the **bot** `switchboardIntegration` with the **agent** `switchboardIntegrationId` as `nextSwitchboardIntegration`**
 
-Whenever there needs to be a transfer from bot to a human agent, on the bot, add Bot Says containing the text `chat with an agent`. When the bot encounter this bot response, the chat will be handed over to a live agent on Zendesk.
+```
+curl $SUNSHINE_CONV_ROOT/v2/apps/:app_id/switchboards/:switchboard_id/switchboardIntegrations \
+     -X POST \
+     -d '{"name": "ZD", "integrationType": "zd:agentWorkspace", "deliverStandbyEvents": false, "messageHistoryCount": 10, "nextSwitchboardIntegrationId": "BOT_SWITCHBOARD_INTEGRATION_ID" }' \
+     -H 'content-type: application/json' \
+     -u app_keyid:app_secretkey
+```
 
-![image](https://user-images.githubusercontent.com/75118325/116491235-0d446600-a8b7-11eb-9ddd-4bdf7ff0af08.png)
+**5. Update the switchboard with the bot’s `switchboardIntegrationId` as `defaultSwitchboardIntegration`**
+
+```
+curl $SUNSHINE_CONV_ROOT/v2/apps/:app_id/switchboards/:switchboard_id \
+     -X PATCH \
+     -d '{"defaultSwitchboardIntegrationId": "BOT_SWITCHBOARD_INTEGRATION_ID", "enabled": true}' \
+     -H 'content-type: application/json' \
+     -u app_keyid:app_secretkey
+```
+
+**6. To activate, update the switchboard with `enabled: true`**
+
+```
+curl $SUNSHINE_CONV_ROOT/v2/apps/:app_id/switchboards/:switchboard_id \
+     -X PATCH \
+     -d '{"defaultSwitchboardIntegrationId": "BOT_SWITCHBOARD_INTEGRATION_ID", "enabled": true}' \
+     -H 'content-type: application/json' \
+     -u app_keyid:app_secretkey
+```
+
+> **In case you need help with the configuration, please reach out to Haptik SPOC to complete this process.**
+
+## Setting up agents on Zendesk
 
 
+
+
+## Integrating the Bot
+
+To integrate the bot on your preffered channel (refer **Step 3** to add channel in your app) you can follow the guides prepared by Sunshine.
+
+You will find the credentials, mentioned in the Sunshine guides, on the Zendesk-Sunshine app.
+
+Click on the app which Zendesk created in you Sunshine account. 
+
+<table>
+  <th>Web Messenger</th>
+  <th>WhatsApp</th>
+  <th>Facebook Messenger</th>
+  <th>LINE</th>
+  
+  <tr>
+    <td><a href="https://docs.smooch.io/guide/web-messenger/" taregt="_blank"> Integrate a web bot</></td>
+    <td><a href="https://docs.smooch.io/guide/whatsapp/" taregt="_blank"> Integrate a WhatsApp bot</></td> 
+    <td><a href="https://docs.smooch.io/guide/facebook-messenger/" taregt="_blank"> Integrate a Facebook bot</></td>
+    <td><a href="https://docs.smooch.io/guide/line/" taregt="_blank"> Integrate a Line bot</></td>
+  </tr>
+</table>
+
+
+## Testing the connection
+
+After you have completed the integration of bot, you can test the bot.
+
+Once you send a message, for example - `connect me with an agent`, a new case should get added on the Zendesk
