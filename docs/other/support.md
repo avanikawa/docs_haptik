@@ -41,7 +41,7 @@ You can access the documentation [**here**](https://docs.haptik.ai/). You can al
   <tr>
   <td rowspan="2">S1 <b>(High)</b></td>
   <td><b>Major functionality has stopped working, moderate business impact</b></td>
-  <td rowspan="2">Within 1 hour (Business Hours)</td>
+  <td rowspan="2">Within 2 hours (Business Hours)</td>
   </tr>
   
   <tr>
