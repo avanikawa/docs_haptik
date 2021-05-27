@@ -70,7 +70,7 @@ Choose the **Team** created in the previous step on Haptik's bot Business Manage
 
 ![Screenshot 2021-05-27 at 3 56 04 PM](https://user-images.githubusercontent.com/55389979/119810943-2b2bd780-bf04-11eb-9e55-18afe3f6ad82.png)
 
-## Step 6: Provide Platform Deployment details
+## Step 7: Provide Platform Deployment details
 
 Provide the following on the **Platform Deployments** section of the Conversation Studio tool. These keys can be found in the Shopify account.
 * Domain name
