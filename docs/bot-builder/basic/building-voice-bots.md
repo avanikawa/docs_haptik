@@ -164,4 +164,29 @@ Once the user has finished recording the message, the IVA converts the message i
 
 ![recordedonlyvoice](assets/voicebot10.png)
 
-This is how you will be able to use a Voice IVA. 
+## Changing the voice personality
+
+Each language has its own default voice personality already set i.e. when the Voice support is configured, the voice assistant has a tone and personality to it. However, you can choose to change the voice personality as per they align with the business requirements. The list of all supported personalities with their corresponding languages can be found [**here**](https://docs.aws.amazon.com/polly/latest/dg/voicelist.html).
+
+To override the default voice personality for a language, you can set the **voice_type** property in the **HaptikInitSettings** as shown in the below image - 
+
+```
+var haptikInitSettings = {
+    "voice_type": {
+        "en": "Amy",
+        "hi": "Aditi"
+    }
+}
+```
+
+To change any the personality of any language, follow this format - 
+
+```
+var haptikInitSettings = {
+    "voice_type": {
+        "<language_code>": "Personality name"
+    }
+}
+```
+
+You can now test the IVA by sending voice messages. 
