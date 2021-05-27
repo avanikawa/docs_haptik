@@ -28,7 +28,11 @@ Once the bot is created, you can create a [**Skill Set**](https://docs.haptik.ai
 
 Click on the **+ Add Skills** button to add required skills on the IVA. As soon as the button is clicked, a modal would open showcasing all skills available on the platform. Search for **Shopify** and you will be able to see the Shopify Smart Skills
 
+![image](https://user-images.githubusercontent.com/75118325/119796968-725f9b80-bef7-11eb-9af8-85efc1f56b94.png)
+
 Click on **Add Smart Skill** button to import the entire user journey on to your bot.
+
+![image](https://user-images.githubusercontent.com/75118325/119797270-b3f04680-bef7-11eb-811c-77e86581b3bf.png)
 
 ### Skill 1: Shopify Track My Order
 
@@ -43,6 +47,8 @@ This skill allows users to cancel their order using Shopify APIs.
 This skill allows user to either return their order or place a replacement request.
 
 ![image](https://user-images.githubusercontent.com/75118325/119783369-c3b55e00-beea-11eb-8d1a-a4d6aa275e7b.png)
+
+> If you want to add customized skills, please contact your Haptik SPOC.
 
 ## Step 3: Changing the APIs
 
@@ -59,3 +65,15 @@ In case where human intervention is required, you can set up a team of agents wh
 Read [**here**](https://docs.haptik.ai/agent-chat/) to setup the team.
 
 ## Step 6: Provide Platform Deployment details
+
+Provide the following on the **Platform Deployments** section of the COnversation Studio tool. These keys can be found in the Shopify account.
+* Domain name
+* API KEY
+* API TOKEN
+
+![image](https://user-images.githubusercontent.com/75118325/119798732-08e08c80-bef9-11eb-83da-ddaa8b78acbb.png)
+
+> Provide the keys on **Production** environment.
+
+![image](https://user-images.githubusercontent.com/75118325/119798192-89eb5400-bef8-11eb-9022-42221b2b9695.png)
+
