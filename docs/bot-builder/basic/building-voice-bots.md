@@ -179,7 +179,7 @@ var haptikInitSettings = {
 }
 ```
 
-To change any the personality of any language, follow this format - 
+To change the personality for any language, follow this format - 
 
 ```
 var haptikInitSettings = {
