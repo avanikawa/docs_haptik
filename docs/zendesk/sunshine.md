@@ -45,8 +45,6 @@ Once the OAuth is successfully completed, the highlighted keys get auto populate
 
 You can then provide the **App Key** and **App Secret** key, which can be found in the **Sunshine App**.
 
-> Provide these details in the production environment of Haptik Platform. 
-
 > On Sunshine App, you will be able to see an app create by **Zendesk**.
 > 
 > The app name will have Zendesk as a prefix.
@@ -118,15 +116,7 @@ curl $SUNSHINE_CONV_ROOT/v2/apps/:app_id/switchboards/:switchboard_id/switchboar
 
 **3. Create the **agent** `switchboardIntegration`, specifying the existing custom integration or partner integration to be wrapped, AND the **bot’s** `switchboardIntegrationId` as `nextSwitchboardIntegration`**
 
-```
-curl $SUNSHINE_CONV_ROOT/v2/apps/:app_id/switchboards/:switchboard_id/switchboardIntegrations/:switchboard_integration_id \
-     -X PATCH \
-     -d '{"nextSwitchboardIntegrationId": "ZENDESK_AW_SWITCHBOARD_INTEGRATION_ID"}' \
-     -H 'content-type: application/json' \
-     -u app_keyid:appsecretkey
-```
-
-**4. Update the **bot** `switchboardIntegration` with the **agent** `switchboardIntegrationId` as `nextSwitchboardIntegration`**
+You will get the `switchboard_integration_id` after calling the API in Step 2 which you will be using in step 4 (in the URL).
 
 ```
 curl $SUNSHINE_CONV_ROOT/v2/apps/:app_id/switchboards/:switchboard_id/switchboardIntegrations \
@@ -134,6 +124,18 @@ curl $SUNSHINE_CONV_ROOT/v2/apps/:app_id/switchboards/:switchboard_id/switchboar
      -d '{"name": "ZD", "integrationType": "zd:agentWorkspace", "deliverStandbyEvents": false, "messageHistoryCount": 10, "nextSwitchboardIntegrationId": "BOT_SWITCHBOARD_INTEGRATION_ID" }' \
      -H 'content-type: application/json' \
      -u app_keyid:app_secretkey
+```
+
+You will receive an ID which should be placed as `nextSwitchboardIntegrationId` in step 4.
+
+**4. Update the **bot** `switchboardIntegration` with the **agent** `switchboardIntegrationId` as `nextSwitchboardIntegration`**
+
+```
+curl $SUNSHINE_CONV_ROOT/v2/apps/:app_id/switchboards/:switchboard_id/switchboardIntegrations/:switchboard_integration_id \
+     -X PATCH \
+     -d '{"nextSwitchboardIntegrationId": "ZENDESK_AW_SWITCHBOARD_INTEGRATION_ID"}' \
+     -H 'content-type: application/json' \
+     -u app_keyid:appsecretkey
 ```
 
 **5. Update the switchboard with the bot’s `switchboardIntegrationId` as `defaultSwitchboardIntegration`**
@@ -160,10 +162,19 @@ curl $SUNSHINE_CONV_ROOT/v2/apps/:app_id/switchboards/:switchboard_id \
 
 ## Setting up agents on Zendesk
 
+When user wants to connect with an agent at Zendesk, you need to enable the **Agent Workspace** on Zendesk first. Navigate to **Settings** -> **Agents**
 
+![image](https://user-images.githubusercontent.com/75118325/119787030-66bba700-beee-11eb-969b-1b56c6511fab.png)
 
+To add a new agent, click on the **+Add** button, after providing the details, an email will be sent to the newly registered user
 
-## Integrating the Bot
+![image](https://user-images.githubusercontent.com/75118325/119787391-c7e37a80-beee-11eb-8b14-ce58194e36cd.png)
+
+To check the agents, you can navigate to **People** section as shown below - 
+
+![image](https://user-images.githubusercontent.com/75118325/119790821-dbdcab80-bef1-11eb-9775-f950e7ecc2b1.png)
+
+## Integrating the Sunshine SDK or channels
 
 To integrate the bot on your preffered channel (refer **Step 3** to add channel in your app) you can follow the guides prepared by Sunshine.
 
@@ -176,7 +187,6 @@ Click on the app which Zendesk created in you Sunshine account.
   <th>WhatsApp</th>
   <th>Facebook Messenger</th>
   <th>LINE</th>
-  
   <tr>
     <td><a href="https://docs.smooch.io/guide/web-messenger/" taregt="_blank"> Integrate a web bot</></td>
     <td><a href="https://docs.smooch.io/guide/whatsapp/" taregt="_blank"> Integrate a WhatsApp bot</></td> 
@@ -185,9 +195,12 @@ Click on the app which Zendesk created in you Sunshine account.
   </tr>
 </table>
 
-
 ## Testing the connection
 
 After you have completed the integration of bot, you can test the bot.
 
 Once you send a message, for example - `connect me with an agent`, a new case should get added on the Zendesk
+
+The following is an example of LINE app using Sunshine Conversation and Zendesk
+
+https://user-images.githubusercontent.com/75118325/119790254-696bcb80-bef1-11eb-9f8e-d1f59cec105f.mp4
