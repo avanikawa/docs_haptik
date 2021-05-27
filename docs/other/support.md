@@ -6,22 +6,20 @@ At Haptik, we are committed to delivering enterprise-class support with your suc
 
 Keeping that in mind, you will have direct access to our Solution Consultants anytime during the onboarding stage. We believe in collaborative development and our Solution Consultants will provide troubleshooting assistance or guidance on demand. 
 
-## How to access to Product Help Centre?
+## How to access Product Help Centre?
 
 Self-service resources to allow customers to troubleshoot and identify the root cause of any issue.
 - 150+ articles and Troubleshooting videos
 - Configuration Videos & Integration Guidelines
 - Classroom training recordings
 
-If you don't like calling or emailing people and want to try and find answers yourself, we have a very comprehensive documentation. If you run into technical issues while using Haptik, you can access our guides and tutorials for self-guided instructions and troubleshooting tips. These issues could be of varied types from product usage, to technical support to other things.
-
 You can access the documentation [**here**](https://docs.haptik.ai/). You can also use the search feature on top to find the exact section you are looking for.
 
-## How to contact technical support?
+## How to contact Technical Support?
 
 - Reach out to your Customer Success Manager
 - Send us an email at **support@haptik.ai**
-- Reach out through our [**Help section**](https://docs.haptik.ai/other/supportbot) on the platform. It will capture every detail of the issue along with the severity. You can read more about how to access Help section [**here**](https://docs.haptik.ai/other/supportbot).
+- Reach out through our **Help section** on the platform. It will capture every detail of the issue along with the severity. You can read more about how to access Help section [**here**](https://docs.haptik.ai/other/supportbot).
  
 ## Support SLA
 
