@@ -1,16 +1,29 @@
 ---
-title: Need Help?
+title: Getting Support
 ---
 
-Haptik Support provides you with everything to help you achieve your outcomes and find success. It is a mix of tools, technology, people, and resources designed to proactively help you find quick solutions, optimize performance, lower costs, and innovate faster. We aim to provide best in class support by answering best practices questions, guidance on configuration, all the way to break-fix and problem resolution. We are determined to make our customers successful on their Haptik journey.
+At Haptik, we are committed to delivering enterprise-class support with your success in mind. Whether you’re an experienced user, or just getting started, our global support plan is designed to help you find the quickest path to resolving any product or technical query that you may have.
 
-We focus on helping you achieve the outcomes you need to make your business successful. It is our approach to Support that sets Haptik apart.
+Keeping that in mind, you will have direct access to our Solution Consultants anytime during the onboarding stage. We believe in collaborative development and our Solution Consultants will provide troubleshooting assistance or guidance on demand. 
 
-Haptik Guidance and the Customer Success Team is always there to help you during your journey with Haptik. Along with that, we also have a dedicated Support team to help you with any questions on the platform or the deployed solution.
+## How to access to Product Help Centre?
 
-In this article, you'll learn how to contact our Support team and find resources to help you with your Haptik account.
+Self-service resources to allow customers to troubleshoot and identify the root cause of any issue.
+- 150+ articles and Troubleshooting videos
+- Configuration Videos & Integration Guidelines
+- Classroom training recordings
 
-## Severity vs Response Time Table
+If you don't like calling or emailing people and want to try and find answers yourself, we have a very comprehensive documentation. If you run into technical issues while using Haptik, you can access our guides and tutorials for self-guided instructions and troubleshooting tips. These issues could be of varied types from product usage, to technical support to other things.
+
+You can access the documentation [**here**](https://docs.haptik.ai/). You can also use the search feature on top to find the exact section you are looking for.
+
+## How to contact technical support?
+
+- Reach out to your Customer Success Manager
+- Send us an email at **support@haptik.ai**
+- Reach out through our [**Help section**](https://docs.haptik.ai/other/supportbot) on the platform. It will capture every detail of the issue along with the severity. You can read more about how to access Help section [**here**](https://docs.haptik.ai/other/supportbot).
+ 
+## Support SLA
 
 <table>
   <th>Severity</th>
@@ -58,17 +71,3 @@ In this article, you'll learn how to contact our Support team and find resources
   </tr>
   
  </table>
- 
-## How to contact technical support?
-
-To get help, you can follow either of this approach -
-
-- Reach out to your Customer Success Manager
-- Send us an email at **support@haptik.ai**
-- Reach out through our [**Help section**](https://docs.haptik.ai/other/supportbot) on the platform. It will capture every detail of the issue along with the severity. You can read more about how to access Help section [**here**](https://docs.haptik.ai/other/supportbot).
- 
-## How to access the Knowledge Base?
-
-If you don't like calling or emailing people and want to try and find answers yourself, we have a very comprehensive documentation. If you run into technical issues while using Haptik, you can access our guides and tutorials for self-guided instructions and troubleshooting tips. These issues could be of varied types from product usage, to technical support to other things.
-
-You can access the documentation [**here**](https://docs.haptik.ai/). You can also use the search feature on top to find the exact section you are looking for.
