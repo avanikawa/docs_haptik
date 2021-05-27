@@ -1,0 +1,140 @@
+<!DOCTYPE html><html lang="en"><head><meta charSet="utf-8"/><meta http-equiv="X-UA-Compatible" content="IE=edge"/><title>Using Conversation Studio · Haptik Docs</title><meta name="viewport" content="width=device-width, initial-scale=1.0"/><meta name="generator" content="Docusaurus"/><meta name="description" content="Haptik Platform&#x27;s **Conversation Studio** has pre made **Skills** built for your use-case that can be implemented for your Shopify bot. The **Haptik Bot** comes with these pre-built use-cases - "/><meta name="docsearch:language" content="en"/><meta property="og:title" content="Using Conversation Studio · Haptik Docs"/><meta property="og:type" content="website"/><meta property="og:url" content="https://docs.haptik.ai/"/><meta property="og:description" content="Haptik Platform&#x27;s **Conversation Studio** has pre made **Skills** built for your use-case that can be implemented for your Shopify bot. The **Haptik Bot** comes with these pre-built use-cases - "/><meta property="og:image" content="https://docs.haptik.ai/img/image_0.png"/><meta name="twitter:card" content="summary"/><meta name="twitter:image" content="https://docs.haptik.ai/img/image_0.png"/><meta name="robots" content="noindex"/><link rel="shortcut icon" href="/img/image_0.png"/><link rel="stylesheet" href="https://cdn.jsdelivr.net/docsearch.js/1/docsearch.min.css"/><link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/default.min.css"/><script>
+              (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+              (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+              m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+              })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+              ga('create', 'UA-106563119-6', 'auto');
+              ga('send', 'pageview');
+            </script><script type="text/javascript" src="/js/index.js"></script><script src="/js/scrollSpy.js"></script><link rel="stylesheet" href="/css/main.css"/><script src="/js/codetabs.js"></script></head><body class="sideNavVisible separateOnPageNav"><div class="fixedHeaderContainer"><div class="headerWrapper wrapper"><header><a href="/"><img class="logo" src="/img/image_0.png" alt="Haptik Docs"/><h2 class="headerTitleWithLogo">Haptik Docs</h2></a><div class="navigationWrapper navigationSlider"><nav class="slidingNav"><ul class="nav-site nav-site-internal"><li class="navSearchWrapper reactNavSearchWrapper"><input type="text" id="search_input_react" placeholder="Search" title="Search"/></li><li class=""><a href="/#tools" target="_self">Tools</a></li><li class=""><a href="/#integrations" target="_self">Integrations</a></li></ul></nav></div></header></div></div><div class="navPusher"><div class="docMainWrapper wrapper"><div class="docsNavContainer" id="docsNav"><nav class="toc"><div class="toggleNav"><section class="navWrapper wrapper"><div class="navBreadcrumb wrapper"><div class="navToggle" id="navToggler"><div class="hamburger-menu"><div class="line1"></div><div class="line2"></div><div class="line3"></div></div></div><h2><i>›</i><span>Implementation</span></h2><div class="tocToggler" id="tocToggler"><i class="icon-toc"></i></div></div><div class="navGroups"><div class="navGroup"><h3 class="navGroupCategoryTitle">Getting Started</h3><ul class=""><li class="navListItem"><a class="navItem" href="/shopify/">Introduction</a></li></ul></div><div class="navGroup"><h3 class="navGroupCategoryTitle">Setup</h3><ul class=""><li class="navListItem"><a class="navItem" href="/shopify/setup-shopify">Connect Haptik &amp; Shopify</a></li></ul></div><div class="navGroup"><h3 class="navGroupCategoryTitle">Implementation</h3><ul class=""><li class="navListItem navListItemActive"><a class="navItem" href="/shopify/build-shopify">Using Conversation Studio</a></li></ul></div></div></section></div><script>
+            var coll = document.getElementsByClassName('collapsible');
+            var checkActiveCategory = true;
+            for (var i = 0; i < coll.length; i++) {
+              var links = coll[i].nextElementSibling.getElementsByTagName('*');
+              if (checkActiveCategory){
+                for (var j = 0; j < links.length; j++) {
+                  if (links[j].classList.contains('navListItemActive')){
+                    coll[i].nextElementSibling.classList.toggle('hide');
+                    coll[i].childNodes[1].classList.toggle('rotate');
+                    checkActiveCategory = false;
+                    break;
+                  }
+                }
+              }
+
+              coll[i].addEventListener('click', function() {
+                var arrow = this.childNodes[1];
+                arrow.classList.toggle('rotate');
+                var content = this.nextElementSibling;
+                content.classList.toggle('hide');
+              });
+            }
+
+            document.addEventListener('DOMContentLoaded', function() {
+              createToggler('#navToggler', '#docsNav', 'docsSliderActive');
+              createToggler('#tocToggler', 'body', 'tocActive');
+
+              var headings = document.querySelector('.toc-headings');
+              headings && headings.addEventListener('click', function(event) {
+                var el = event.target;
+                while(el !== headings){
+                  if (el.tagName === 'A') {
+                    document.body.classList.remove('tocActive');
+                    break;
+                  } else{
+                    el = el.parentNode;
+                  }
+                }
+              }, false);
+
+              function createToggler(togglerSelector, targetSelector, className) {
+                var toggler = document.querySelector(togglerSelector);
+                var target = document.querySelector(targetSelector);
+
+                if (!toggler) {
+                  return;
+                }
+
+                toggler.onclick = function(event) {
+                  event.preventDefault();
+
+                  target.classList.toggle(className);
+                };
+              }
+            });
+        </script></nav></div><div class="container mainContainer docsContainer"><div class="wrapper"><div class="post"><header class="postHeader"><h1 id="__docusaurus" class="postHeaderTitle">Using Conversation Studio</h1></header><article><div><span><p>Haptik Platform's <strong>Conversation Studio</strong> has pre made <strong>Skills</strong> built for your use-case that can be implemented for your Shopify bot. The <strong>Haptik Bot</strong> comes with these pre-built use-cases -</p>
+<ul>
+<li>Track order status</li>
+<li>Cancel order request</li>
+<li>Place a return and replacement request</li>
+</ul>
+<p>You can build new use-cases apart from these usecases by following the Haptik guide, <a href="https://docs.haptik.ai/bot-builder/basic/making-first-bot"><strong>here</strong></a>.</p>
+<p>Haptik's Smart Skills uses Shopify APIs to provide real-time information to the users. These Smart Skills have all the APIs in-built. You can simply import these Smart Skills and start using using the bot by making few changes, such as modifying the Bot Resposes according to your business requirement.</p>
+<h2><a class="anchor" aria-hidden="true" id="step-1-create-a-new-bot"></a><a href="#step-1-create-a-new-bot" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Step 1: Create a New Bot</h2>
+<p>We will start by creating a new bot on the platform.</p>
+<ol>
+<li>Go to <a href="https://staging.hellohaptik.com/mogambo/#/bots"><strong>Conversation Studio</strong></a></li>
+<li>Click on <strong>New Bot</strong></li>
+<li>Provide a <strong>Name</strong>, select the <strong>Partner</strong> from dropdown</li>
+<li>Click on <strong>Create Bot</strong></li>
+</ol>
+<p><img src="https://user-images.githubusercontent.com/75118325/114122315-a5c97500-990d-11eb-999f-425e88d6add9.png" alt="image"></p>
+<h2><a class="anchor" aria-hidden="true" id="step-2-import-the-smart-skills"></a><a href="#step-2-import-the-smart-skills" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Step 2: Import the Smart Skills</h2>
+<p>Once the bot is created, you can create a <a href="https://docs.haptik.ai/bot-builder/basic/create-your-first-bot"><strong>Skill Set</strong></a>. Within this Skill Set, you can now add the Shopify Skills.</p>
+<p>Click on the <strong>+ Add Skills</strong> button to add required skills on the IVA. As soon as the button is clicked, a modal would open showcasing all skills available on the platform. Search for <strong>Shopify</strong> and you will be able to see the Shopify Smart Skills</p>
+<p><img src="https://user-images.githubusercontent.com/75118325/119796968-725f9b80-bef7-11eb-9af8-85efc1f56b94.png" alt="image"></p>
+<p>Click on <strong>Add Smart Skill</strong> button to import the entire user journey on to your bot.</p>
+<p><img src="https://user-images.githubusercontent.com/75118325/119797270-b3f04680-bef7-11eb-811c-77e86581b3bf.png" alt="image"></p>
+<h3><a class="anchor" aria-hidden="true" id="skill-1-shopify-track-my-order"></a><a href="#skill-1-shopify-track-my-order" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Skill 1: Shopify Track My Order</h3>
+<p>This skill is used to fetch orders from the user's account on Shopify and display them on the bot.</p>
+<h3><a class="anchor" aria-hidden="true" id="skill-2-shopify-order-cancellation"></a><a href="#skill-2-shopify-order-cancellation" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Skill 2: Shopify Order Cancellation</h3>
+<p>This skill allows users to cancel their order using Shopify APIs.</p>
+<h3><a class="anchor" aria-hidden="true" id="skill-3-shopify-return-and-replacement"></a><a href="#skill-3-shopify-return-and-replacement" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Skill 3: Shopify Return And Replacement</h3>
+<p>This skill allows user to either return their order or place a replacement request.</p>
+<p><img src="https://user-images.githubusercontent.com/75118325/119783369-c3b55e00-beea-11eb-8d1a-a4d6aa275e7b.png" alt="image"></p>
+<blockquote>
+<p>If you want to add customized skills, please contact your Haptik SPOC.</p>
+</blockquote>
+<h2><a class="anchor" aria-hidden="true" id="step-3-changing-the-apis"></a><a href="#step-3-changing-the-apis" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Step 3: Changing the APIs</h2>
+<p>Once you have imported the Smart Skills, please contact your Haptik SPOC to update the Shopify credentails on the bot.</p>
+<h2><a class="anchor" aria-hidden="true" id="step-4-train-and-transfer-the-bot"></a><a href="#step-4-train-and-transfer-the-bot" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Step 4: Train and Transfer the bot</h2>
+<p>After the credentials have been updated, you can now train the bot and Transfer the bot to Production environment. Dont forget to transfer the Business as well to Production environment.</p>
+<h2><a class="anchor" aria-hidden="true" id="step-5-create-a-team-on-smart-agent-chat"></a><a href="#step-5-create-a-team-on-smart-agent-chat" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Step 5: Create a Team on Smart Agent Chat</h2>
+<p>In case where human intervention is required, you can set up a team of agents who can then handle escalations on the bot and help resolve user's queries faster.</p>
+<p>Read <a href="https://docs.haptik.ai/agent-chat/"><strong>here</strong></a> to setup the team. This should be done on Production directly.</p>
+<h2><a class="anchor" aria-hidden="true" id="step-6-connect-team-with-haptiks-bot"></a><a href="#step-6-connect-team-with-haptiks-bot" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Step 6: Connect Team with Haptik's Bot</h2>
+<p>Choose the <strong>Team</strong> created in the previous step on Haptik's bot Business Manager. This should be done on Production directly.</p>
+<p><img src="https://user-images.githubusercontent.com/55389979/119810943-2b2bd780-bf04-11eb-9e55-18afe3f6ad82.png" alt="Screenshot 2021-05-27 at 3 56 04 PM"></p>
+<h2><a class="anchor" aria-hidden="true" id="step-7-provide-platform-deployment-details"></a><a href="#step-7-provide-platform-deployment-details" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Step 7: Provide Platform Deployment details</h2>
+<p>Provide the following on the <strong>Platform Deployments</strong> section of the Conversation Studio tool. These keys can be found in the Shopify account.</p>
+<ul>
+<li>Domain name</li>
+<li>API KEY</li>
+<li>API TOKEN</li>
+</ul>
+<p><img src="https://user-images.githubusercontent.com/75118325/119798732-08e08c80-bef9-11eb-83da-ddaa8b78acbb.png" alt="image"></p>
+<p>You can provide these details under <strong>Platform Deployments</strong> section on the Business Manager page of Haptik's Bot. Choose the <strong>Platform</strong> as Shopify Connector and fill up the details.</p>
+<p><img src="https://user-images.githubusercontent.com/75118325/119798192-89eb5400-bef8-11eb-9022-42221b2b9695.png" alt="image"></p>
+<blockquote>
+<p>Provide the keys on <strong>Production</strong> environment.</p>
+</blockquote>
+</span></div></article></div><div class="docLastUpdate"><em>Last updated on 5/27/2021</em></div><div class="docs-prevnext"><a class="docs-prev button" href="/shopify/setup-shopify"><span class="arrow-prev">← </span><span>Connect Haptik &amp; Shopify</span></a></div></div></div><nav class="onPageNav"><ul class="toc-headings"><li><a href="#step-1-create-a-new-bot">Step 1: Create a New Bot</a></li><li><a href="#step-2-import-the-smart-skills">Step 2: Import the Smart Skills</a><ul class="toc-headings"><li><a href="#skill-1-shopify-track-my-order">Skill 1: Shopify Track My Order</a></li><li><a href="#skill-2-shopify-order-cancellation">Skill 2: Shopify Order Cancellation</a></li><li><a href="#skill-3-shopify-return-and-replacement">Skill 3: Shopify Return And Replacement</a></li></ul></li><li><a href="#step-3-changing-the-apis">Step 3: Changing the APIs</a></li><li><a href="#step-4-train-and-transfer-the-bot">Step 4: Train and Transfer the bot</a></li><li><a href="#step-5-create-a-team-on-smart-agent-chat">Step 5: Create a Team on Smart Agent Chat</a></li><li><a href="#step-6-connect-team-with-haptiks-bot">Step 6: Connect Team with Haptik's Bot</a></li><li><a href="#step-7-provide-platform-deployment-details">Step 7: Provide Platform Deployment details</a></li></ul></nav></div><footer class="nav-footer" id="footer"><div class="footer"><a href="https://haptik.ai/" target="_blank" rel="noreferrer noopener" class="fbOpenSource"><img src="/img/image_0.png" alt="Haptik Inc." width="100"/></a><div class="footer-columns"><div class="footer-column"><div class="footer-column-title">Tools</div><div class="footer-column-links"><a href="https://docs.haptik.ai/bot-builder/basic/introduction" class="footer-column-link">Conversation Studio</a><a href="https://docs.haptik.ai/agent-chat/" class="footer-column-link">Smart Agent Chat</a><a href="https://docs.haptik.ai/bot-analytics/" class="footer-column-link">Intelligent Analytics</a></div></div><div class="footer-column"><div class="footer-column-title">Integrations</div><div class="footer-column-links"><a href="https://docs.haptik.ai/ios-sdk/" class="footer-column-link">iOS SDK</a><a href="https://docs.haptik.ai/android-sdk/" class="footer-column-link">Android SDK</a><a href="https://docs.haptik.ai/web-sdk/" class="footer-column-link">Web SDK</a><a href="https://docs.haptik.ai/whatsapp/" class="footer-column-link">WhatsApp</a><a href="https://docs.haptik.ai/other/facebook" class="footer-column-link">Facebook</a><a href="https://docs.haptik.ai/webhooks/" class="footer-column-link">Bot API</a></div></div><div class="footer-column"><div class="footer-column-title">Others</div><div class="footer-column-links"><a href="https://docs.haptik.ai/hsl/" class="footer-column-link">HSL</a><a href="https://docs.haptik.ai/other/sla" class="footer-column-link">SLA</a><a href="https://docs.haptik.ai/external-chat-tool/" class="footer-column-link">External Agent Chat Tool</a></div></div></div><div class="footer-copyright"></div></div><section class="copyright">Copyright © 2021 Haptik Inc.</section></footer></div><script type="text/javascript" src="https://cdn.jsdelivr.net/docsearch.js/1/docsearch.min.js"></script><script>
+                document.addEventListener('keyup', function(e) {
+                  if (e.target !== document.body) {
+                    return;
+                  }
+                  // keyCode for '/' (slash)
+                  if (e.keyCode === 191) {
+                    const search = document.getElementById('search_input_react');
+                    search && search.focus();
+                  }
+                });
+              </script><script>
+              var search = docsearch({
+                
+                apiKey: '224c7079e67e84a978d8b4621f6af16d',
+                indexName: 'haptik',
+                inputSelector: '#search_input_react',
+                algoliaOptions: {}
+              });
+            </script></body></html>
