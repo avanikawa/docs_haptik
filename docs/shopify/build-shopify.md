@@ -62,18 +62,25 @@ After the credentials have been updated, you can now train the bot and Transfer 
 
 In case where human intervention is required, you can set up a team of agents who can then handle escalations on the bot and help resolve user's queries faster.
 
-Read [**here**](https://docs.haptik.ai/agent-chat/) to setup the team.
+Read [**here**](https://docs.haptik.ai/agent-chat/) to setup the team. This should be done on Production directly.
+
+## Step 6: Connect Team with Haptik's Bot
+
+Choose the **Team** created in the previous step on Haptik's bot Business Manager. This should be done on Production directly.
+
+![Screenshot 2021-05-27 at 3 56 04 PM](https://user-images.githubusercontent.com/55389979/119810943-2b2bd780-bf04-11eb-9e55-18afe3f6ad82.png)
 
 ## Step 6: Provide Platform Deployment details
 
-Provide the following on the **Platform Deployments** section of the COnversation Studio tool. These keys can be found in the Shopify account.
+Provide the following on the **Platform Deployments** section of the Conversation Studio tool. These keys can be found in the Shopify account.
 * Domain name
 * API KEY
 * API TOKEN
 
 ![image](https://user-images.githubusercontent.com/75118325/119798732-08e08c80-bef9-11eb-83da-ddaa8b78acbb.png)
 
-> Provide the keys on **Production** environment.
+You can provide these details under **Platform Deployments** section on the Business Manager page of Haptik's Bot. Choose the **Platform** as Shopify Connector and fill up the details.
 
 ![image](https://user-images.githubusercontent.com/75118325/119798192-89eb5400-bef8-11eb-9022-42221b2b9695.png)
 
+> Provide the keys on **Production** environment.
