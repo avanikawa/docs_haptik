@@ -4,9 +4,9 @@ title: Connect Haptik & Shopify
 
 In this guide, you will be able to complete the configuration required to integrate Shopify with Haptik.
 
-What you'll need - 
+**What will you need?**
 
-- A Shopify account, register yourself a partner using the Shopify account. Read [**here**](https://help.shopify.com/en/partners/faq/partner-program#how-do-i-become-a-shopify-partner) to know more about becoming a partner on Shopify.
+- A Shopify account, register yourself as a partner using the Shopify account. Read [**here**](https://help.shopify.com/en/partners/faq/partner-program#how-do-i-become-a-shopify-partner) to know more about becoming a partner on Shopify.
 - Access to Haptik Platform
 
 ## Step 1: Register as a partner
@@ -25,7 +25,7 @@ Click on **Apps** in the left sidebar and then click on **Create App** button.
 
 ![image](https://user-images.githubusercontent.com/75118325/117384203-190bda00-af00-11eb-9c26-847764460f3d.png)
 
-## Step 3: Setting up the Custom App
+## Step 3: Set up the Custom App
 
 Select the app type to be **Custom App**
 
@@ -41,13 +41,13 @@ You can check the new app in the **Apps** section.
 
 ![image](https://user-images.githubusercontent.com/75118325/119133312-5ec8b680-ba59-11eb-98a2-214e0a90748d.png)
 
-## Step 4: Providing the keys on Haptik Platform
+## Step 4: Provide the keys on Haptik Platform
 
 When you open the newly created app, you will find the **API key** and **API Secret Key**
 
 ![image](https://user-images.githubusercontent.com/75118325/117386868-46a75200-af05-11eb-8d01-d50544a4cf6d.png)
 
-Copy these keys and provide it on the **Platform Deployments** section of the Business Manager on Conversation Studio tool.
+Copy these keys and provide it on the **Platform Deployments** section of the Business Manager on Haptik Platform.
 
 ## Step 5: Authenticate the App
 
