@@ -85,12 +85,12 @@ module.exports = () => (
           url: '/hsl',
         },
         {
-          title: 'SLA',
-          url: '/other/sla',
+          title: 'Getting Support',
+          url: '/other/support',
         },
         {
-          title: 'Help',
-          url: '/other/supportbot',
+          title: 'SLA',
+          url: '/other/sla',
         },
         {
           title: 'Chat Link',
