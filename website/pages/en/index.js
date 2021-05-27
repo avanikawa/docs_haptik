@@ -138,6 +138,13 @@ module.exports = () => (
           ctaLink: '/salesforce',
         },
         {
+          title: 'Shopify',
+          description:
+            'Documentation to help you build conversational experiences on Shopify',
+          ctaText: 'Get Started',
+          ctaLink: '/shopify',
+        },
+        {
           title: 'Bot API',
           description:
             'API docs to help you build powerful chatbot solutions with great customisations',
