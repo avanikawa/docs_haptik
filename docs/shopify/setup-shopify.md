@@ -1,5 +1,5 @@
 ---
-title: Setting up Shopify
+title: Connect Haptik & Shopify
 ---
 
 In this guide, you will be able to complete the configuration required to integrate Shopify with Haptik.
