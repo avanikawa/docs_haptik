@@ -65,6 +65,12 @@ You can read more about Shopify domains, [**here**](https://help.shopify.com/en/
 
 ![image](https://user-images.githubusercontent.com/75118325/117389588-3645a600-af0a-11eb-90b9-cae5abc115a1.png)
 
-A new link gets generated here. Copy the link and open it in a new tab of your browser for the authentication process.
+A new link gets generated here. Copy the link and open it in a new tab of your browser for the authentication process. You will able to see the following screen.
 
-One the authentication process is done, you will be able to test the bot in the store.
+![image](https://user-images.githubusercontent.com/75118325/119753849-1710b780-bebd-11eb-8023-438b3947577d.png)
+
+* When you click on **Make it live** option, the bot will be deployed on your Shopify page.
+* When you click on **Test IVA**, a dummy HTML page will open up where you can do a functional testing of the bot.
+
+
+Voila! Once you have tested the bot, your users will then be able to communicate with the bot. Read [**here**](https://docs.haptik.ai/shopify/build-shopify) to know more about the use-cases you can implement on your bot.
