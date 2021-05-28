@@ -3,9 +3,18 @@ title: Introduction
 id: index
 ---
 
+Telegram is a fast and secure messaging platform, used by millions of people around the globe. Telegram Bots are special accounts that do not require an additional phone number to set up. Users can interact with bots in two ways:
+
+* Send messages and commands to bots by opening a chat with them or by adding them to groups.
+* Send requests directly from the input field by typing the bot's @username and a query. This allows sending content from inline bots directly into any chat, group, or channel.
 
 
+There are multiple perks of using the Telegram bot. Telegram provides multiple types of interfaces for users to communicate with the bot.
 
 
+> Click [**here**](https://core.telegram.org/bots#5-bot-perks) to know the different benefits of using the Telegram bot.
 
-Click [**here**]() to get started with the setup of Telegram bot.
+
+Haptik Platform can help you elevate the user experience by creating conversational flows, powered by AI. Using the Conversation Studio tool of Haptik Platform, you can build user journeys to resolve user queries faster. You can create conversation user journeys, connect the user to an agent if any human intervention is required, and so on.
+
+To get started with a Telegram bot, you can simply start to create a new bot on Telegram, as Telegram does not require any additional phone number. Click [**here**](https://docs.haptik.ai/telegram/setup-telegram) to set up a Telegram bot powered by the Haptik Platform.
