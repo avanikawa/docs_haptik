@@ -46,7 +46,7 @@ On the Dashboard, click on the **Apps** option in the top right corner and selec
 
 Navigate to **Settings -> Accounts -> API & SDKs** section
 
-![image](https://user-images.githubusercontent.com/75118325/116492907-19322700-a8bb-11eb-9ef5-399abb27a9fc.png)
+![image](https://user-images.githubusercontent.com/75118325/119950260-4f48f080-bfb8-11eb-8899-0a953b3f21ce.png)
 
 Click on **Add API client**. Here, provide the following details - 
 
@@ -63,6 +63,8 @@ Click on **Add API client**. Here, provide the following details -
     * The URL would resemble this format - 
     
     `https://env.haptikapi.com/third_party_integrations/v1/zendesk_live_chat/generate_authorize_url/xxxx`
+    
+![image](https://user-images.githubusercontent.com/75118325/119950490-83bcac80-bfb8-11eb-9bb9-f3491a41c2fe.png)
 
 Once the API Client is added, a pop-up will appear. Copy these keys.
 
@@ -84,7 +86,9 @@ Here, provide the following keys -
 * **Client Secret**: This is the **Client Secret** from the Zendesk API Client, created in step 3.
 * **Authorization URL**: This field is auto generated.
 
-![image](https://user-images.githubusercontent.com/75118325/119141550-05fe1b80-ba63-11eb-99ad-0856464759be.png)
+![image](https://user-images.githubusercontent.com/75118325/119951169-44db2680-bfb9-11eb-8954-68c1fc612c2b.png)
+
+> To know more about Business Manager, please click [**here**](https://docs.haptik.ai/bot-builder/basic/business).
 
 Open the **Authorization URL** in the browser. It will open up the authentication screen. Click on **Allow** here.
 
