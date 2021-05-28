@@ -7,7 +7,7 @@ Zendesk is a service-first CRM company that builds software designed to improve 
 
 The Zendesk Messaging Bot Partner Program is a new initiative at Zendesk to help businesses deliver bot integrations into Zendesk Suite. Any business opting for the program will have their integration listed on [**Sunshine Conversations Marketplace**](https://app.smooch.io/integrations/) as part of the Switchboard API launch.
 
-Leveraging Zendesk Integration and using Haptik Platform will allow you to provide a finer customer service. Using Haptik Platform, you can build AI powered user journeys which helps the user to resolve their queries faster. 
+Leveraging Zendesk Integration and Haptik Platform will allow you to provide a finer customer service. Using Haptik Platform, you can build AI powered user journeys which helps the user to resolve their queries faster. 
 
 Zendesk provides two integration options - 
 * Zendesk and Sunshine Conversations Integration (recommended by Zendesk)
@@ -21,7 +21,7 @@ Building on the Sunshine Conversations platform comes with a wide range of benef
 - Ability to deploy your bot solution across dozens of channels, including Whatsapp, Facebook Messenger, LINE, and more
 - Access to a wide range of rich messaging capabilities, including rich message types, activity indicators, template messages, and robust SDKs
 - Ability to programmatically manage control of the conversation using Switchboard, including escalation to a live agent in Zendesk Support
-- Ability to connect all your data sources giving you a complete insight into your customers using the Zendesk Suite
+- Ability to connect all your data sources giving you a complete insight about your customers using the Zendesk Suite
 - Ability to reduce costs, speed up development time, and bring your bot faster to market using our fully featured Sunshine Conversations SDKs
 
 The following diagram visualizes how the Zendesk and Sunshine Conversation Integration works - 
@@ -42,7 +42,7 @@ Zendesk promotes implementing Zendesk + Sunshine Conversation as the Zendesk mes
 
 ## Licenses required
 
-Before you can start to implement Zendesk Integration with Haptik Platform, you will have to acquire License(s) from Zendesk and Sunshine, along with access to Haptik Platform.
+Before you start to implement Zendesk Integration with Haptik Platform, you will have to acquire License(s) from Zendesk and Sunshine, along with access to Haptik Platform.
 
 ### **Zendesk and Sunshine Conversations**
 
@@ -55,7 +55,7 @@ For Zendesk and Sunshine Conversations, you will need the following licenses -
 
 ### Zendesk Messaging
 
-For Zendesk Chat you will require the following license - 
+For Zendesk Messaging you will require the following license - 
 
 1. Zendesk Chat license
 
