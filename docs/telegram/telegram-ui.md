@@ -29,13 +29,13 @@ Conversation Studio tool has various rich chat elements to show different types 
   
   <tr>
   <td><b>Sending Audio Files to the user</b></td>
-  <td align="center">Refer the JSON provided below the table</td>
+  <td align="center">Refer the HSM provided below the table</td>
   <td align="center"><img src="https://user-images.githubusercontent.com/75118325/119971709-f0db3c80-bfce-11eb-8701-3e089d38f7c4.png"/></td>
   </tr>
   
   <tr>
   <td><b>Documents (for users to download)</b></td>
-  <td align="center">Refer the JSON provided below the table</td>
+  <td align="center">Refer the HSM provided below the table</td>
   <td align="center"><img src="https://user-images.githubusercontent.com/75118325/119968981-a5735f00-bfcb-11eb-93e1-d688459a6602.png"/></td>
   </tr>
   
@@ -65,7 +65,9 @@ Conversation Studio tool has various rich chat elements to show different types 
   </table>
   
   
-  ### JSON to send Audio files to the user
+### HSM to send Audio files to the user
+  
+You can copy this **Highly Structured Message** (HSM) and paste it in the Bot Says section of the Conversation Studio tool 
   
   ```JSON
   {
@@ -90,7 +92,10 @@ Conversation Studio tool has various rich chat elements to show different types 
 }
   ```
   
-  ### JSON to display PDFs to the user
+### HSM to display PDFs to the user
+
+You can copy this **Highly Structured Message** (HSM) and paste it in the Bot Says section of the Conversation Studio tool 
+
   
   ```JSON
   {
