@@ -55,7 +55,6 @@ So to quickly create a Bot that can answer all your FAQs:
 
 ### Sample Uploader
 
-You can download the sample uploader [**here**](general_nodes_faq.tsv)
-
+You can download the sample uploader [**here**](/general_nodes_faq.tsv).
 
 And you're done!
