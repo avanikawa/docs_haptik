@@ -2,7 +2,7 @@
 title: Setup Zendesk and Sunshine Conversation
 ---
 
-Zendesk and Sunshine Conversation provide powerful asynchronous conversations which is the ideal solution to integration with an Intelligent Virtual Assistant.
+Zendesk and Sunshine Conversation provide powerful asynchronous conversations which is the ideal solution to integrate with an Intelligent Virtual Assistant.
 The following setup will help you configure Haptik IVA within Zendesk and Sunshine Conversation ecosystem. Once the process is complete, your agents can start conversing with the users using the Zendesk Platform.
 
 **What you'll need -** 
@@ -11,11 +11,11 @@ The following setup will help you configure Haptik IVA within Zendesk and Sunshi
   * While buying Sunshine license, **reach out to Zendesk support** for connecting your Sunshine account with the Zendesk account. Zendesk will create an app within your Sunshine account and link it as well.
 * Access to the **Haptik** Platform
 
-> Ensure on the Sunshine Conversations account, if you are able to see the app created by Zendesk. This app will **Zendesk** as a prefix.
+> Ensure on the Sunshine Conversations account, if you are able to see the app created by Zendesk. This app will have **Zendesk** as a prefix.
 
 ![image](https://user-images.githubusercontent.com/75118325/119676057-2fe88100-be5b-11eb-86bf-b15e731ed63b.png)
 
-## Setup Zendesk and Sunshine Conversation
+## Setting up Zendesk and Sunshine Conversation
 
 ### Step 1: Build a New Bot on Haptik Platform
 
@@ -23,7 +23,7 @@ Firstly, you will have to create a new bot on the Haptik Platform. This bot will
 
 To know more about how to create a new bot on Haptik Platform, click [**here**](https://docs.haptik.ai/bot-builder/basic/making-first-bot).
 
-> Whenever there needs to be a transfer from bot to a human agent, on the bot, add Bot Says containing the text `chat with an agent`. When the bot encounter this bot response, the chat will be handed over to a live agent on Zendesk.
+> Whenever there needs to be a transfer from bot to a human agent, on the bot add **Bot Says** containing the text `chat with an agent`. When the bot encounter this bot response, the chat will be handed over to a live agent on Zendesk.
 > 
 > ![image](https://user-images.githubusercontent.com/75118325/116491235-0d446600-a8b7-11eb-9ddd-4bdf7ff0af08.png)
 
@@ -35,7 +35,7 @@ To generate authentication link, reach out to your Haptik SPOC with a request to
 
 `https://app.smooch.io/oauth/authorize?client_id=haptik&response_type=code&state=<state_code>`
 
-Once you click on the link and the OAuth process is completed, you will get the following screen - 
+Once you click on the link and the OAuth process is completed, you will get the following screen
 
 ![image](https://user-images.githubusercontent.com/75118325/116486922-5ba03780-a8ac-11eb-99a2-18941a976659.png)
 
@@ -43,9 +43,9 @@ Once the OAuth is successfully completed, the highlighted keys get auto populate
 
 ![image](https://user-images.githubusercontent.com/75118325/119683787-907abc80-be61-11eb-8cb5-c81056a38ae7.png)
 
-You can then provide the **App Key** and **App Secret** key, which can be found in the **Sunshine App**.
+You can then provide the **App Key** and **App Secret key**, which can be found in the **Sunshine App**.
 
-> On Sunshine App, you will be able to see an app create by **Zendesk**.
+> On Sunshine App, you will be able to see an app created by **Zendesk**.
 > 
 > The app name will have Zendesk as a prefix.
 > 
@@ -80,9 +80,7 @@ _You can add multiple channels within the Sunshine app._
 
 ### Step 4: Sunshine Switchboard Configuration
 
-> Currently, Haptik will have to complete the Sunshine Conversation and Zendesk Configuration.
-
-Whenever there is a human assistant involved, there needs to be a decision maker which passes the control between different parties. The decision maker will correctly route control to the widget either from a bot or a live agent. Switchboard is the decision maker.
+Whenever there is a human assistant involved, there needs to be a decision maker which passes the control between different parties. The decision maker will correctly route control to the widget either from a bot or a live agent. **Switchboard is the decision maker.**
 
 Switchboard enables businesses to build a seamless integration between the chatbot solution and other Sunshine Conversations integrations, including the Zendesk Suite - enabling shared customers to take full advantage of the joint solution.
 
@@ -158,7 +156,7 @@ curl $SUNSHINE_CONV_ROOT/v2/apps/:app_id/switchboards/:switchboard_id \
      -u app_keyid:app_secretkey
 ```
 
-> **In case you need help with the configuration, please reach out to Haptik SPOC to complete this process.**
+> In case you need help with the configuration, please reach out to Haptik SPOC to complete this process.
 
 ## Setting up agents on Zendesk
 
@@ -180,7 +178,7 @@ To integrate the bot on your preffered channel (refer **Step 3** to add channel 
 
 You will find the credentials, mentioned in the Sunshine guides, on the Zendesk-Sunshine app.
 
-Click on the app which Zendesk created in you Sunshine account. 
+Click on the app which Zendesk created in your Sunshine account. 
 
 <table>
   <th>Web Messenger</th>
@@ -199,8 +197,4 @@ Click on the app which Zendesk created in you Sunshine account.
 
 After you have completed the integration of bot, you can test the bot.
 
-Once you send a message, for example - `connect me with an agent`, a new case should get added on the Zendesk
-
-The following is an example of LINE app using Sunshine Conversation and Zendesk
-
-https://user-images.githubusercontent.com/75118325/119790254-696bcb80-bef1-11eb-9f8e-d1f59cec105f.mp4
+Once you send a message, for example - `connect me with an agent`, a new case should get added on the Zendesk.
