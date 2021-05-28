@@ -2,13 +2,13 @@
 title: Setup Zendesk Messaging
 ---
 
-Zendesk Messaging uses inept synchronous API communication. Please refer the UI compatibility section [**here**](http://docs.haptik.ai/zendesk/zendesk-ui) to know the limitations.
+Zendesk Messaging uses inept synchronous API communication. This guide will help you connect Haptik bot with Zendesk Messaging to handle live agent integration. Please refer the UI compatibility section [**here**](http://docs.haptik.ai/zendesk/zendesk-ui) to know the limitations.
 
-This guide will help you connect Haptik bot with Zenchat WebSDK to handle live agent integration in Zenchat. There are total 5 steps to follow to complete this integration.
-
-**What you'll need -** 
+**What will you need -** 
 - Zendesk License
 - Access to Haptik Platform
+
+There are total 5 steps to follow to complete this integration.
 
 ## Step 1: Create a New Bot on Haptik Platform
 
