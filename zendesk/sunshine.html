@@ -1,0 +1,216 @@
+<!DOCTYPE html><html lang="en"><head><meta charSet="utf-8"/><meta http-equiv="X-UA-Compatible" content="IE=edge"/><title>Setup Zendesk and Sunshine Conversation · Haptik Docs</title><meta name="viewport" content="width=device-width, initial-scale=1.0"/><meta name="generator" content="Docusaurus"/><meta name="description" content="Zendesk and Sunshine Conversation provide powerful asynchronous conversations which is the ideal solution to integrate with an Intelligent Virtual Assistant."/><meta name="docsearch:language" content="en"/><meta property="og:title" content="Setup Zendesk and Sunshine Conversation · Haptik Docs"/><meta property="og:type" content="website"/><meta property="og:url" content="https://docs.haptik.ai/"/><meta property="og:description" content="Zendesk and Sunshine Conversation provide powerful asynchronous conversations which is the ideal solution to integrate with an Intelligent Virtual Assistant."/><meta property="og:image" content="https://docs.haptik.ai/img/image_0.png"/><meta name="twitter:card" content="summary"/><meta name="twitter:image" content="https://docs.haptik.ai/img/image_0.png"/><meta name="robots" content="noindex"/><link rel="shortcut icon" href="/img/image_0.png"/><link rel="stylesheet" href="https://cdn.jsdelivr.net/docsearch.js/1/docsearch.min.css"/><link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/default.min.css"/><script>
+              (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+              (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+              m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+              })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+              ga('create', 'UA-106563119-6', 'auto');
+              ga('send', 'pageview');
+            </script><script type="text/javascript" src="/js/index.js"></script><script src="/js/scrollSpy.js"></script><link rel="stylesheet" href="/css/main.css"/><script src="/js/codetabs.js"></script></head><body class="sideNavVisible separateOnPageNav"><div class="fixedHeaderContainer"><div class="headerWrapper wrapper"><header><a href="/"><img class="logo" src="/img/image_0.png" alt="Haptik Docs"/><h2 class="headerTitleWithLogo">Haptik Docs</h2></a><div class="navigationWrapper navigationSlider"><nav class="slidingNav"><ul class="nav-site nav-site-internal"><li class="navSearchWrapper reactNavSearchWrapper"><input type="text" id="search_input_react" placeholder="Search" title="Search"/></li><li class=""><a href="/#tools" target="_self">Tools</a></li><li class=""><a href="/#integrations" target="_self">Integrations</a></li></ul></nav></div></header></div></div><div class="navPusher"><div class="docMainWrapper wrapper"><div class="docsNavContainer" id="docsNav"><nav class="toc"><div class="toggleNav"><section class="navWrapper wrapper"><div class="navBreadcrumb wrapper"><div class="navToggle" id="navToggler"><div class="hamburger-menu"><div class="line1"></div><div class="line2"></div><div class="line3"></div></div></div><h2><i>›</i><span>Zendesk and Sunshine Conversation</span></h2><div class="tocToggler" id="tocToggler"><i class="icon-toc"></i></div></div><div class="navGroups"><div class="navGroup"><h3 class="navGroupCategoryTitle">Getting Started</h3><ul class=""><li class="navListItem"><a class="navItem" href="/zendesk/">Introduction</a></li></ul></div><div class="navGroup"><h3 class="navGroupCategoryTitle">Zendesk and Sunshine Conversation</h3><ul class=""><li class="navListItem navListItemActive"><a class="navItem" href="/zendesk/sunshine">Setup Zendesk and Sunshine Conversation</a></li></ul></div><div class="navGroup"><h3 class="navGroupCategoryTitle">Zendesk Messaging</h3><ul class=""><li class="navListItem"><a class="navItem" href="/zendesk/zenchat">Setup Zendesk Messaging</a></li></ul></div></div></section></div><script>
+            var coll = document.getElementsByClassName('collapsible');
+            var checkActiveCategory = true;
+            for (var i = 0; i < coll.length; i++) {
+              var links = coll[i].nextElementSibling.getElementsByTagName('*');
+              if (checkActiveCategory){
+                for (var j = 0; j < links.length; j++) {
+                  if (links[j].classList.contains('navListItemActive')){
+                    coll[i].nextElementSibling.classList.toggle('hide');
+                    coll[i].childNodes[1].classList.toggle('rotate');
+                    checkActiveCategory = false;
+                    break;
+                  }
+                }
+              }
+
+              coll[i].addEventListener('click', function() {
+                var arrow = this.childNodes[1];
+                arrow.classList.toggle('rotate');
+                var content = this.nextElementSibling;
+                content.classList.toggle('hide');
+              });
+            }
+
+            document.addEventListener('DOMContentLoaded', function() {
+              createToggler('#navToggler', '#docsNav', 'docsSliderActive');
+              createToggler('#tocToggler', 'body', 'tocActive');
+
+              var headings = document.querySelector('.toc-headings');
+              headings && headings.addEventListener('click', function(event) {
+                var el = event.target;
+                while(el !== headings){
+                  if (el.tagName === 'A') {
+                    document.body.classList.remove('tocActive');
+                    break;
+                  } else{
+                    el = el.parentNode;
+                  }
+                }
+              }, false);
+
+              function createToggler(togglerSelector, targetSelector, className) {
+                var toggler = document.querySelector(togglerSelector);
+                var target = document.querySelector(targetSelector);
+
+                if (!toggler) {
+                  return;
+                }
+
+                toggler.onclick = function(event) {
+                  event.preventDefault();
+
+                  target.classList.toggle(className);
+                };
+              }
+            });
+        </script></nav></div><div class="container mainContainer docsContainer"><div class="wrapper"><div class="post"><header class="postHeader"><h1 id="__docusaurus" class="postHeaderTitle">Setup Zendesk and Sunshine Conversation</h1></header><article><div><span><p>Zendesk and Sunshine Conversation provide powerful asynchronous conversations which is the ideal solution to integrate with an Intelligent Virtual Assistant.
+The following setup will help you configure Haptik IVA within Zendesk and Sunshine Conversation ecosystem. Once the process is complete, your agents can start conversing with the users using the Zendesk Platform.</p>
+<p><strong>What you'll need -</strong></p>
+<ul>
+<li><strong>Zendesk</strong> license</li>
+<li><strong>Sunshine Conversations</strong> license
+<ul>
+<li>While buying Sunshine license, <strong>reach out to Zendesk support</strong> for connecting your Sunshine account with the Zendesk account. Zendesk will create an app within your Sunshine account and link it as well.</li>
+</ul></li>
+<li>Access to the <strong>Haptik</strong> Platform</li>
+</ul>
+<blockquote>
+<p>Ensure on the Sunshine Conversations account, if you are able to see the app created by Zendesk. This app will have <strong>Zendesk</strong> as a prefix.</p>
+</blockquote>
+<p><img src="https://user-images.githubusercontent.com/75118325/119676057-2fe88100-be5b-11eb-86bf-b15e731ed63b.png" alt="image"></p>
+<h2><a class="anchor" aria-hidden="true" id="setting-up-zendesk-and-sunshine-conversation"></a><a href="#setting-up-zendesk-and-sunshine-conversation" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Setting up Zendesk and Sunshine Conversation</h2>
+<h3><a class="anchor" aria-hidden="true" id="step-1-build-a-new-bot-on-haptik-platform"></a><a href="#step-1-build-a-new-bot-on-haptik-platform" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Step 1: Build a New Bot on Haptik Platform</h3>
+<p>Firstly, you will have to create a new bot on the Haptik Platform. This bot will be connected to Zendesk + Sunshine Integration.</p>
+<p>To know more about how to create a new bot on Haptik Platform, click <a href="https://docs.haptik.ai/bot-builder/basic/making-first-bot"><strong>here</strong></a>.</p>
+<blockquote>
+<p>Whenever there needs to be a transfer from bot to a human agent, on the bot add <strong>Bot Says</strong> containing the text <code>chat with an agent</code>. When the bot encounter this bot response, the chat will be handed over to a live agent on Zendesk.</p>
+<p><img src="https://user-images.githubusercontent.com/75118325/116491235-0d446600-a8b7-11eb-9ddd-4bdf7ff0af08.png" alt="image"></p>
+</blockquote>
+<h3><a class="anchor" aria-hidden="true" id="step-2-complete-the-oauth-process"></a><a href="#step-2-complete-the-oauth-process" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Step 2: Complete the OAuth process</h3>
+<p>Haptik will provide you with an authentication link that will complete the process of connecting your Haptik IVA with Sunshine Conversation.</p>
+<p>To generate authentication link, reach out to your Haptik SPOC with a request to create the authentication link. Your SPOC will respond back with the link. The link will be in this format -</p>
+<p><code>https://app.smooch.io/oauth/authorize?client_id=haptik&amp;response_type=code&amp;state=&lt;state_code&gt;</code></p>
+<p>Once you click on the link and the OAuth process is completed, you will get the following screen</p>
+<p><img src="https://user-images.githubusercontent.com/75118325/116486922-5ba03780-a8ac-11eb-99a2-18941a976659.png" alt="image"></p>
+<p>Once the OAuth is successfully completed, the highlighted keys get auto populated in the <strong>Business Manager</strong> section of Conversation Studio tool on Haptik Platform.</p>
+<p><img src="https://user-images.githubusercontent.com/75118325/119683787-907abc80-be61-11eb-8cb5-c81056a38ae7.png" alt="image"></p>
+<p>You can then provide the <strong>App Key</strong> and <strong>App Secret key</strong>, which can be found in the <strong>Sunshine App</strong>.</p>
+<blockquote>
+<p>On Sunshine App, you will be able to see an app created by <strong>Zendesk</strong>.</p>
+<p>The app name will have Zendesk as a prefix.</p>
+<p><img src="https://user-images.githubusercontent.com/75118325/119684333-0da63180-be62-11eb-830e-69469203578e.png" alt="image"></p>
+<p>Once you click on the app name, navigate to <strong>Settings</strong> tab</p>
+<p><img src="https://user-images.githubusercontent.com/75118325/119684564-3b8b7600-be62-11eb-805d-0e2fa81f721d.png" alt="image"></p>
+<p>On scrolling down, you can find the <strong>App ID</strong> and <strong>API Keys</strong></p>
+<p><img src="https://user-images.githubusercontent.com/75118325/119684857-79889a00-be62-11eb-96d2-bc0adc037c7c.png" alt="image"></p>
+<p>Provide the <strong>App ID</strong> as <strong>App Key</strong> and <strong>API Keys</strong> as <strong>App Secret</strong></p>
+</blockquote>
+<p>As the authentication is complete, you will now be able to see <strong>Haptik</strong> as one of the intergration within your <strong>Sunshine App</strong>.</p>
+<blockquote>
+<p><em>You should be seeing <strong>Zendesk</strong> and <strong>Haptik</strong> on this screen</em></p>
+<p><img src="https://user-images.githubusercontent.com/75118325/119686182-b43f0200-be63-11eb-8b32-dad5ea421f90.png" alt="image"></p>
+</blockquote>
+<h3><a class="anchor" aria-hidden="true" id="step-3-channel-integration-on-sunshine-conversation"></a><a href="#step-3-channel-integration-on-sunshine-conversation" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Step 3: Channel Integration on Sunshine Conversation</h3>
+<p>In this step, you can select the preferred channel you want to deploy the bot on.</p>
+<p>Click on <strong>Connect Channels</strong> within your newly created app.</p>
+<p><img src="https://user-images.githubusercontent.com/75118325/116487092-d0737180-a8ac-11eb-821d-4496fe107de7.png" alt="image"></p>
+<p><em>You can add multiple channels within the Sunshine app.</em></p>
+<h3><a class="anchor" aria-hidden="true" id="step-4-sunshine-switchboard-configuration"></a><a href="#step-4-sunshine-switchboard-configuration" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Step 4: Sunshine Switchboard Configuration</h3>
+<p>Whenever there is a human assistant involved, there needs to be a decision maker which passes the control between different parties. The decision maker will correctly route control to the widget either from a bot or a live agent. <strong>Switchboard is the decision maker.</strong></p>
+<p>Switchboard enables businesses to build a seamless integration between the chatbot solution and other Sunshine Conversations integrations, including the Zendesk Suite - enabling shared customers to take full advantage of the joint solution.</p>
+<p>Switchboard delivers dedicated API endpoints to help your software pass, offer, and accept control of a given conversation and manage the flow of messages between a customer and various business systems.</p>
+<p>Switchboard API configuration can be done by calling the open APIs provided by Sunshine.</p>
+<p>The following is an overview of the switchboard setup process. Each step is covered with their cURL requests below:</p>
+<p><strong>1. Create the switchboard</strong></p>
+<p>Switchboards are created with an empty post body. They begin in a disabled state by default so as to not interfere with the delivery of messages while it is being configured.</p>
+<pre><code class="hljs">POST /v2/apps/<span class="hljs-symbol">:app_id/switchboards</span>
+
+curl <span class="hljs-variable">$SUNSHINE_CONV_ROOT</span>/v2/apps/<span class="hljs-symbol">:app_id/switchboards</span> \
+     -X POST \
+     -u <span class="hljs-symbol">app_keyid:</span>app_secretkey
+</code></pre>
+<p><strong>2. Create the bot <code>switchboardIntegration</code>, specifying the existing custom integration or partner integration to be wrapped</strong></p>
+<pre><code class="hljs">curl <span class="hljs-variable">$SUNSHINE_CONV_ROOT</span>/v2/apps/<span class="hljs-symbol">:app_id/switchboards/</span><span class="hljs-symbol">:switchboard_id/switchboardIntegrations</span> \
+     -X POST \
+     -d <span class="hljs-string">'{"name": "bot", "integrationType": "CLIENT_ID", "deliverStandbyEvents": false}'</span> \
+     -H <span class="hljs-string">'content-type: application/json'</span> \
+     -u <span class="hljs-symbol">app_keyid:</span>app_secretkey
+</code></pre>
+<p><strong>3. Create the <strong>agent</strong> <code>switchboardIntegration</code>, specifying the existing custom integration or partner integration to be wrapped, AND the <strong>bot’s</strong> <code>switchboardIntegrationId</code> as <code>nextSwitchboardIntegration</code></strong></p>
+<p>You will get the <code>switchboard_integration_id</code> after calling the API in Step 2 which you will be using in step 4 (in the URL).</p>
+<pre><code class="hljs">curl $<span class="hljs-type">SUNSHINE_CONV_ROOT</span>/v2/apps/:app_id/switchboards/:switchboard_id/switchboardIntegrations \
+     -<span class="hljs-type">X</span> <span class="hljs-type">POST</span> \
+     -d '{<span class="hljs-string">"name"</span>: <span class="hljs-string">"ZD"</span>, <span class="hljs-string">"integrationType"</span>: <span class="hljs-string">"zd:agentWorkspace"</span>, <span class="hljs-string">"deliverStandbyEvents"</span>: <span class="hljs-literal">false</span>, <span class="hljs-string">"messageHistoryCount"</span>: <span class="hljs-number">10</span>, <span class="hljs-string">"nextSwitchboardIntegrationId"</span>: <span class="hljs-string">"BOT_SWITCHBOARD_INTEGRATION_ID"</span> }' \
+     -<span class="hljs-type">H</span> <span class="hljs-symbol">'content</span>-<span class="hljs-class"><span class="hljs-keyword">type</span></span>: application/json' \
+     -u app_keyid:app_secretkey
+</code></pre>
+<p>You will receive an ID which should be placed as <code>nextSwitchboardIntegrationId</code> in step 4.</p>
+<p><strong>4. Update the <strong>bot</strong> <code>switchboardIntegration</code> with the <strong>agent</strong> <code>switchboardIntegrationId</code> as <code>nextSwitchboardIntegration</code></strong></p>
+<pre><code class="hljs">curl <span class="hljs-variable">$SUNSHINE_CONV_ROOT</span>/v2/apps/<span class="hljs-symbol">:app_id/switchboards/</span><span class="hljs-symbol">:switchboard_id/switchboardIntegrations/</span><span class="hljs-symbol">:switchboard_integration_id</span> \
+     -X PATCH \
+     -d <span class="hljs-string">'{"nextSwitchboardIntegrationId": "ZENDESK_AW_SWITCHBOARD_INTEGRATION_ID"}'</span> \
+     -H <span class="hljs-string">'content-type: application/json'</span> \
+     -u <span class="hljs-symbol">app_keyid:</span>appsecretkey
+</code></pre>
+<p><strong>5. Update the switchboard with the bot’s <code>switchboardIntegrationId</code> as <code>defaultSwitchboardIntegration</code></strong></p>
+<pre><code class="hljs">curl <span class="hljs-variable">$SUNSHINE_CONV_ROOT</span>/v2/apps/<span class="hljs-symbol">:app_id/switchboards/</span><span class="hljs-symbol">:switchboard_id</span> \
+     -X PATCH \
+     -d <span class="hljs-string">'{"defaultSwitchboardIntegrationId": "BOT_SWITCHBOARD_INTEGRATION_ID", "enabled": true}'</span> \
+     -H <span class="hljs-string">'content-type: application/json'</span> \
+     -u <span class="hljs-symbol">app_keyid:</span>app_secretkey
+</code></pre>
+<p><strong>6. To activate, update the switchboard with <code>enabled: true</code></strong></p>
+<pre><code class="hljs">curl <span class="hljs-variable">$SUNSHINE_CONV_ROOT</span>/v2/apps/<span class="hljs-symbol">:app_id/switchboards/</span><span class="hljs-symbol">:switchboard_id</span> \
+     -X PATCH \
+     -d <span class="hljs-string">'{"defaultSwitchboardIntegrationId": "BOT_SWITCHBOARD_INTEGRATION_ID", "enabled": true}'</span> \
+     -H <span class="hljs-string">'content-type: application/json'</span> \
+     -u <span class="hljs-symbol">app_keyid:</span>app_secretkey
+</code></pre>
+<blockquote>
+<p>In case you need help with the configuration, please reach out to Haptik SPOC to complete this process.</p>
+</blockquote>
+<h2><a class="anchor" aria-hidden="true" id="setting-up-agents-on-zendesk"></a><a href="#setting-up-agents-on-zendesk" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Setting up agents on Zendesk</h2>
+<p>When user wants to connect with an agent at Zendesk, you need to enable the <strong>Agent Workspace</strong> on Zendesk first. Navigate to <strong>Settings</strong> -&gt; <strong>Agents</strong></p>
+<p><img src="https://user-images.githubusercontent.com/75118325/119787030-66bba700-beee-11eb-969b-1b56c6511fab.png" alt="image"></p>
+<p>To add a new agent, click on the <strong>+Add</strong> button, after providing the details, an email will be sent to the newly registered user</p>
+<p><img src="https://user-images.githubusercontent.com/75118325/119787391-c7e37a80-beee-11eb-8b14-ce58194e36cd.png" alt="image"></p>
+<p>To check the agents, you can navigate to <strong>People</strong> section as shown below -</p>
+<p><img src="https://user-images.githubusercontent.com/75118325/119790821-dbdcab80-bef1-11eb-9775-f950e7ecc2b1.png" alt="image"></p>
+<h2><a class="anchor" aria-hidden="true" id="integrating-the-sunshine-sdk-or-channels"></a><a href="#integrating-the-sunshine-sdk-or-channels" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Integrating the Sunshine SDK or channels</h2>
+<p>To integrate the bot on your preffered channel (refer <strong>Step 3</strong> to add channel in your app) you can follow the guides prepared by Sunshine.</p>
+<p>You will find the credentials, mentioned in the Sunshine guides, on the Zendesk-Sunshine app.</p>
+<p>Click on the app which Zendesk created in your Sunshine account.</p>
+<table>
+  <th>Web Messenger</th>
+  <th>WhatsApp</th>
+  <th>Facebook Messenger</th>
+  <th>LINE</th>
+  <tr>
+    <td><a href="https://docs.smooch.io/guide/web-messenger/" taregt="_blank"> Integrate a web bot</></td>
+    <td><a href="https://docs.smooch.io/guide/whatsapp/" taregt="_blank"> Integrate a WhatsApp bot</></td> 
+    <td><a href="https://docs.smooch.io/guide/facebook-messenger/" taregt="_blank"> Integrate a Facebook bot</></td>
+    <td><a href="https://docs.smooch.io/guide/line/" taregt="_blank"> Integrate a Line bot</></td>
+  </tr>
+</table>
+<h2><a class="anchor" aria-hidden="true" id="testing-the-connection"></a><a href="#testing-the-connection" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Testing the connection</h2>
+<p>After you have completed the integration of bot, you can test the bot.</p>
+<p>Once you send a message, for example - <code>connect me with an agent</code>, a new case should get added on the Zendesk.</p>
+</span></div></article></div><div class="docLastUpdate"><em>Last updated on 5/28/2021</em></div><div class="docs-prevnext"><a class="docs-prev button" href="/zendesk/index"><span class="arrow-prev">← </span><span>Introduction</span></a><a class="docs-next button" href="/zendesk/zenchat"><span>Setup Zendesk Messaging</span><span class="arrow-next"> →</span></a></div></div></div><nav class="onPageNav"><ul class="toc-headings"><li><a href="#setting-up-zendesk-and-sunshine-conversation">Setting up Zendesk and Sunshine Conversation</a><ul class="toc-headings"><li><a href="#step-1-build-a-new-bot-on-haptik-platform">Step 1: Build a New Bot on Haptik Platform</a></li><li><a href="#step-2-complete-the-oauth-process">Step 2: Complete the OAuth process</a></li><li><a href="#step-3-channel-integration-on-sunshine-conversation">Step 3: Channel Integration on Sunshine Conversation</a></li><li><a href="#step-4-sunshine-switchboard-configuration">Step 4: Sunshine Switchboard Configuration</a></li></ul></li><li><a href="#setting-up-agents-on-zendesk">Setting up agents on Zendesk</a></li><li><a href="#integrating-the-sunshine-sdk-or-channels">Integrating the Sunshine SDK or channels</a></li><li><a href="#testing-the-connection">Testing the connection</a></li></ul></nav></div><footer class="nav-footer" id="footer"><div class="footer"><a href="https://haptik.ai/" target="_blank" rel="noreferrer noopener" class="fbOpenSource"><img src="/img/image_0.png" alt="Haptik Inc." width="100"/></a><div class="footer-columns"><div class="footer-column"><div class="footer-column-title">Tools</div><div class="footer-column-links"><a href="https://docs.haptik.ai/bot-builder/basic/introduction" class="footer-column-link">Conversation Studio</a><a href="https://docs.haptik.ai/agent-chat/" class="footer-column-link">Smart Agent Chat</a><a href="https://docs.haptik.ai/bot-analytics/" class="footer-column-link">Intelligent Analytics</a></div></div><div class="footer-column"><div class="footer-column-title">Integrations</div><div class="footer-column-links"><a href="https://docs.haptik.ai/ios-sdk/" class="footer-column-link">iOS SDK</a><a href="https://docs.haptik.ai/android-sdk/" class="footer-column-link">Android SDK</a><a href="https://docs.haptik.ai/web-sdk/" class="footer-column-link">Web SDK</a><a href="https://docs.haptik.ai/whatsapp/" class="footer-column-link">WhatsApp</a><a href="https://docs.haptik.ai/other/facebook" class="footer-column-link">Facebook</a><a href="https://docs.haptik.ai/webhooks/" class="footer-column-link">Bot API</a></div></div><div class="footer-column"><div class="footer-column-title">Others</div><div class="footer-column-links"><a href="https://docs.haptik.ai/hsl/" class="footer-column-link">HSL</a><a href="https://docs.haptik.ai/other/sla" class="footer-column-link">SLA</a><a href="https://docs.haptik.ai/external-chat-tool/" class="footer-column-link">External Agent Chat Tool</a></div></div></div><div class="footer-copyright"></div></div><section class="copyright">Copyright © 2021 Haptik Inc.</section></footer></div><script type="text/javascript" src="https://cdn.jsdelivr.net/docsearch.js/1/docsearch.min.js"></script><script>
+                document.addEventListener('keyup', function(e) {
+                  if (e.target !== document.body) {
+                    return;
+                  }
+                  // keyCode for '/' (slash)
+                  if (e.keyCode === 191) {
+                    const search = document.getElementById('search_input_react');
+                    search && search.focus();
+                  }
+                });
+              </script><script>
+              var search = docsearch({
+                
+                apiKey: '224c7079e67e84a978d8b4621f6af16d',
+                indexName: 'haptik',
+                inputSelector: '#search_input_react',
+                algoliaOptions: {}
+              });
+            </script></body></html>
