@@ -159,11 +159,12 @@ You can change the language of the bot as shown in the below image
 
 And you are ready, start having a conversation with the bot in your choice of language.
 
-## Auto-Detect User Language
+## Auto-Detect User's Language
 
-When the users to the bot and directly start conversing with the bot in any language other than English (default language of the bot), the bot does not change the language automatically. In case of WebSDK, the users have to change the language from the UI and in case of other channels such as WhatsApp, the users have to go through a user flow created on the bot.
+If the users come to the bot and start conversing in a language other than English, which is the default language of the bot, and the bot is not able to comprehend user's language, that is considered as a bad experience to the user. We add additional load on the user if they have to change the language on the UI manually or by going through a bot flow. To resolve this problem, user's language should be automatically detected. 
 
-Now, the bot will run a language detection API to identify which language the user is talking in and then automatically switch language and respond in that language. The bot will follow **first three** messages sent by the user and try to identify the language of the user, only if the user is not changing the language in the middle of the **first three** messages they are sending to the bot.
+The language detection API identifies the user's language, automatically switches it's language and starts to respond in the same language. The bot will follow **first three** messages sent by the user and tries to identify the language of the user. 
 
-> If the language is supported on the bot, the bot will automatically switch the language and will respond in the chosen language.
-> If the language is not supported on the bot, the bot will give a bot break message.
+> This API only detects the language in the **first three** messages sent by the user.
+
+If the language is supported on the bot, the bot will automatically switch the language and will respond in the chosen language. If the language is not supported on the bot, the bot will give a bot break message.
