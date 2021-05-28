@@ -161,7 +161,7 @@ And you are ready, start having a conversation with the bot in your choice of la
 
 ## Auto-Detect User's Language
 
-If the users come to the bot and start conversing in a language other than English, which is the default language of the bot, and the bot is not able to comprehend user's language, that is considered as a bad experience to the user. We add additional load on the user if they have to change the language on the UI manually or by going through a bot flow. To resolve this problem, user's language should be automatically detected. 
+If the users come to the bot and start conversing in a language other than the default language of the bot, and the bot is not able to comprehend user's language, that is considered to be a bad user experience. We add additional load on the user if they have to change the language on the UI manually or by going through a bot flow. To resolve this problem, user's language should be automatically detected. 
 
 The language detection API identifies the user's language, automatically switches it's language and starts to respond in the same language. The bot will follow **first three** messages sent by the user and tries to identify the language of the user. 
 
