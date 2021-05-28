@@ -1,0 +1,13 @@
+{
+    "sidebar": {
+        "Getting Started": [
+            "index"
+        ],
+        "Setup": [
+            "setup-telegram"
+        ],
+        "Implementation": [
+            "telegram-ui"
+        ]
+    }
+}
