@@ -103,6 +103,8 @@ When the user will come back and respond on the chat screen, the chat will get r
 
 This is what makes this button extremely powerful, it cleans up concurrency bucket of the agent at their demand without inserting any friction for the user.
 
+> Note: When an agent is marked offline, all chats that were in "Waiting for user" state are moved back to team queue, and may get assigned to an available agent.
+
 ## Reassign chat
 
 In situations where agents need additional help from his team members, they can use this button to reassign the chat to anyone specific among his team or whoever  free in his team. 
