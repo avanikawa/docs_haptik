@@ -7,6 +7,8 @@ As the Team Lead you can -
 * Analyze closing categories
 * Analyze time and chat statistics
 * Analyze agent performance
+* Add/remove agents from a team
+* Mark the agents as online/offline
 
 ## Monitor Chats
 
