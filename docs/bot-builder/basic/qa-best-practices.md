@@ -15,6 +15,9 @@ Testing all the functional flows will ensure if the bot is giving correct respon
 * Execution of scenarios, and issues fixes with retesting.
 * Prepare a sheet for all the test cases you are testing. Find a sample sheet at the end of the document.
 
+![image](https://user-images.githubusercontent.com/75118325/120077674-2bc19b00-c0c9-11eb-83c0-3e5472819937.png)
+
+
 ## 2. API testing and its alignment with requirements in IVA:
 
 All the APIs should be tested to ensure users are getting responses and the APIs is giving timely responses.
@@ -33,8 +36,11 @@ Small Talk is a module present for all the bot. Small Talk responds to random qu
 * Verify the negative intents for Small talk as well. 
   
   `Example: You are useless.`
-  
+   
 * Ask the question such as _‘Who made you?’_ It should not give **Haptik** branding. Small talk customized messages are recommended.
+
+![image](https://user-images.githubusercontent.com/75118325/120077791-ba361c80-c0c9-11eb-9217-28da4f451a8d.png)
+
 
 ## 4. FAQs verification (if FAQs are present):
 
@@ -42,7 +48,10 @@ Small Talk is a module present for all the bot. Small Talk responds to random qu
 * Each node should have specific intent, avoid similar intents on multiple nodes.
 * Ask questions with 3-4 variations for same intent.
 
-## 5. Error handling : API error,invalid inputs, Bot break and reprompts:
+![image](https://user-images.githubusercontent.com/75118325/120077802-cde18300-c0c9-11eb-9b47-ced2a164025a.png)
+
+
+## 5. Error handling : API error, invalid inputs, Bot break and reprompts:
 
 As the bot may break on different scenarios, the users should receive a prompt reply from the bot regarding the error.
 
@@ -61,6 +70,11 @@ As the bot may break on different scenarios, the users should receive a prompt r
   
 > Users should not get the same message everytime the bot throws any error. Check the variations added in as bot responses.
 
+![image](https://user-images.githubusercontent.com/75118325/120090697-12007200-c122-11eb-9ec5-8fa70c31a3d5.png)
+![image](https://user-images.githubusercontent.com/75118325/120077750-8529ca00-c0c9-11eb-8c21-cdb139c78c51.png)
+![image](https://user-images.githubusercontent.com/75118325/120077760-9a9ef400-c0c9-11eb-9472-39023892d432.png)
+
+
 ## 6. UI elements and Content Verification
 
 * Verify functioning of various UI elements such as Buttons, QRs, Carousel, Forms, Webviews, Location Picker and so on.
@@ -69,6 +83,28 @@ As the bot may break on different scenarios, the users should receive a prompt r
 * Verify the tone used in the bot is as per design i.e causal, formal, friendly, funny.
 * Check the grammar and spellings along with punctuations.
 * Use of correct emojis at correct places and bullet points
+
+<table>
+  <th>Text and Quick Replies</th>
+  <th>Taskbox</th>
+  <th>Chatform</th>
+  
+  <tr>
+    <td><img src="https://user-images.githubusercontent.com/75118325/120077889-53fdc980-c0ca-11eb-9c17-74f1b77145ce.png"/></td>
+    <td><img src="https://user-images.githubusercontent.com/75118325/120077928-7ee81d80-c0ca-11eb-97a9-f00c31863a48.png"/></td>
+    <td><img src="https://user-images.githubusercontent.com/75118325/120077958-a2ab6380-c0ca-11eb-98a2-f080fe9c1554.png"/></td>
+  </tr>
+  
+  <th>Carousel</th>
+  <th>Text and Buttons</th>
+  <th>Location</th>
+  
+  <tr>
+    <td><img src="https://user-images.githubusercontent.com/75118325/120090495-8cc88d80-c120-11eb-9cbe-e005fbba0ec0.png"/></td>
+    <td><img src="https://user-images.githubusercontent.com/75118325/120090526-f3e64200-c120-11eb-8f3c-5474b7f6f55c.png"/></td>
+    <td align="center"><img src="https://user-images.githubusercontent.com/75118325/120090583-635c3180-c121-11eb-93cb-a242ba5931f0.png" height=300/></td>
+  </tr>
+</table>
 
 ## 7. Outro flows / follow up messages: 
 
@@ -87,6 +123,10 @@ The journey should never end abruptly at any juncture unless the user abandons t
   `Example: Still looking for chairs? Tell me how many you need.`
   
   Support email or contact number should be present in the bot whenever the user asks for further assistance from support team.
+  
+![image](https://user-images.githubusercontent.com/75118325/120077832-efdb0580-c0c9-11eb-904f-c599b02c7460.png)
+![image](https://user-images.githubusercontent.com/75118325/120077852-0ed99780-c0ca-11eb-9c68-59a63141d916.png)
+
 
 ## 8. Negative User Says handling: 
 
@@ -99,6 +139,9 @@ Test variations with negative tone within the bot flow.
   `I don't remember account number`
   `I didn't receive OTP`
   `I did not get any email`
+  
+![image](https://user-images.githubusercontent.com/75118325/120090667-ea110e80-c121-11eb-8f34-03f44c776a34.png)
+
 
 ## 9. For multilingual IVAs (if enabled):
 
@@ -106,11 +149,17 @@ Test variations with negative tone within the bot flow.
 - Adding different language should not impact English language flow.
 - Bot break message language should be checked.
 
+![image](https://user-images.githubusercontent.com/75118325/120090811-f6e23200-c122-11eb-9329-fbdf44000451.png)
+
+
 ## 10. Chat agent functionality (if enabled): 
 
 * Check if the chat is transferred to agent on bot break or upon user says.
 * Check if the chat gets assigned to an agent and if you are getting reponses on the bot.
 * Check if agent is able to close the chat.
+
+![image](https://user-images.githubusercontent.com/75118325/120090785-c26e7600-c122-11eb-8fb7-f0a771effd8c.png)
+
 
 ## Preparing Test cases
 
