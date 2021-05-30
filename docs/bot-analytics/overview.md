@@ -9,23 +9,30 @@ The first section in the `Intelligent Analytics` tool is the **Overview** sectio
 The **Overview** section provides information about:
 
 * Unique Users
-* Conversations
+* CSAT
 * User Rating
+* Conversations
 * Top Funnels
 * Bot Automation
 * Language Usage
+* Conversation Split
 
-![OverviewPage](assets/Overview1.png)
+![overvire](https://user-images.githubusercontent.com/75118325/120091322-8db0ed80-c127-11eb-86de-6f5e65967498.gif)
 
-> You can know more about a section by clicking on the **?** icon.
 
-### Filters
+> You can know more about a section by clicking on the ![image](https://user-images.githubusercontent.com/75118325/120093226-77f6f480-c136-11eb-9eac-14a0c8371cf0.png) icon and ![image](https://user-images.githubusercontent.com/75118325/120093217-5bf35300-c136-11eb-864b-5f583371f3b3.png) icon will take you to their respective sections on the Intelligent Analytics tool.
 
-![Filter Channels Bots](assets/basic-filter-channels-bots.png)
+### Business Name
 
-On top of all screens inside the Intelligent Analytics tool you will find filter options. These **filter options** can help you filter your data by Business or Bots from the filters on the left hand side. 
+![image](https://user-images.githubusercontent.com/75118325/120091455-f482d680-c128-11eb-927c-632016c1b629.png)
 
-You can select `Channels` or `Bots` from the first dropdown on the left hand side and then select the particular business or bot from the dropdown next to it.
+On top of all screens inside the Intelligent Analytics tool you will find the business options. This option helps you select the business name from the dropdown for which you want to analyze the data.
+
+### Timezone
+
+![image](https://user-images.githubusercontent.com/75118325/120091223-c1d7de80-c126-11eb-97e7-be507395e10c.png)
+
+The tool will identify your timezone to analyze the data.
 
 ### Duration
 
@@ -39,13 +46,37 @@ There is a compare feature available which will help you to compare the performa
 
 ## ***Unique Users***
 
-![UniqueUsers](assets/Overview2.png)
+![image](https://user-images.githubusercontent.com/75118325/120091162-1595f800-c126-11eb-8197-54ddd96df01d.png)
 
-The first section in the overview section is the unique users section. This section shows the number of unique users for the filtered channel or bot in the given duration period.
+
+The first section in the overview section is the number of users who have conversed on the bot in the given duration period. On hovering the number, you will be able to check the actual number of **new users** and the number of returning users i.e., **repeated users**.
+
+## _CSAT_
+
+![image](https://user-images.githubusercontent.com/75118325/120091424-a4a40f80-c128-11eb-8ab9-d46da9d3fa5f.png)
+
+CSAT Stands for _Customer Satisfaction Score_. This key performance indicator tracks how satisfied are the customers are with service.
+
+_**How is CSAT Calculated?**_
+
+> CSAT Formula = Positive responses (4 and 5) / Total no. of response volume
+
+For example, if you have 35 positive responses (4 and 5) and a total of 50 responses, your CSAT would be 70%.
+
+There following colours are used to show the benchmarks of CSAT - 
+* **Green** - 80% and Above
+* **Orange** - 70-80%
+* **Red** - Below 70%
+
+<img src="https://user-images.githubusercontent.com/75118325/120093772-16388980-c13a-11eb-8bf7-f51f960762e6.png" width=500/>
+
+## ***User Rating***
+
+![image](https://user-images.githubusercontent.com/75118325/120093482-43843800-c138-11eb-87f1-dbc1913527b4.png)
+
+This section gives the average User Rating. The rating is optional and is given on a scale of 1-5 stars.
 
 ## ***Conversations***
-
-![Conversation](assets/Overview3.png)
 
 A conversation is defined as a series of messages exchanged between the IVA and the user before 8 minutes of inactivity.
 
@@ -59,11 +90,11 @@ In agent state, we close a conversation either only when the agent clicks “Clo
 
 > Automated system messages like "Chat Assigned", "Chat Completed", "Delay", "Follow Up" etc. are not to be included when calculating the conversation complete time.
 
-![ConversationGraph](assets/Overview4.png)
+![image](https://user-images.githubusercontent.com/75118325/120093514-6d3d5f00-c138-11eb-8857-771a56d0d478.png)
 
 In the graph, the X axis represents selected time range and the Y axis represents conversations count. 
 
-![ConversationGraph2](assets/Overview5.png)
+![image](https://user-images.githubusercontent.com/75118325/120093528-847c4c80-c138-11eb-89b2-448c8b4fda23.png)
 
 You can view data by hovering over the graph at the selected point of date-time. 
 
@@ -75,15 +106,9 @@ You can view data by hovering over the graph at the selected point of date-time.
 
 - **User Rating**: It will give the average of user ratings given.
 
-## ***User Rating***
-
-![UserRating](assets/Overview6.png)
-
-This section gives the average User Rating. The rating is optional and is given on a scale of 1-5 stars.
-
 ## ***Top Funnels***
 
-![BotAutomation](assets/Overview7.png)
+![image](https://user-images.githubusercontent.com/75118325/120093540-9f4ec100-c138-11eb-890a-399495daf3eb.png)
 
 This section gives first 5 funnels as per volume coming on the bot.
 
@@ -96,8 +121,6 @@ Along with the funnel name, funnel hits and completion rate are also shown.
 > **Completion rate**: Defines the number of instances where the user reached their end goal.
 
 ## ***Bot Automation***
-
-![Queries](assets/Overview9.png)
 
 The next section is Bot Automation. Bot Automation percentage tells us about what percentage of the conversations did not have either a bot break or an agent involved for the selected duration of time.
 
@@ -122,9 +145,11 @@ As we do not count Smart Assist as a broken message. In case you want to access 
   1. 0-30 for Bot Break and Smart Assist messages
   2. Above 30 for all other messages
   
-![BotAutomation1](assets/Overview8.png)
+![image](https://user-images.githubusercontent.com/75118325/120093576-e472f300-c138-11eb-9146-78a38bf8cf7e.png)
 
 You can view data by hovering over the graph at the selected point of date-time. 
+
+![image](https://user-images.githubusercontent.com/75118325/120093595-00769480-c139-11eb-8781-d7b5d901d2ed.png)
 
 - **Traffic**: It will give the number of unique users and conversations.
 
@@ -136,17 +161,15 @@ You can view data by hovering over the graph at the selected point of date-time.
 
 ### Bot Transfers
 
-![BotAutomation1](assets/Overview10.png)
+![image](https://user-images.githubusercontent.com/75118325/120093651-4895b700-c139-11eb-8a0e-6216bf47a0eb.png)
 
 Bot Transfers are shown on the graph too with a vertical line along with a toggle filter to see the details with and without. Checking these lines on the graph will help us understand if there have been any changes in the bot's performance due to bot transfers.
-
-![BotAutomation1](assets/Overview11.png)
 
 ## Language Usage
 
 **Language Usage** shows the split of languages, conversations and bot automation percentage for all the languages user are interacting in, on the IVA. This section helps in understanding capabilities that should be added to support end-users who reach out in different languages.
 
-![Language Usage](assets/languagess.png)
+![image](https://user-images.githubusercontent.com/75118325/120093841-75969980-c13a-11eb-9677-d2736a0ed5ba.png)
 
 **What does language(s) mean?**
 
@@ -158,7 +181,7 @@ This section helps in understanding split of different languages your users are 
 
 Conversations shows the split of languages in which the users are interacting with the IVA.
 
-**Formula = No. of conversations (in that language)/ Total no. of conversations X 100**
+**Formula = No. of conversations (in that language) / Total no. of conversations X 100**
 
 The message which was spoken by the user towards the end of the conversation is considered as the language in which the user interacted with the IVA. If in the conversation, the first half of the conversation is in English and the rest is in Hindi, the conversation counter would go up for Hindi as the last message was in Hindi.
 
@@ -169,6 +192,3 @@ When you hover over the Conversation %, you can see the conversation count as sh
 **How is bot automation calculated under Language Usage?**
 
 **Formula = No of conversations (in that language) that didn’t have a bot break or agent response/Total number of conversations (in that same language) X 100**
-
-> Arrows in every section can take you to the corresponding pages to understand a particular metric in depth.
-
