@@ -105,7 +105,7 @@ This is a dropdown field. You can click on the field and the dropdown options sh
 ### Conversation ID	
 The next filter is `Conversation ID`. This filter lets you see data related to a particular conversation. You can enter the conversation id of the conversation you want to view the data for in the input field and click on the magnifying glass icon to filter the data.
 
-![Conversation ID](assets/message-analysis-conversation-id.png)
+![image](https://user-images.githubusercontent.com/75118325/120155547-929c9c80-c20e-11eb-83ab-da4375ef43ac.png)
 
 ### Confidence Score
 The next filter we will look at is `Confidence Score`. This option lets you filter messages that the AI was able to categorise by the degree of confidence configured by you.
