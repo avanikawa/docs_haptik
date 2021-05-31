@@ -11,7 +11,6 @@ The following user details are visible to the agents -
 * Country
 * Timezone
 * Platform
-* language_code
 
 There is a small **Show More** option which expands the User Details section. You can use this section to display details which were collected from the user in the bot, apart from above mentioned ones.
 
