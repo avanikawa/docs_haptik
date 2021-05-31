@@ -764,3 +764,7 @@ Step 2: Add an entity **bot_flush_exception_list** on the start node where you w
 - This function needs to be added only on start nodes.
 
 - Do not add this function on Context Clear nodes.
+
+- Adding the entity flusher on nodes which have other mandatory entities will clear those as well.
+
+- System entities will not be flushed by using entity flusher.
