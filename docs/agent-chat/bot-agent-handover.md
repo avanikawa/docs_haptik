@@ -18,7 +18,7 @@ You can set rule(s) to enable the redirection of users from bot to a human assis
 Example use cases - 
 
 1. When the user comes to a bot and explicitly says "I want to chat with an agent".
-2. When you want to capture some user details such as the user's name and email and then redirect the user to an agent.
+2. When you want to capture some user details such as their name and email and then redirect the user to an agent.
 ```
 
 There is a generic function for Smart Agent Chat integration that needs to be added to a node from where the agent function is to be used.
@@ -29,9 +29,38 @@ On the **Integrations** tab of the node, select the type as **Entity and Integra
 
 ![Chat Integration Function](assets/HO1.png)
 
-When the user reaches the node where this integration function exists (_get the details_ is the node in the above image), then the chat will be transferred to Smart Agent Chat. This is also called **Skill-based routing**.
+Once the users reaches the node where you have added the integration function to transfer the chat to an agent, the bot will redirect the user to a [**Team**](https://docs.haptik.ai/agent-chat/teams) on **Smart Agent Chat**.
+
+You need to specify a default Team name in the **Business Manager** section of the Conversation Studio tool. All the agents are a part of Team on Smart Agent Chat. Hence, the chat gets assigned to an agent within the mentioned default Team. To provide a default Team, navigate to **Business Manager** via **Open Business** button on the bot page.
+
+![image](https://user-images.githubusercontent.com/75118325/120187935-18cada00-c233-11eb-8202-761a5e01817e.png)
+
+> **What is a Default Team?**
+> 
+> There can be a situation when the team routing logic fails and no team is shortlisted to assign a chat. In that case, the chat is assigned to the default team. Create the default team on Smart Agent Chat. Open General Settings on Business manager and set the default team.
+
+On the **Business Manager**, in the **General Settings**, select the Team name from the dropdown as shown below - 
+
+![image](https://user-images.githubusercontent.com/75118325/120188106-5596d100-c233-11eb-8e45-ffbd7698940d.png)
+
+> You will need to create a **Team** on Smart Agent Chat. Once you have create the Team, the team name will appear in the dropdown. To know how to create a team, click [**here**]((https://docs.haptik.ai/agent-chat/teams).
+
+
+When the user reaches the node where this integration function exists (_get the details_ is the node in the above image), then the chat will be transferred to a Team on Smart Agent Chat. This is also called **Skill-based routing**.
 
 > Click [**here**](https://docs.haptik.ai/bot-builder/basic/creating-nodes) to know more about creating nodes.
+
+A team can receive chats from a business in 2 possible configurations
+
+- If a Business is **Bot + Human Assisted** 
+
+![image](https://user-images.githubusercontent.com/75118325/111911168-62a48080-8a8a-11eb-9e63-575c1674b895.png)
+
+- If a Business is **Completely Human Assisted**
+
+_Note: If a Business is **Completely Bot Assisted**, the chat will never be assigned to a team._
+
+> Every Business has a default team in case no team is detected. For no bot condition, the default team is the only team a partner can have.
 
 ## Enabling Human Assistance flag on Business Manager
 
