@@ -20,7 +20,7 @@ The **Overview** section provides information about:
 ![overvire](https://user-images.githubusercontent.com/75118325/120091322-8db0ed80-c127-11eb-86de-6f5e65967498.gif)
 
 
-> You can know more about a section by clicking on the ![image](https://user-images.githubusercontent.com/75118325/120093226-77f6f480-c136-11eb-9eac-14a0c8371cf0.png) icon and ![image](https://user-images.githubusercontent.com/75118325/120093217-5bf35300-c136-11eb-864b-5f583371f3b3.png) icon will take you to their respective sections on the Intelligent Analytics tool.
+> You can know more about a section by clicking on the **?** icon and **->** icon will take you to their respective sections on the Intelligent Analytics tool.
 
 ### Business Name
 
@@ -48,14 +48,26 @@ There is a compare feature available which will help you to compare the performa
 
 ![image](https://user-images.githubusercontent.com/75118325/120091162-1595f800-c126-11eb-8197-54ddd96df01d.png)
 
+The first section in the overview section is the number of users who have conversed on the bot in the given duration period. On hovering over the number, you will be able to check the actual number of **new users** and the number of returning users i.e., **repeat users**.
 
-The first section in the overview section is the number of users who have conversed on the bot in the given duration period. On hovering the number, you will be able to check the actual number of **new users** and the number of returning users i.e., **repeated users**.
+_What are unique users?_
+
+Unique Users refer to the number of unique individuals who have visited your bot over a period of time. As the name indicates, the number of visits per user does not affect this count.
+
+Eg. If Mary visits the bot on Tuesday, Wednesday and Thursday, the unique user count will be displayed as 1. It does not increase by 3 as Mary is one ‘unique’ user.
+
+_What are New vs. Repeat users?_
+
+* **New users** are users who are visiting your bot for the first time and have never been to your bot previously.
+* **Repeat users** are users who have interacted with your bot before and have come back again.
+
+Eg. If Mary visits the bot on Tuesday for the first time, then comes on Wednesday again, the repeat user count will be displayed as 1.
 
 ## _CSAT_
 
 ![image](https://user-images.githubusercontent.com/75118325/120091424-a4a40f80-c128-11eb-8ab9-d46da9d3fa5f.png)
 
-CSAT Stands for _Customer Satisfaction Score_. This key performance indicator tracks how satisfied are the customers are with service.
+CSAT Stands for _Customer Satisfaction Score_. This key performance indicator tracks how satisfied are the customers with the service.
 
 _**How is CSAT Calculated?**_
 
@@ -191,4 +203,4 @@ When you hover over the Conversation %, you can see the conversation count as sh
 
 **How is bot automation calculated under Language Usage?**
 
-**Formula = No of conversations (in that language) that didn’t have a bot break or agent response/Total number of conversations (in that same language) X 100**
+Formula = No of conversations (in that language) that didn’t have a bot break or agent response / Total number of conversations (in that same language) X 100
