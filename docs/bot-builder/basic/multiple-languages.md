@@ -158,3 +158,13 @@ You can change the language of the bot as shown in the below image
 ![Language14](assets/language15.png)
 
 And you are ready, start having a conversation with the bot in your choice of language.
+
+## Auto-Detect User's Language
+
+If the users come to the bot and start conversing in a language other than the default language of the bot, and the bot is not able to comprehend user's language, that is considered to be a bad user experience. We add additional load on the user if they have to change the language on the UI manually or by going through a bot flow. To resolve this problem, user's language should be automatically detected. 
+
+The language detection API identifies the user's language, automatically switches it's language and starts to respond in the same language. The bot will follow **first three** messages sent by the user and tries to identify the language of the user. 
+
+> This API only detects the language in the **first three** messages sent by the user.
+
+If the language is supported on the bot, the bot will automatically switch the language and will respond in the chosen language. If the language is not supported on the bot, the bot will give a bot break message.
