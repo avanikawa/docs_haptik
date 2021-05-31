@@ -30,7 +30,7 @@ You can access the documentation [**here**](https://docs.haptik.ai/). You can al
   
   <tr>
   <td rowspan="2">S0 <b>(Blocker)</b></td>
-  <td><b>Criticial Functionality has stopped working, serious business impact</b></td>
+  <td><b>Critical Functionality has stopped working, serious business impact</b></td>
   <td rowspan="2">Within 1 hour (24x7)</td>
   </tr>
   
