@@ -23,11 +23,11 @@ There are 3 filter options -
 
 ![image](https://user-images.githubusercontent.com/75118325/120096985-d7133400-c14b-11eb-93cd-b5cfcbbf91ed.png)
 
-You can choose the view the _reviews_ on the basis of _star ratings_ provided by the user. 
+You can choose to view the _reviews_ on the basis of _star ratings_ provided by the user. 
 
 Selecting **All** option will show you all the cumulative reviews along with the star ratings provided by the user.
 
-This is helpful to understand what are majority reviews provided by users who have given a particular star rating.
+This is helpful to understand the co-relation between reviews and star ratings.
 
 You can also select to view reviews for selected star ratings.
 
@@ -42,7 +42,7 @@ If you have Bot + Human solution, where human agents are also handling user conv
 
 You can choose to view the reviews provided by the user to the agents or the bot or both.
 
-If you select **All** option, the **Bot Recipient** column will mention who was the recipient of the review.
+If you select **All** option, the **Recipient** column will mention who was the recipient of the review.
 
 ![image](https://user-images.githubusercontent.com/75118325/120097458-2ce8db80-c14e-11eb-8c4a-d9d845b0e3bf.png)
 
