@@ -2,7 +2,7 @@
 title: Button
 ---
 
-#### Sample Json
+## Sample Button
 
 ```json
 {
@@ -27,9 +27,47 @@ title: Button
 }
 ```
 
-#### Sample Output
+## Sample Output
 
 ![hsl_sample_button](assets/hsl_sample_button.png)
+
+
+## HSL to upload PDF
+
+```JSON
+{
+  "text": "Upload PDF",
+  "type": "BUTTON",
+  "data": {
+    "items": [
+      {
+        "actionable_text": "PDF upload",
+        "location_required": false,
+        "is_default": 0,
+        "uri": "DOCUMENT_PICKER",
+        "type": "APP_ACTION",
+        "payload": {
+          "mime_types": [
+            "application/pdf",
+            "application/msword",
+            "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
+            "application/vnd.ms-excel",
+            "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet",
+            "text/csv",
+            "comma-separated-values"
+          ]
+        }
+      }
+    ]
+  },
+  "isNew": false
+}
+```
+
+## Output
+
+![image](https://user-images.githubusercontent.com/75118325/117771789-17ba1480-b254-11eb-9b2f-f81ff4cc1bc6.png)
+
 
 <table border="1" class="docutils">
    <thead>

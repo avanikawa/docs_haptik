@@ -298,6 +298,8 @@ There are these three types of attachments allowed -
 - Document (pdf, docx, xls, csv)
 - Video (Only for Whatsapp)
 
+> The document should be less **5 MB** in size.
+
 ![Attachment Entity](assets/Video2.png)
 
 You would need to create a Button HSL for letting the user upload the image and document. To know more about using Button HSL click [**here**](https://docs.haptik.ai/bot-builder/basic/chat-elements#open-screen).
@@ -313,6 +315,7 @@ In the above example, if the user is not uploading an image file then the **enti
 For video entity to be captured on a Whatsapp bot, we need to enable the settings from Business Manager as shown below -
 
 ![Attachment Entity](assets/Video3.png)
+
 
 > NOTE - The uploaded video will get deleted in 3 days.
 
