@@ -119,19 +119,19 @@ The Bot Prompt visual consists of the following components:
 
 ![dynamic bot prompt](https://user-images.githubusercontent.com/75118325/117744190-d3b01b00-b225-11eb-819f-52615df64ecc.gif)
 
-Dynamic Bot Prompt Triggers change according to what where user is on the webpage. 
+Dynamic Bot Prompt Triggers change based on user's activity on the webpage. 
 
-### Create Dynamic Bot Prompt Triggers
+### How to create Dynamic Bot Prompt Triggers?
 
-#### 1. On Webpage
+#### Step 1: Add it in your HTML code
 
 To set up the Bot Prompt when user hovers on a specific field or area of the webpage, you will have to set which Bot Prompt needs to get triggered.
 
-When user hovers on the **i** symbol besides **Year Built**, a Bot Prompt is triggered.
+When user hovers on the **"i"** symbol besides **Year Built**, a Bot Prompt is triggered.
 
 ![image](https://user-images.githubusercontent.com/75118325/117745789-cfd1c800-b228-11eb-85b6-4c6f5e0638a9.png)
 
-The following is the sample code of how the button **i** symbol is set and the messages which will be sent when user hovers on it.
+The following is the sample code of how the bot prompt is set on the hover of the **"i"** symbol and what messages will be sent.
 
 
 ```html
@@ -153,11 +153,11 @@ The following is the sample code of how the button **i** symbol is set and the m
             </div>
 ```
 
-#### JavaScript Function
+#### Step 2: Create a JavaScript function
 
 Bot Prompt Triggers can be initiated at different instances i.e. when user _clicks_ on some button or textarea, or when user _hovers_ overs some text or button on the page.
 
-The following example is a demonstration when user hovers over the **i** symbol, then how will the bot prompt be triggered.
+The following is the sample code for triggering the bot prompt on hovering over the **i** symbol.
 
 
 ```JavaScript
