@@ -20,6 +20,14 @@ The data in the tables are paginated and you can scroll to different pages of th
 
 ![Pagination Navigation](assets/message-analysis-table-pagination.png)
 
+In **View Message** mode, you can see the count of messages above the table. When you select a filter, this count will change according to the number of messages that were found.
+
+![image](https://user-images.githubusercontent.com/75118325/120146008-0dab8600-c202-11eb-9f0e-06f01be7ed39.png)
+
+In the **View Conversation** mode, the tool will show the total number of conversations.
+
+![image](https://user-images.githubusercontent.com/75118325/120146683-16e92280-c203-11eb-9d68-f0d8da6ad0c1.png)
+
 ## View Messages
 The View Messages section of the page which can be accessed by clicking on the `View Messages` link above the table. The table shows data about the messages processed by your bot.
 
@@ -94,8 +102,8 @@ This is a dropdown field. You can click on the field and the dropdown options sh
 
 ![image](https://user-images.githubusercontent.com/75118325/117749180-ef6bef00-b22e-11eb-954b-cff96f703f54.png)
 
-### Conv ID
-The next filter is `Conv ID`. This filter lets you see data related to a particular conversation. You can enter the conversation id of the conversation you want to view the data for in the input field and click on the magnifying glass icon to filter the data.
+### Conversation ID	
+The next filter is `Conversation ID`. This filter lets you see data related to a particular conversation. You can enter the conversation id of the conversation you want to view the data for in the input field and click on the magnifying glass icon to filter the data.
 
 ![Conversation ID](assets/message-analysis-conversation-id.png)
 
