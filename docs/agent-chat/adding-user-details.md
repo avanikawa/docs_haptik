@@ -7,10 +7,11 @@ On the **MyChats** page, agents can check the **User Details** tab on the right 
 The following user details are visible to the agents - 
 * Name
 * Email
-* MobileNo
+* Phone
 * Country
 * Timezone
-* Device Platform
+* Platform
+* language_code
 
 There is a small **Show More** option which expands the User Details section. You can use this section to display details which were collected from the user in the bot, apart from above mentioned ones.
 
@@ -23,7 +24,7 @@ There are two instances when you would require to display additional user detail
 
 #### Displaying specific information
 
-The agents may need access to see the custom user details on the RHS of the user who is is assigned/initiated/pinned to that agents screen.
+The agents may need access to see the custom user details on the RHS of the user who is assigned/initiated/pinned to that agents screen.
 
 ##### How can the information be displayed?
 
@@ -49,7 +50,11 @@ Whenever agent is required to create a ticket on some CRM tool, they might need 
 
 ### Where will the User Details be available?
 
+The User Details will be visible to them who have approriate access to see personal details of the users. To know more about the access, click [**here**](https://docs.haptik.ai/bot-analytics/chat-links).
+
 These User Details are available on  - 
 * Raw Chat Link 
 * [User Info Links](https://docs.haptik.ai/agent-chat/action-toolbars#user-info-link)
 * [Business/Teams in the view user details section](https://docs.haptik.ai/agent-chat/businesses#section-3-chat-detail-view)
+
+
