@@ -15,9 +15,9 @@ Based on the configuration made by the bot developers, a bot might ask for feedb
 ## ***Overall Channel Rating***
 
 At the top of the User Ratings page you have the Overall Channel Rating. This section will show the bifurcation of ratings received on the bot. There are three types of feedback ratings - 
-* **Total Feedback** - This is the total feeback received both on bot and for agents.
-* **Agent Feedback** - This is the number of feedback collected on Smart Agent Chat i.e. when users provide a feedback after conversaing with agents.
-* **Bot Feedback** - This is the number of feedback collected on the bot i.e. the overall rating provided by the users to the bot. (This feedback module kicks in when user reaches Context Clear Node)
+* **Total Feedback** - This is the number of total feeback received both for bot and agents.
+* **Agent Feedback** - This is the number of feedback collected for the agents i.e. when users provide a feedback after conversing with agents.
+* **Bot Feedback** - This is the number of feedback collected for the bot i.e. the overall rating provided by the users to the bot. (This feedback module kicks in when user reaches Context Clear Node)
 
 In the left corner of this section you can see the average star rating provided by all users. Next to it you can see the total number of people that have given a particular number of stars. For example you can see how many users gave 5 stars, how many gave 4 stars and so on. You can find both the percentage and absolute number of users for any feedback. 
 
