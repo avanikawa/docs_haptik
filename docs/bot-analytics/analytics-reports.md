@@ -43,7 +43,7 @@ ie. no. of user messages in a conversation, no. of bot messages, did the convers
   <tr>
     <td>Story Analysis Report</td>
     <td>Understand the conversations and users at node level</td>
-    <td><a href="https://docs.haptik.ai/bot-analytics/story-analysis" target="_blank">AI Recommedations</a></td>
+    <td><a href="https://docs.haptik.ai/bot-analytics/story-analysis" target="_blank">Story Analysis</a></td>
     <td>Dashboard</td>
   </tr>
   
