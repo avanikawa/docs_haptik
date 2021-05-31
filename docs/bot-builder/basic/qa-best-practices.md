@@ -71,7 +71,9 @@ As the bot may break on different scenarios, the users should receive a prompt r
 > Users should not get the same message everytime the bot throws any error. Check the variations added in as bot responses.
 
 ![image](https://user-images.githubusercontent.com/75118325/120090697-12007200-c122-11eb-9ec5-8fa70c31a3d5.png)
+
 ![image](https://user-images.githubusercontent.com/75118325/120077750-8529ca00-c0c9-11eb-8c21-cdb139c78c51.png)
+
 ![image](https://user-images.githubusercontent.com/75118325/120077760-9a9ef400-c0c9-11eb-9472-39023892d432.png)
 
 
@@ -125,6 +127,7 @@ The journey should never end abruptly at any juncture unless the user abandons t
   Support email or contact number should be present in the bot whenever the user asks for further assistance from support team.
   
 ![image](https://user-images.githubusercontent.com/75118325/120077832-efdb0580-c0c9-11eb-904f-c599b02c7460.png)
+
 ![image](https://user-images.githubusercontent.com/75118325/120077852-0ed99780-c0ca-11eb-9c68-59a63141d916.png)
 
 
