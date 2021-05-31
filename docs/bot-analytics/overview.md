@@ -202,5 +202,3 @@ When you hover over the Conversation %, you can see the conversation count as sh
 ![Language Usage](assets/languagess2.PNG)
 
 **How is bot automation calculated under Language Usage?**
-
-Formula = No of conversations (in that language) that didn’t have a bot break or agent response / Total number of conversations (in that same language) X 100
