@@ -41,7 +41,7 @@ Note: Using other listeners like `window.onload` or `document.onload` will lead 
 
 ### `destroy()`
 
-*When there are 2 SDKs (one for guest user and another for logged in user) adding destroy() will clear out all the information from the previous instance (bot one) to load the seond bot*
+*When there are 2 SDKs (one for guest user and another for logged in user) adding destroy() will clear out all the information and context from the previous instance (guest bot) to load the second bot (logged in bot)*
 
 **Params: <None>**
 
