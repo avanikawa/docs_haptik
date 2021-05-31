@@ -55,7 +55,7 @@ Apart from the HSL button configuration the Webview can also be displayed by sen
         "is_default": 1,
         "type": "APP_ACTION",
         "payload": {
-          "url": "<Provide your URL Here>", # This is the URL when the page is hosted
+          "url": "<Provide your URL Here>", # This is the URL where the page is hosted
           "link": "",
           "gogo_message": ""
         },
@@ -116,12 +116,12 @@ http://haptik-webview//perform-action?action=close&message={message}&message_typ
 
 You can create your own webpage and host it. The wepage page must be secured i.e. start with https.
 
-> You need to pass the collected information (using entities or fetched from APIs) to the webpage which will be displayed as a webview to the user. Pass the using query parameters.
+> You need to pass the collected information (using entities or fetched from APIs) to the webpage which will be displayed as a webview to the user. Pass them using query parameters.
 > 
 
 The following is a sample webpage will be shown as a webview to the user.
 
-`<!DOCTYPE html>
+```<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -225,5 +225,6 @@ The following is a sample webpage will be shown as a webview to the user.
 </body>
 
 </html>
-`
+```
+
 ![webvew demo](https://user-images.githubusercontent.com/75118325/114317145-57da8a00-9b24-11eb-83a1-0d23d7dfc10e.gif)
