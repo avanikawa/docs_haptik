@@ -20,6 +20,14 @@ The data in the tables are paginated and you can scroll to different pages of th
 
 ![Pagination Navigation](assets/message-analysis-table-pagination.png)
 
+In **View Message** mode, you can see the count of messages above the table. When you select a filter, this count will change according to the number of messages that were found.
+
+![image](https://user-images.githubusercontent.com/75118325/120146008-0dab8600-c202-11eb-9f0e-06f01be7ed39.png)
+
+In the **View Conversation** mode, the tool will show the total number of conversations.
+
+![image](https://user-images.githubusercontent.com/75118325/120146683-16e92280-c203-11eb-9d68-f0d8da6ad0c1.png)
+
 ## View Messages
 The View Messages section of the page which can be accessed by clicking on the `View Messages` link above the table. The table shows data about the messages processed by your bot.
 
@@ -87,18 +95,17 @@ However, if you are interested in exact match only, then you can enclose your ph
 
 ![search body](https://user-images.githubusercontent.com/75118325/114306207-c7d31b00-9af8-11eb-8a43-dc75f02d9596.gif)
 
-
 ### Select Nodes
-The next filter option is `Select Nodes`. This option allows you to filter by the bot builder nodes the message or conversation uses.
+The next filter option is `Select Nodes`. This option allows you to filter by the nodes (static and output nodes).
 
 This is a dropdown field. You can click on the field and the dropdown options should show the different nodes in the bot. You can pick one of the nodes from the list and the table will be filtered to only data relevant to that node.
 
-![Select Nodes](assets/message-analysis-select-nodes.png)
+![image](https://user-images.githubusercontent.com/75118325/117749180-ef6bef00-b22e-11eb-954b-cff96f703f54.png)
 
-### Conv ID
-The next filter is `Conv ID`. This filter lets you see data related to a particular conversation. You can enter the conversation id of the conversation you want to view the data for in the input field and click on the magnifying glass icon to filter the data.
+### Conversation ID	
+The next filter is `Conversation ID`. This filter lets you see data related to a particular conversation. You can enter the conversation id of the conversation you want to view the data for in the input field and click on the magnifying glass icon to filter the data.
 
-![Conversation ID](assets/message-analysis-conversation-id.png)
+![image](https://user-images.githubusercontent.com/75118325/120155547-929c9c80-c20e-11eb-83ab-da4375ef43ac.png)
 
 ### Confidence Score
 The next filter we will look at is `Confidence Score`. This option lets you filter messages that the AI was able to categorise by the degree of confidence configured by you.
@@ -138,7 +145,7 @@ A key component in Haptik’s conversational experience is SMART ASSIST. The obj
 
 This option lets you see those messages that triggered the Smart Assist layer.
 
-![SA Filter](assets/sa1.png)
+![image](https://user-images.githubusercontent.com/75118325/117749258-0a3e6380-b22f-11eb-8e46-5aed8e2dee86.png)
 
 ### User ID
 This option lets you filter the data based on the user id. This can be helpful to understand the messages/conversations of a partcular user.
