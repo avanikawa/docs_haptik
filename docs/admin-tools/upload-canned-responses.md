@@ -2,7 +2,7 @@
 title: Canned Responses
 ---
 
-Canned Responses helps the agents to send rapid and apt responses to the users.
+Canned Responses help the agents to send rapid and apt responses to the users.
 
 The Team Leader can upload the Canned Responses for the team from the **Admin Tools** section.
 
@@ -12,7 +12,7 @@ Open the **Admin Tools** page and click on **Canned Responses**.
 
 ![image](https://user-images.githubusercontent.com/75118325/111741567-afcafb80-88ac-11eb-815c-42a173448bce.png)
 
-> **You can either add every Canned Response one by one or upload multiple Canned Responses using a CSV**
+> You can either add every Canned Response one by one or upload multiple Canned Responses using a CSV.
 
 ## Add single Canned Response
 
@@ -37,7 +37,7 @@ You can upload a CSV file to make a bulk upload for all the Canned Responses.
 
 ![image](https://user-images.githubusercontent.com/75118325/111787730-4ca98b00-88e5-11eb-9681-193c32437794.png)
 
-> You can download the sample CSV [**here**](assets/Upload Canned Response.csv).
+> You can download the sample CSV [**here**](assets/UploadCannedResponse.csv).
 
 ## Delete Canned Responses
 
