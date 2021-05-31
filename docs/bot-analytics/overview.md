@@ -172,3 +172,25 @@ When you hover over the Conversation %, you can see the conversation count as sh
 
 > Arrows in every section can take you to the corresponding pages to understand a particular metric in depth.
 
+## Conversation Split
+
+The Conversation Split metrics will help you understand which conversations are being handed over to agents for live support.
+
+- It could be used to uncover root causes of deflection to the call center or agent live chat tool.
+- It could be used to identify opportunities for further automation, allowing customers to skip the agent and instead self-serve, to get their answers by automating top asked queries, finding new data sources or training sets for improving the performance.
+
+![image](https://user-images.githubusercontent.com/75118325/119284456-5f319f00-bc5d-11eb-9c0c-3d5ec6b09352.png)
+
+There are 4 different splits you can check in the **Conversations Split** section:
+
+* **Bot Automation**: These is the percentage of the conversations which did not give a bot break message. This percentage is same as you would see in the **Bot Automation** section.
+
+* **Broken**: This is the percentage of conversations where the bot gave a bot break message to the user. 
+
+* **Agent Handover**: This is the percentage of conversations where the conversation is transferred to an agent after the bot breaks. 
+
+   _The agent handover happens if the **Enable Human Assistance** flag is **enabled** from the Business Manager section of the **Conversation Studio** tool._
+
+* **Agent Handover by Design**: This is the percentage of conversations where the conversation is transferred to an agent by design in the conversational flow of the bot.
+
+> Arrow on the top right corner of this section will take you to **Message Analysis' View Conversation** section.
