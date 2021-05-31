@@ -20,6 +20,14 @@ The data in the tables are paginated and you can scroll to different pages of th
 
 ![Pagination Navigation](assets/message-analysis-table-pagination.png)
 
+In **View Message** mode, you can see the count of messages above the table. When you select a filter, this count will change according to the number of messages that were found.
+
+![image](https://user-images.githubusercontent.com/75118325/120146008-0dab8600-c202-11eb-9f0e-06f01be7ed39.png)
+
+In the **View Conversation** mode, the tool will show the total number of conversations.
+
+![image](https://user-images.githubusercontent.com/75118325/120146683-16e92280-c203-11eb-9d68-f0d8da6ad0c1.png)
+
 ## View Messages
 The View Messages section of the page which can be accessed by clicking on the `View Messages` link above the table. The table shows data about the messages processed by your bot.
 
@@ -27,9 +35,13 @@ The columns of the table can be configured by you in case of Viewing Messages. W
 
 These columns are:
 * **Body** - This column shows you the actual message that was sent.
-* **Chat Link** - This column provides a link to open and view the conversation related to the message. Clicking on the link will open a page that shows the conversation as well as the user details.
+* **Chat Link** - This column provides a link to open and view the entire conversation related to the message. 
+
+Clicking on the link will open a page that shows the conversation as well as the user details which were collected on the bot. There is a **Previous Conversation** and **Next Conversation** button to help you navigate throughout the various conversations of the user. If you have access to both **Smart Agent Chat** and **Intelligent Analytics**, you will be able to the chat link as shown below - 
 
   ![Chat Link](assets/message-analysis-chat-link.png)
+
+> Read more about chat links, [**here**](https://docs.haptik.ai/bot-analytics/chat-links).
   
 * **Conversation ID** - This is a unique ID every conversation has.
 * **Created At** - This column tells you when the message was recieved by the bot.
@@ -37,7 +49,7 @@ These columns are:
 * **Last Nodes** - This column shows the last node that the user was on before sending this message. This information can be useful to understand what the context was for the user sending the current message.
 * **Sub Story** - This column shows which Sub Story the node from **Last Nodes** column belongs to.
 
-![View Messages](assets/message-analysis-view-messages.png)
+![image](https://user-images.githubusercontent.com/75118325/114306348-62335e80-9af9-11eb-9204-5b3e7c9b22b9.png)
 
 ## View Conversations
 The View Conversations section of the page which can be accessed by clicking on the `View Conversations` link above the table. The table shows data at a conversation level, rather than at a message level.
@@ -54,7 +66,7 @@ In case of viewing conversations the columns of the table are fixed and they are
     4) Others - This section tells you how many messages came from other sources. These could include notifications, reminders, feedback messages etc.
 * **Broken Messages** - This column gives you information about how many messages broke in the conversation. A message is considered to be broken if the bot cannot respond to it.
 
-![View Conversations](assets/message-analysis-view-conversations.png)
+![image](https://user-images.githubusercontent.com/75118325/114306615-f0a7e000-9af9-11eb-8a3a-6fcce20d3cf8.png)
 
 ### Downloading the report
 There is an option to email the Message or Conversation data in CSV format if needed. This can be done by clicking on the `Email Report` button above the table showing the data.
@@ -68,7 +80,6 @@ As mentioned above, the Message Analysis page provides you with many filter opti
 
 In this section of the document we will go over each of these filter options. We will see how you can use one or a combination of these options to select the data you view in the tables.
 
-
 ### Search Body
 The first filter option is `Search Body`. You can use this option to filter the table based on the message body.
 
@@ -81,21 +92,20 @@ The above will give you all the messages similar to the phrase you searched for.
 However, if you are interested in exact match only, then you can enclose your phrase within double quotes `"`. For example, `"I want to book a flight ticket"` will show only those messages with the exact string being present.
 
 > **ProTip:** If you want to search for an exact phrase, enclose it within double quotes like this `"<search phrase>"` when searching.
->
-![Search Body](assets/message-analysis/message-analysis-exact-search.gif)
 
+![search body](https://user-images.githubusercontent.com/75118325/114306207-c7d31b00-9af8-11eb-8a43-dc75f02d9596.gif)
 
 ### Select Nodes
-The next filter option is `Select Nodes`. This option allows you to filter by the bot builder nodes the message or conversation uses.
+The next filter option is `Select Nodes`. This option allows you to filter by the nodes (static and output nodes).
 
 This is a dropdown field. You can click on the field and the dropdown options should show the different nodes in the bot. You can pick one of the nodes from the list and the table will be filtered to only data relevant to that node.
 
-![Select Nodes](assets/message-analysis-select-nodes.png)
+![image](https://user-images.githubusercontent.com/75118325/117749180-ef6bef00-b22e-11eb-954b-cff96f703f54.png)
 
-### Conv ID
-The next filter is `Conv ID`. This filter lets you see data related to a particular conversation. You can enter the conversation id of the conversation you want to view the data for in the input field and click on the magnifying glass icon to filter the data.
+### Conversation ID	
+The next filter is `Conversation ID`. This filter lets you see data related to a particular conversation. You can enter the conversation id of the conversation you want to view the data for in the input field and click on the magnifying glass icon to filter the data.
 
-![Conversation ID](assets/message-analysis-conversation-id.png)
+![image](https://user-images.githubusercontent.com/75118325/120155547-929c9c80-c20e-11eb-83ab-da4375ef43ac.png)
 
 ### Confidence Score
 The next filter we will look at is `Confidence Score`. This option lets you filter messages that the AI was able to categorise by the degree of confidence configured by you.
@@ -111,7 +121,7 @@ The message analysis page also lets you filter the data in the table based on th
 * User - Only shows messages sent by the user.
 * Assistant - Only shows messages sent by the chat agent.
 
-![Message By](assets/message-analysis-message-by.png)
+![image](https://user-images.githubusercontent.com/75118325/114306235-f224d880-9af8-11eb-8f14-d04e5497cf49.png)
 
 ### Select Sub Story
 This option lets you filter the data based on which sub story on the bot builder the conversation or message belongs to.
@@ -135,7 +145,7 @@ A key component in Haptik’s conversational experience is SMART ASSIST. The obj
 
 This option lets you see those messages that triggered the Smart Assist layer.
 
-![SA Filter](assets/sa1.png)
+![image](https://user-images.githubusercontent.com/75118325/117749258-0a3e6380-b22f-11eb-8e46-5aed8e2dee86.png)
 
 ### User ID
 This option lets you filter the data based on the user id. This can be helpful to understand the messages/conversations of a partcular user.

@@ -85,12 +85,16 @@ module.exports = () => (
           url: '/hsl',
         },
         {
+          title: 'Getting Support',
+          url: '/other/support',
+        },
+        {
           title: 'SLA',
           url: '/other/sla',
         },
         {
-          title: 'Help',
-          url: '/other/supportbot',
+          title: 'Chat Link',
+          url: '/bot-analytics/chat-links'
         }
       ]}
     />
@@ -98,20 +102,6 @@ module.exports = () => (
       id="integrations"
       title="Integrations"
       sections={[
-        {
-          title: 'iOS SDK',
-          description:
-            'Objective-C framework to bring the chatbot magic in your app for iOS 9 & higher',
-          ctaText: 'Get Started',
-          ctaLink: '/ios-sdk',
-        },
-        {
-          title: 'Android SDK',
-          description:
-            'Java framework to supercharge your Android app with AI powered chatbot capabilities',
-          ctaText: 'Get Started',
-          ctaLink: '/android-sdk',
-        },
         {
           title: 'Web SDK',
           description:
@@ -131,7 +121,35 @@ module.exports = () => (
           description:
             'Documentation to help you build conversational experiences on Facebook',
           ctaText: 'Get Started',
-          ctaLink: '/other/facebook',
+          ctaLink: '/facebook',
+        },
+        {
+          title: 'Google Business Messages',
+          description:
+            'Documentation to help you build conversational experiences on Google Business Messages',
+          ctaText: 'Get Started',
+          ctaLink: '/gbm',
+        },
+        {
+          title: 'Salesforce Service Cloud Integration',
+          description:
+            'Documentation to help you build conversational experiences on Salesforce Service Cloud',
+          ctaText: 'Get Started',
+          ctaLink: '/salesforce',
+        },
+          {
+          title: 'Zendesk',
+          description:
+            'Documentation to help you build conversational experiences on Zendesk',
+          ctaText: 'Get Started',
+          ctaLink: '/zendesk',
+        },
+        {
+          title: 'Shopify',
+          description:
+            'Documentation to help you build conversational experiences on Shopify',
+          ctaText: 'Get Started',
+          ctaLink: '/shopify',
         },
         {
           title: 'Bot API',
@@ -139,6 +157,20 @@ module.exports = () => (
             'API docs to help you build powerful chatbot solutions with great customisations',
           ctaText: 'Get Started',
           ctaLink: '/webhooks',
+        },
+        {
+          title: 'iOS SDK',
+          description:
+            'Objective-C framework to bring the chatbot magic in your app for iOS 9 & higher',
+          ctaText: 'Get Started',
+          ctaLink: '/ios-sdk',
+        },        
+        {
+          title: 'Android SDK',
+          description:
+            'Java framework to supercharge your Android app with AI powered chatbot capabilities',
+          ctaText: 'Get Started',
+          ctaLink: '/android-sdk',
         },
       ]}
       others={[

@@ -1116,3 +1116,85 @@ implementation 'ai.haptik.android.sdk:haptiklib-jio-communications:7.0.0-70183'
 ```groovy
 implementation 'ai.haptik.android.sdk:haptiklib-xdk:7.0.0-70183'
 ```
+
+## Moving from 7.0.0 → 7.0.1
+
+```groovy
+implementation 'ai.haptik.android.sdk:haptiklib-core:7.0.1-70284'
+```
+
+```groovy
+implementation 'ai.haptik.android.sdk:haptiklib-extensions:7.0.1-70284'
+```
+
+```groovy
+implementation 'ai.haptik.android.sdk:haptiklib-picasso-helper:7.0.1-70284'
+```
+
+```groovy
+implementation 'ai.haptik.android.sdk:haptiklib-glide-helper:7.0.1-70284'
+```
+
+```groovy
+implementation 'ai.haptik.android.sdk:haptiklib-jio-communications:7.0.1-70284'
+```
+
+```groovy
+implementation 'ai.haptik.android.sdk:haptiklib-xdk:7.0.1-70284'
+```
+
+## Moving from 7.0.1 → 7.0.2
+- Fixes a bug where the feedback from the user was attributed to a wrong agent
+- Fixes a crash caused on the logout event for the SDK
+- **BREAKING:** Method signature for logout method has changed.
+- **BREAKING:** Implementation of InitDataCallback is no longer optional, please implement the interface in the application class.
+
+```groovy
+implementation 'ai.haptik.android.sdk:haptiklib-core:7.0.2-70383'
+```
+
+```groovy
+implementation 'ai.haptik.android.sdk:haptiklib-extensions:7.0.2-70383'
+```
+
+```groovy
+implementation 'ai.haptik.android.sdk:haptiklib-picasso-helper:7.0.2-70383'
+```
+
+```groovy
+implementation 'ai.haptik.android.sdk:haptiklib-glide-helper:7.0.2-70383'
+```
+
+```groovy
+implementation 'ai.haptik.android.sdk:haptiklib-jio-communications:7.0.2-70383'
+```
+
+```groovy
+implementation 'ai.haptik.android.sdk:haptiklib-xdk:7.0.2-70383'
+```
+
+## Moving from 7.0.2 -> 7.1.0
+- Fixed few UI bugs related to QR and Carousal.
+
+```groovy
+implementation 'ai.haptik.android.sdk:haptiklib-core:7.1.0_71183'
+```
+
+```groovy
+implementation 'ai.haptik.android.sdk:haptiklib-extensions:7.1.0_71183'
+```
+
+```groovy
+implementation 'ai.haptik.android.sdk:haptiklib-picasso-helper:7.1.0_71183'
+```
+
+```groovy
+implementation 'ai.haptik.android.sdk:haptiklib-glide-helper:7.1.0_71183'
+```
+
+```groovy
+implementation 'ai.haptik.android.sdk:haptiklib-jio-communications:7.1.0_71183'
+```
+
+```groovy
+implementation 'ai.haptik.android.sdk:haptiklib-xdk:7.1.0_71183'

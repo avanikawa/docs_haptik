@@ -89,6 +89,7 @@ Payload sent to your registered webhook will always be in json.
 
 ## Payload types
 
+> The events are supported by all channels such as WhatsApp, Facebook and so on.
 
 ### Message
 
@@ -278,6 +279,9 @@ Example:
         "conversation_identifier": "<CONVERSATION_IDENTIFIER>",
         "chat_link":"<CHAT_LINK>", // deprecated. use `complete_chat_link` instead
         "complete_chat_link": "<CHAT_LINK>",
+		"completion_type": "agent", // possible values 'gogo', 'agent', 'autocomplete' depends who marked the chat complete
+    	"completion_by": "<AGENT_CLAIM_NAME>", // the state of a conversation before it was marked as completed.
+		                              //Possible values 'AGENT_CLAIM_NAME', 'Team Offline Flag', 'Waiting for User', 'Bot completed'
         "closing_categories": {
             "reason": "",
             "subReason": "",
