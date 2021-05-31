@@ -13,7 +13,7 @@ The following setup will help you configure Haptik IVA within Zendesk and Sunshi
 
 > Ensure on the Sunshine Conversations account, if you are able to see the app created by Zendesk. This app will have **Zendesk** as a prefix.
 
-![image](https://user-images.githubusercontent.com/75118325/120142308-bbfffd00-c1fb-11eb-82e6-23a5dfbd9023.png)
+![image](https://user-images.githubusercontent.com/75118325/120147722-b8bd3f00-c204-11eb-9a57-71c1d0d48ffd.png)
 
 ## Setting up Zendesk and Sunshine Conversation
 
