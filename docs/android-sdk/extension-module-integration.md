@@ -36,7 +36,7 @@ This module will enable the `Extensions` functionality in the Haptik SDK.
 Add the following in module `build.gradle` for eg: `build.gradle (Module: app)`
 
 ```java
-implementation 'ai.haptik.android.sdk:haptiklib-extensions:7.0.2-70383'
+implementation 'ai.haptik.android.sdk:haptiklib-extensions:7.1.0_71183'
 ```
 
 ## Step 3: Configure Inbox Activity (Optional)
