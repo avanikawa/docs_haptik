@@ -1,8 +1,6 @@
 ---
-title: Team Analytics
+title: Analyse Team Data
 ---
-
-All Statistics shown on this page are chats which have been initiated in the selected timestamp.
 
 ## How to analyse Team metrics?
 
@@ -13,7 +11,6 @@ All Statistics shown on this page are chats which have been initiated in the sel
 You can filter the summary and agent metrics by *Custom time* or *Custom date*. Refer the image below for how to check hourly/daily **Team analytics**.
 
 ![image](https://user-images.githubusercontent.com/75118325/120192777-3d29b500-c239-11eb-8c77-bca6f41645e2.png)
-
 
 > Tip: You can choose hourly slots on a date in the Time picker to get the metric values for the chosen Date and Time.
 
