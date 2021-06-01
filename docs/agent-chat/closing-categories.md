@@ -2,7 +2,9 @@
 title: Closing Categories
 ---
 
-When an agent closes a chat with an user they have to select a closing category and reason for closing the chat. They can additionally add notes about the conversation. This data is useful to understand the types of requests users are making, the categories of questions the bot can't handle. 
+When an agent closes a chat with a user they have to select a closing category and reason for closing the chat. They can additionally add notes about the conversation. 
+
+This data is useful to understand the types of requests users are making, the categories of questions the bot can't handle. 
 Additionally, the conversation notes help any other assistant who might pick up the chat to get a quick context of the previous conversations.
 
 ![Close Chat Options](assets/close_chat_options.png)
