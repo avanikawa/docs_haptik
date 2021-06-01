@@ -31,9 +31,7 @@ You can set up Closing Categories which agents have to select while closing a ch
 
 Canned Responses are predefined responses uploaded prior, which can easily be used by agents to reduce response time.
 
-> Click [**here**](https://docs.haptik.ai/agent-chat/add-canned-responses) to know more about adding Canned Responses.
-
-
+> Click [**here**](https://docs.haptik.ai/admin-tools/upload-canned-responses) to know more about adding Canned Responses.
 
 Once you have completed these steps, you can now test the connection by sending a message to the bot.
 
