@@ -1,5 +1,5 @@
 ---
-title: Agent Reports
+title: Analyse Agent Data
 ---
 
 The Smart Agent Chat report gives you a list of all the agent conversations in a selected time period. You can now analyse your agents based on various metrics like response times and more on a granular level. Please go through each of the metrics mentioned below. We have described each column metric added in the report so that you could find out the best performing agents and monitor agent performance on a more granular level.
