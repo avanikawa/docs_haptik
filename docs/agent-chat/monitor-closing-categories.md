@@ -1,5 +1,5 @@
 ---
-title: Monitor Closing Categories
+title: Analyse Closing Categories
 ---
 
 At the end every conversation, agents have to mark a closing category along with reason. This is mandatory if the closing categories have been set up initially.
