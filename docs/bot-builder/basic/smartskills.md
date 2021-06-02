@@ -20,4 +20,4 @@ Haptik’s Smart Skills are focused on **three** major verticals for now -
 
 3. 	[**Insurance**](https://docs.haptik.ai/bot-builder/basic/insurance)
 
-You can read more about using these Smart Skills [**here**](https://docs.haptik.ai/bot-builder/basic/create-your-first-bot).
+You can read more about using these Smart Skills [**here**](https://docs.haptik.ai/bot-builder/basic/making-first-bot).
