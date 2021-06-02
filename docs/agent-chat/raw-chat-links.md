@@ -77,7 +77,7 @@ One can think of chat states as a condition of a users interaction with a busine
   - Agent Logging out, while chat was pinned.
   - 8 mins of user inactivity, while chat was in waiting for state/bot state.
 
-### Waiting 
+### Waiting State
 
 **This is a special state that is available to all agents, they can mark any chat that is currently assigned to them as “waiting for user”. We recommend using this state when the user seems to be unresponsive.**
 
