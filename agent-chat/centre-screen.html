@@ -1,0 +1,162 @@
+<!DOCTYPE html><html lang="en"><head><meta charSet="utf-8"/><meta http-equiv="X-UA-Compatible" content="IE=edge"/><title>Message Composer · Haptik Docs</title><meta name="viewport" content="width=device-width, initial-scale=1.0"/><meta name="generator" content="Docusaurus"/><meta name="description" content="The centre of the screen comprises of the message composer. An agent can - "/><meta name="docsearch:language" content="en"/><meta property="og:title" content="Message Composer · Haptik Docs"/><meta property="og:type" content="website"/><meta property="og:url" content="https://docs.haptik.ai/"/><meta property="og:description" content="The centre of the screen comprises of the message composer. An agent can - "/><meta property="og:image" content="https://docs.haptik.ai/img/image_0.png"/><meta name="twitter:card" content="summary"/><meta name="twitter:image" content="https://docs.haptik.ai/img/image_0.png"/><meta name="robots" content="noindex"/><link rel="shortcut icon" href="/img/image_0.png"/><link rel="stylesheet" href="https://cdn.jsdelivr.net/docsearch.js/1/docsearch.min.css"/><link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/default.min.css"/><script>
+              (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+              (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+              m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+              })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+              ga('create', 'UA-106563119-6', 'auto');
+              ga('send', 'pageview');
+            </script><script type="text/javascript" src="/js/index.js"></script><script src="/js/scrollSpy.js"></script><link rel="stylesheet" href="/css/main.css"/><script src="/js/codetabs.js"></script></head><body class="sideNavVisible separateOnPageNav"><div class="fixedHeaderContainer"><div class="headerWrapper wrapper"><header><a href="/"><img class="logo" src="/img/image_0.png" alt="Haptik Docs"/><h2 class="headerTitleWithLogo">Haptik Docs</h2></a><div class="navigationWrapper navigationSlider"><nav class="slidingNav"><ul class="nav-site nav-site-internal"><li class="navSearchWrapper reactNavSearchWrapper"><input type="text" id="search_input_react" placeholder="Search" title="Search"/></li><li class=""><a href="/#tools" target="_self">Tools</a></li><li class=""><a href="/#integrations" target="_self">Integrations</a></li></ul></nav></div></header></div></div><div class="navPusher"><div class="docMainWrapper wrapper"><div class="docsNavContainer" id="docsNav"><nav class="toc"><div class="toggleNav"><section class="navWrapper wrapper"><div class="navBreadcrumb wrapper"><div class="navToggle" id="navToggler"><div class="hamburger-menu"><div class="line1"></div><div class="line2"></div><div class="line3"></div></div></div><h2><i>›</i><span>How to manage chats?</span></h2><div class="tocToggler" id="tocToggler"><i class="icon-toc"></i></div></div><div class="navGroups"><div class="navGroup"><h3 class="navGroupCategoryTitle">Getting Started</h3><ul class=""><li class="navListItem"><a class="navItem" href="/agent-chat/">Introduction</a></li><li class="navListItem"><a class="navItem" href="/agent-chat/bot-agent-handover">Transfer Chats to Human Agents</a></li></ul></div><div class="navGroup"><h3 class="navGroupCategoryTitle">How to set up?</h3><ul class=""><li class="navListItem"><a class="navItem" href="/agent-chat/setup-intro">Introduction</a></li><li class="navListItem"><a class="navItem" href="/agent-chat/teams">Teams</a></li><li class="navListItem"><a class="navItem" href="/agent-chat/chat-assignment">Chat Routing Algorithm</a></li><li class="navListItem"><a class="navItem" href="/agent-chat/closing-categories">Closing Categories</a></li></ul></div><div class="navGroup"><h3 class="navGroupCategoryTitle">How to manage chats?</h3><ul class=""><li class="navListItem"><a class="navItem" href="/agent-chat/newmychats">Introduction</a></li><li class="navListItem"><a class="navItem" href="/agent-chat/left-hs">Live Statistics</a></li><li class="navListItem navListItemActive"><a class="navItem" href="/agent-chat/centre-screen">Message Composer</a></li><li class="navListItem"><a class="navItem" href="/agent-chat/right-hs">User Details and External Tool</a></li><li class="navListItem"><a class="navItem" href="/agent-chat/manage-team-capacity">Manage Team Capacity</a></li><li class="navListItem"><a class="navItem" href="/agent-chat/businesses">Monitor Chats</a></li></ul></div><div class="navGroup"><h3 class="navGroupCategoryTitle">How to analyze chats?</h3><ul class=""><li class="navListItem"><a class="navItem" href="/agent-chat/analyze-intro">Introduction</a></li><li class="navListItem"><a class="navItem" href="/agent-chat/monitor-closing-categories">Analyse Closing Categories</a></li><li class="navListItem"><a class="navItem" href="/agent-chat/analytics">Analyse Team Data</a></li><li class="navListItem"><a class="navItem" href="/agent-chat/agent-reports">Analyse Agent Data</a></li></ul></div><div class="navGroup"><h3 class="navGroupCategoryTitle">Miscellaneous</h3><ul class=""><li class="navListItem"><a class="navItem" href="/agent-chat/adding-custom-tools">Adding your own custom tool</a></li><li class="navListItem"><a class="navItem" href="/agent-chat/integrating-external-bot">Integrating with External Bot</a></li><li class="navListItem"><a class="navItem" href="/agent-chat/claiming-and-closing">Chat Priority and Assignment</a></li><li class="navListItem"><a class="navItem" href="/agent-chat/agent-stats-email">Agent Daily Statistics Mailer</a></li><li class="navListItem"><a class="navItem" href="/agent-chat/sac-faq">FAQ</a></li></ul></div></div></section></div><script>
+            var coll = document.getElementsByClassName('collapsible');
+            var checkActiveCategory = true;
+            for (var i = 0; i < coll.length; i++) {
+              var links = coll[i].nextElementSibling.getElementsByTagName('*');
+              if (checkActiveCategory){
+                for (var j = 0; j < links.length; j++) {
+                  if (links[j].classList.contains('navListItemActive')){
+                    coll[i].nextElementSibling.classList.toggle('hide');
+                    coll[i].childNodes[1].classList.toggle('rotate');
+                    checkActiveCategory = false;
+                    break;
+                  }
+                }
+              }
+
+              coll[i].addEventListener('click', function() {
+                var arrow = this.childNodes[1];
+                arrow.classList.toggle('rotate');
+                var content = this.nextElementSibling;
+                content.classList.toggle('hide');
+              });
+            }
+
+            document.addEventListener('DOMContentLoaded', function() {
+              createToggler('#navToggler', '#docsNav', 'docsSliderActive');
+              createToggler('#tocToggler', 'body', 'tocActive');
+
+              var headings = document.querySelector('.toc-headings');
+              headings && headings.addEventListener('click', function(event) {
+                var el = event.target;
+                while(el !== headings){
+                  if (el.tagName === 'A') {
+                    document.body.classList.remove('tocActive');
+                    break;
+                  } else{
+                    el = el.parentNode;
+                  }
+                }
+              }, false);
+
+              function createToggler(togglerSelector, targetSelector, className) {
+                var toggler = document.querySelector(togglerSelector);
+                var target = document.querySelector(targetSelector);
+
+                if (!toggler) {
+                  return;
+                }
+
+                toggler.onclick = function(event) {
+                  event.preventDefault();
+
+                  target.classList.toggle(className);
+                };
+              }
+            });
+        </script></nav></div><div class="container mainContainer docsContainer"><div class="wrapper"><div class="post"><header class="postHeader"><h1 id="__docusaurus" class="postHeaderTitle">Message Composer</h1></header><article><div><span><p>The centre of the screen comprises of the message composer. An agent can -</p>
+<ul>
+<li>Exchange messages with the user</li>
+<li>Send <strong>canned responses</strong> to users</li>
+<li>Use <strong>Smart Actions</strong></li>
+<li><strong>Report</strong> a user as inappropriate</li>
+<li>Take down <strong>notes</strong> during a conversation</li>
+<li>Share a chat link with others</li>
+<li>Mark chat as <strong>Complete</strong> and <strong>Waiting for user</strong></li>
+<li><strong>Reassign chat</strong> to a person or a team</li>
+</ul>
+<p><img src="/assets/centrescreen.png" alt="MyChatsScreen7"></p>
+<blockquote>
+<p>When a new chat is assigned to an agent, the agents are able to check the history of the user's conversation with the bot i.e., the messages which user sent to the bot before an agent stepped into the conversation.</p>
+</blockquote>
+<h2><a class="anchor" aria-hidden="true" id="send-messages-to-the-user"></a><a href="#send-messages-to-the-user" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Send messages to the user</h2>
+<p>Agent can type the responses in the message composer and send them to the user.</p>
+<p><img src="https://user-images.githubusercontent.com/75118325/119291664-76c45400-bc6c-11eb-98a8-e1c2aeff9395.png" alt="image"></p>
+<h2><a class="anchor" aria-hidden="true" id="canned-responses"></a><a href="#canned-responses" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Canned Responses</h2>
+<p><img src="/assets/cannedresponses.png" alt="MyChatsScreen88"></p>
+<p>Canned Responses are predefined responses uploaded prior, which can easily used by agents to reduce response time. They are ready-made responses which agents can customise according to the situation and need before sending it to the user.</p>
+<h2><a class="anchor" aria-hidden="true" id="smart-actions"></a><a href="#smart-actions" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Smart Actions</h2>
+<p>Smart Actions help the agents to send media attachments to the users. To open smart action, click on the icon at the left hand side of the action toolbar</p>
+<p><img src="https://user-images.githubusercontent.com/75118325/119292054-403b0900-bc6d-11eb-9ade-17eefd5981b8.png" alt="image"></p>
+<p>Once you click on it, below window will pop-up</p>
+<p><img src="https://user-images.githubusercontent.com/75118325/119292077-4e892500-bc6d-11eb-9782-841dfb6d6c77.png" alt="image"></p>
+<h4><a class="anchor" aria-hidden="true" id="image-smart-action"></a><a href="#image-smart-action" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Image Smart Action</h4>
+<p>Image smart action is used to share an image with the user. The agent can drag and drop the image file on the pop-up that opens on clicking this smart action. You can also add a custom text for the user here. Now, click <em>Save</em> and then send it to the user.</p>
+<h4><a class="anchor" aria-hidden="true" id="attachment-smart-action"></a><a href="#attachment-smart-action" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Attachment Smart Action</h4>
+<p>Attachment smart action is used to share .pdf files with the user. The agent can drag and drop the file on the pop-up that opens on clicking this smart action. You can also add a custom text for the user here. Now, click <em>Save</em> and then send it to the user.</p>
+<h4><a class="anchor" aria-hidden="true" id="external-link-smart-action"></a><a href="#external-link-smart-action" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>External Link Smart Action</h4>
+<p>Use external link smart action to send links to the user. In <em>URL</em> field you have to paste link and in the <em>Custom Text for User</em> field, mention about the link provided.</p>
+<p>Pasting a link without using the smart action automatically converts it to one without the custom text.</p>
+<h2><a class="anchor" aria-hidden="true" id="toolbar-actions"></a><a href="#toolbar-actions" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Toolbar Actions</h2>
+<h3><a class="anchor" aria-hidden="true" id="report-a-user-as-inappropriate"></a><a href="#report-a-user-as-inappropriate" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Report a user as inappropriate</h3>
+<p>Agents can mark a user as inappropriate by clicking on this icon as shown below -</p>
+<p><img src="/assets/reportinappropriateicon.png" alt="MyChatsScreen18"></p>
+<p>We register/log a user being marked as inappropriate once every 2 hours per user. If the inappropriate count for a user is greater than 2, we send a blocked message to the user as shown below -</p>
+<pre><code class="hljs">Hi &lt;User Name&gt;, this is a system generated message to inform you that your access to 
+this chat service has been permanently disabled. You will not be able to use this 
+chat service any more as you have been flagged multiple times for inappropriate messages 
+sent to our Human assistants.
+</code></pre>
+<h3><a class="anchor" aria-hidden="true" id="notes"></a><a href="#notes" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Notes</h3>
+<p>Notes section is used to save link of the product suggested or any other information given from any website. These notes are shared with other assistants for a particular user. It is helpful for another assistant to get the details quickly by just checking notes. Even numbers are saved in <em>Notes</em> for reference. Make sure that you save notes wherever and whenever required.</p>
+<blockquote>
+<p>The user won’t be able to see <em>Notes</em> on the app as it is only for assistants.</p>
+</blockquote>
+<p>Please note <em>Assistant</em> and <em>Agent</em> is the same as the person replying back to the user queries on our chat window.</p>
+<h3><a class="anchor" aria-hidden="true" id="user-info-link"></a><a href="#user-info-link" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>User Info Link</h3>
+<p>This tool will help you to get the link of the ongoing chat. As soon as you click on the tool, it will take you to the next tab where the <em>User Info</em> link will be visible. This is used for sharing chat link of users.</p>
+<h2><a class="anchor" aria-hidden="true" id="close-chat"></a><a href="#close-chat" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Close Chat</h2>
+<p>Agents can close a chat by clicking on this button.</p>
+<p><img src="/assets/closechatbutton.png" alt="MyChatsScreen13"></p>
+<p>As an agent clicks on this button, a modal opens up showing few options like <strong>closing categories</strong> aka disposition tags and <strong>follow up</strong>.</p>
+<p><img src="/assets/closingcategorymodal.png" alt="MyChatsScreen14"></p>
+<p>You can read more about closing categories <a href="https://docs.haptik.ai/agent-chat/closing-categories"><strong>here</strong></a>.</p>
+<h2><a class="anchor" aria-hidden="true" id="waiting-for-user"></a><a href="#waiting-for-user" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Waiting for user</h2>
+<p>As we know, an agent can take only a certain number of chats at once. We call that number <strong>concurrency of chats</strong>. This is specific to an agent.</p>
+<p>Many times we have seen a user stops replying in between a conversation, what shall an agent do in this case? This chat where the user has stopped replying keeps the agent's concurrency bucket blocked. To clear up the concurrency bucket without closing a chat, agents can use <strong>Waiting for user</strong> button.</p>
+<p><img src="/assets/waitingforuserbutton.png" alt="MyChatsScreen15"></p>
+<p>When the user will come back and respond on the chat screen, the chat will get reassigned to the agent and the agent can continue the conversation with the user.</p>
+<p>This is what makes this button extremely powerful, it cleans up concurrency bucket of the agent at their demand without inserting any friction for the user.</p>
+<blockquote>
+<p>Note: When an agent is marked offline, all chats that were in &quot;Waiting for user&quot; state are moved back to team queue, and may get assigned to an available agent.</p>
+</blockquote>
+<h2><a class="anchor" aria-hidden="true" id="reassign-chat"></a><a href="#reassign-chat" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Reassign chat</h2>
+<p>In situations where agents need additional help from his team members, they can use this button to reassign the chat to anyone specific among his team or whoever  free in his team.</p>
+<p><img src="/assets/reassign_chat.png" alt="MyChatsScreen16"></p>
+<p>Once you click on the <strong>Reassign Chat</strong> button, a modal opens up on the right hand side of the screen where you can choose whom to reassign it to.</p>
+<ol>
+<li>&quot;Assign to any agent&quot; will auto-assign the chat to an online agent of the team</li>
+<li>The &quot;Assign&quot; button will be active only if the agent is online, which is indicated by green dot on the left side of agent's name</li>
+<li>In case the agent is offline (red dot) or logged out (grey dot), the &quot;Assign&quot; button will not be active and chat's can't be assigned to that particular agent</li>
+</ol>
+<blockquote>
+<p>When an agent is offline, he would not get the option of <strong>Waiting for user</strong> but only <strong>Reassigning Chat</strong> and <strong>Closing Category</strong> as compared to online state, where agents get to see all controls mentioned above.</p>
+</blockquote>
+</span></div></article></div><div class="docLastUpdate"><em>Last updated on 6/2/2021</em></div><div class="docs-prevnext"><a class="docs-prev button" href="/agent-chat/left-hs"><span class="arrow-prev">← </span><span>Live Statistics</span></a><a class="docs-next button" href="/agent-chat/right-hs"><span>User Details and External Tool</span><span class="arrow-next"> →</span></a></div></div></div><nav class="onPageNav"><ul class="toc-headings"><li><a href="#send-messages-to-the-user">Send messages to the user</a></li><li><a href="#canned-responses">Canned Responses</a></li><li><a href="#smart-actions">Smart Actions</a></li><li><a href="#toolbar-actions">Toolbar Actions</a><ul class="toc-headings"><li><a href="#report-a-user-as-inappropriate">Report a user as inappropriate</a></li><li><a href="#notes">Notes</a></li><li><a href="#user-info-link">User Info Link</a></li></ul></li><li><a href="#close-chat">Close Chat</a></li><li><a href="#waiting-for-user">Waiting for user</a></li><li><a href="#reassign-chat">Reassign chat</a></li></ul></nav></div><footer class="nav-footer" id="footer"><div class="footer"><a href="https://haptik.ai/" target="_blank" rel="noreferrer noopener" class="fbOpenSource"><img src="/img/image_0.png" alt="Haptik Inc." width="100"/></a><div class="footer-columns"><div class="footer-column"><div class="footer-column-title">Tools</div><div class="footer-column-links"><a href="https://docs.haptik.ai/bot-builder/basic/introduction" class="footer-column-link">Conversation Studio</a><a href="https://docs.haptik.ai/agent-chat/" class="footer-column-link">Smart Agent Chat</a><a href="https://docs.haptik.ai/bot-analytics/" class="footer-column-link">Intelligent Analytics</a></div></div><div class="footer-column"><div class="footer-column-title">Integrations</div><div class="footer-column-links"><a href="https://docs.haptik.ai/web-sdk/" class="footer-column-link">Web SDK</a><a href="https://docs.haptik.ai/whatsapp/" class="footer-column-link">WhatsApp</a><a href="https://docs.haptik.ai/facebook/" class="footer-column-link">Facebook</a><a href="https://docs.haptik.ai/gbm/" class="footer-column-link">Google Business Messages</a><a href="https://docs.haptik.ai/salesforce/" class="footer-column-link">Salesforce Service Cloud</a><a href="https://docs.haptik.ai/webhooks/" class="footer-column-link">Bot API</a><a href="https://docs.haptik.ai/ios-sdk/" class="footer-column-link">iOS SDK</a><a href="https://docs.haptik.ai/android-sdk/" class="footer-column-link">Android SDK</a></div></div><div class="footer-column"><div class="footer-column-title">Others</div><div class="footer-column-links"><a href="https://docs.haptik.ai/hsl/" class="footer-column-link">HSL</a><a href="https://docs.haptik.ai/other/sla" class="footer-column-link">SLA</a><a href="https://docs.haptik.ai/external-chat-tool/" class="footer-column-link">External Agent Chat Tool</a></div></div></div><div class="footer-copyright"></div></div><section class="copyright">Copyright © 2021 Haptik Inc.</section></footer></div><script type="text/javascript" src="https://cdn.jsdelivr.net/docsearch.js/1/docsearch.min.js"></script><script>
+                document.addEventListener('keyup', function(e) {
+                  if (e.target !== document.body) {
+                    return;
+                  }
+                  // keyCode for '/' (slash)
+                  if (e.keyCode === 191) {
+                    const search = document.getElementById('search_input_react');
+                    search && search.focus();
+                  }
+                });
+              </script><script>
+              var search = docsearch({
+                
+                apiKey: '224c7079e67e84a978d8b4621f6af16d',
+                indexName: 'haptik',
+                inputSelector: '#search_input_react',
+                algoliaOptions: {}
+              });
+            </script></body></html>
