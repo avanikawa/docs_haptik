@@ -27,6 +27,8 @@
         "Miscellaneous": [  
             "adding-custom-tools",
             "integrating-external-bot",
+            "claiming-and-closing",
+            "agent-stats-email",
             "sac-faq"
         ]
     },
