@@ -100,7 +100,7 @@ Step 1 — Locate the IVA amongst the list of IVAs on the Staging Environment
 
 Step 2 — Click on the respective IVA. On the next screen, click the “SMALLTALK” section
 
-![Smalltalk 12](/assets/SmallTalk12.png)
+![Screenshot 2021-06-02 at 4 45 26 PM](https://user-images.githubusercontent.com/55389979/120471466-5e69dd00-c3c2-11eb-872d-ce3b24d78075.png)
 
 Step 3 — The below page opens up and allows the IVA Response to be edited. The platform also allows multiple variations for IVA response to be added to each Intent. When such an Intent is detected in User Utterance, the IVA randomly picks one Bot response to respond to the User.
 
@@ -114,7 +114,7 @@ Step 1 — Locate the IVA amongst the list of IVAs on the Staging Environment
 
 Step 2 — Click on the respective IVA. On the next screen, click the “SMALLTALK” section
 
-![Smalltalk 12](/assets/SmallTalk12.png)
+![Screenshot 2021-06-02 at 4 45 26 PM](https://user-images.githubusercontent.com/55389979/120471466-5e69dd00-c3c2-11eb-872d-ce3b24d78075.png)
 
 Step 3 — The below page opens up and shows the list of intents. If you do not want a particular intent to function, then we can deactivate it as shown below.
 
