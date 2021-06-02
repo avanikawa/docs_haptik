@@ -23,8 +23,6 @@
 		],
 		"Essentials of Bot Building": [
 			"basic/making-first-bot",
-			"basic/bot-hierarchy",
-			"basic/creating-story",
 			"basic/creating-nodes",
 			"basic/user-says-guidelines",
 			"basic/smart-variants",
