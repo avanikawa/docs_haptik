@@ -1,12 +1,22 @@
 ---
-title: Analytics
+title: Analyse Team Data
 ---
 
-All Statistics shown on this page are chats which have been initiated in the selected timestamp.
+## How to analyse Team metrics?
+
+1. View Team level statistics
+2. View Agent level statistics
+3. Set duration
+
+You can filter the summary and agent metrics by *Custom time* or *Custom date*. Refer the image below for how to check hourly/daily **Team analytics**.
+
+![image](https://user-images.githubusercontent.com/75118325/120192777-3d29b500-c239-11eb-8c77-bca6f41645e2.png)
+
+> Tip: You can choose hourly slots on a date in the Time picker to get the metric values for the chosen Date and Time.
 
 ## Overview
 
-![Overview](assets/overview.png)
+![image](https://user-images.githubusercontent.com/75118325/120192835-503c8500-c239-11eb-8344-377a9aa2cab5.png)
 
 1. **Avg. User rating**
 
@@ -23,7 +33,7 @@ All Statistics shown on this page are chats which have been initiated in the sel
 
 ## Time Stats
 
-![Time_stats](assets/time_stats.png)
+![image](https://user-images.githubusercontent.com/75118325/120192893-634f5500-c239-11eb-949f-2adff5208ea9.png)
 
 1. **Average Agent First Response Time** (FRT)
 
@@ -54,7 +64,7 @@ All Statistics shown on this page are chats which have been initiated in the sel
 
 ## Chat Stats
 
-![Chat_stats](assets/chat_stats.png)
+![image](https://user-images.githubusercontent.com/75118325/120193016-87ab3180-c239-11eb-95d5-916c0c00958f.png)
 
 1. **Total Chats Received** 
     
@@ -116,14 +126,28 @@ All Statistics shown on this page are chats which have been initiated in the sel
 
     When agents are receiving chats, we total this time i.e. to give you a sense of agent's online activity. This is a useful input to understand agent productivity. 
     
-![Online agents with no metrics](assets/no_ecm_agent.png)
-    
+![image](https://user-images.githubusercontent.com/75118325/120193416-0acc8780-c23a-11eb-8f31-b1c6cefccaf0.png)
+
 > When agents are in online state and they have pinned chats, they would not get new chats assigned, as they are capped at their concurrency limit. So, we could get scenarios wherein, we have agents online but they don't get new chats and other metrics such as FRT, Resolution Time etc. are absent. This happens because the agent is not closing chats and is capped at their concurrency. This concurrency cap is the maximum allowed chats count that an agent is allowed to take at any instant. 
 
 You get the detailed agent report as per your timezone from a UI click. You can download the agent report. This is allowed for maximum of **30** days. Also there is a timezone drop-down using which you can choose the value as per the needs.
 
-![Agent_stats](assets/emailagentreport1.png)
+![image](https://user-images.githubusercontent.com/75118325/120193217-c8a34600-c239-11eb-80fe-0aeb57be1868.png)
 
 You would be able to download the detailed agent data report from the above shown screen. You can email the report to your id.
 
-![Agent_stats](assets/emailagentreport2.png)
+![image](https://user-images.githubusercontent.com/75118325/120193316-e375ba80-c239-11eb-9ebd-fc2656c41961.png)
+
+### Tips to manage a Team
+
+✅ Track No. of Delayed Chats and optimise agent strength per Team
+
+✅ Track No. of Live Chats received at a given time
+
+✅ View Response Times for a given time frame to mointor agent performance
+
+✅ View Resolution Times on a Team/Agent level 
+
+✅ View Individual Chats to get quality feedback
+
+✅ Analyze end of day Team-wise analytice values here.

@@ -1,5 +1,5 @@
 ---
-title: Agent Reports
+title: Analyse Agent Data
 ---
 
 The Smart Agent Chat report gives you a list of all the agent conversations in a selected time period. You can now analyse your agents based on various metrics like response times and more on a granular level. Please go through each of the metrics mentioned below. We have described each column metric added in the report so that you could find out the best performing agents and monitor agent performance on a more granular level.
@@ -107,16 +107,16 @@ The Smart Agent Chat report gives you a list of all the agent conversations in a
 
     Total time conversation was in waiting state before getting assigned to a specific agent in `hh:mm:ss` format. It is the sum of all waiting times the chat was in before it got closed
 
-21. **Closing Category** or [Chat Disposition Reason](https://docs.haptik.ai/agent-chat/claiming-and-closing#chat-disposition)
+21. **Closing Category**
 
     Disposition reason selected by the agent while closing the conversation
 
   
-22. **Closing Sub-category** or [Chat Disposition Sub-Reason](https://docs.haptik.ai/agent-chat/claiming-and-closing#chat-disposition)
+22. **Closing Sub-category**
 
     Disposition sub-reason under selected reason selected by the agent while closing the chat
     
-23. **Closing Category comment** or [Chat Disposition Comment](https://docs.haptik.ai/agent-chat/claiming-and-closing#chat-disposition)
+23. **Closing Category comment**
 
     Any closing comment add by the agent while closing the conversation
  

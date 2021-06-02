@@ -1,104 +1,80 @@
 ---
-title: Bot Agent Handover
+title: Transfer Chats to Human Agents
 ---
 
-A user always talks to a Business. The user can use one of the many device platforms (Haptik SDKs, Messenger, Jio, etc.) to communicate with the Business.
+When the user's come to the bot and start conversing, they go through the automated user journeys created using the Conversation Studio tool. When the bot is trained to understand the user's messages, the bot gives correct responses to the user. But when the bot does not understand the user's messages, the bot gives a bot break message. 
 
-    On the Business side, any replies could be sent automatically by a
-    1. Bot (Gogo) or
-    2. by an Expert/Agent from Athena.
+When the bot cannot understand the user, you can choose to redirect the user to a human assistant who will help the user resolve their query. 
 
-To keep the transition from Bot to Agent smooth for best user experience, we allow multiple different ways a chat can be transferred from a Bot to a Human.
+You can set rule(s) to enable the redirection of users from bot to a human assistant. There are two rules - 
+1. Adding Smart Agent Chat integration function on the bot
+2. Enabling Human Assistance flag on Business Manager
 
-## Handover rules
+## Adding Smart Agent Chat integration function on the bot
 
-### Adding Smart Agent Chat Integration functionality on Bot:
+```
+Example use cases - 
 
-There is a generic function for Smart Agent Chat integration which needs to be added on a node from where the agent function is to be used.
+1. When the user comes to a bot and explicitly says "I want to chat with an agent".
+2. When you want to capture some user details such as their name and email and then redirect the user to an agent.
+```
 
-**integration.utils.common.chat_force_pending**
+There is a generic function for Smart Agent Chat integration that needs to be added to a node from where the agent function is to be used.
 
-On the **Integrations** tab of the node, select the type as **Entity and Integration function** and add the below function name in the integration field and then click on Save.
+> **integration.utils.common.chat_force_pending**
+
+On the **Integrations** tab of the node, select the type as **Entity and Integration function** and add the below function name in the integration field and then click on **Save**.
 
 ![Chat Integration Function](assets/HO1.png)
 
-If this integration function exists, then the chat will be transferred to a team as per the integration function. This is how we achieve **Skill-based routing**.
+Once the users reache the node where you have added the integration function to transfer the chat to an agent, the bot will redirect the user to a [**Team**](https://docs.haptik.ai/agent-chat/teams) on **Smart Agent Chat**.
 
-### Human Assistance flag on Business Manager:
+You need to specify a default Team name in the **Business Manager** section of the Conversation Studio tool. All the agents are a part of Team on Smart Agent Chat. Hence, the chat gets assigned to an agent within the mentioned default Team. 
 
-If the human assistance flag is ON for a business, a chat will be moved to an agent whenever the bot doesn't understand the user's message.
+To provide a default Team, navigate to **Business Manager** via **Open Business** button on the bot page.
 
-> Warning: Before the handover to agent, the bot might give a [**Smart Assist**](https://docs.haptik.ai/bot-builder/basic/smart-assist) message. In cases where we do not want this to happen, the Smart Assist can be disabled from the backend.
+![image](https://user-images.githubusercontent.com/75118325/120187935-18cada00-c233-11eb-8202-761a5e01817e.png)
 
-### Claiming a chat from Smart Agent Chat tool:
+> **What is a Default Team?**
+> 
+> There can be a situation when the team routing logic fails and no team is shortlisted to assign a chat. In that case, the chat is assigned to the default team, set on Business manager.
 
-You can send a chat to any specific agent using the *Reassign Chat* button from Smart Agent Chat tool.
+On the **Business Manager**, in the **General Settings**, select the Team name from the dropdown as shown below - 
 
-For automated transitions, Business Manager in Bot Builder has a `Team Manager` section where you can configure the Team that the chat should be moved to.
+![image](https://user-images.githubusercontent.com/75118325/120188106-5596d100-c233-11eb-8e45-ffbd7698940d.png)
 
-    Tip: API Integration functions can also specify the team to which a chat is to be sent.
+> You will need to create a **Team** on Smart Agent Chat. Once you have created the Team, the team name will appear in the dropdown on Business Manager. To know how to create a team, click [**here**](https://docs.haptik.ai/agent-chat/teams).
 
-### Settings to configure the bot with Smart Agent Chat tool:
+When the users reach the node where this integration function exists (_get the details_ is the node in the above image), then the chat will be transferred to the Team on Smart Agent Chat.
 
-1. Go to the Teams page on Smart Agent Chat tool and click on Create Teams
+> Click [**here**](https://docs.haptik.ai/bot-builder/basic/creating-nodes) to know more about creating nodes.
 
-![Team Creation1](assets/HO2.png)
+## Enabling Human Assistance flag on Business Manager
 
-2. After creating the team, add a **name** for your team, add the owner (partner) in the respective fields and tap on the **Save** button to create the Team.
+```
+Example use cases - 
 
-![image](https://user-images.githubusercontent.com/75118325/111908416-333c4680-8a7f-11eb-8464-de00e6dcba9f.png)
+1. When you directly want to redirect the user to an agent and there are no user journeys on the bot.
+2. To handle out-of-scope queries of users. The users will be directed to an agent directly.
+```
 
-Team Description is optional.
+Every bot on the Haptik Platform has a **Business Manager** which contains all the configurations related to a bot. In the **General Settings** section, you can enable the **Enable Human Assistance** flag. 
 
-You can change or add automated messages from **Team Settings**. To know more about **Team Settings**, click [**here**](https://docs.haptik.ai/agent-chat/teams#how-to-make-changes-in-the-team-settings).
+If this flag is ON for a business, a chat will be moved to an agent whenever the bot doesn't understand the user's message, i.e., instead of responding with a bot break message, the bot will assign an agent to the user to resolve user's query.
 
-![image](https://user-images.githubusercontent.com/75118325/111908608-dbeaa600-8a7f-11eb-843c-0f5c835f9b30.png)
+![image](https://user-images.githubusercontent.com/75118325/120059600-36037b00-c070-11eb-998d-d4c0433c1f99.png)
 
-3. Now, assign agents for the Team created. For this -
 
-- Open the team which you just created by selecting it from LHS.
-- Tap on Manage Agents Tab on the top menu bar.
-- Tap on Add agent Button.
-- You can add agents by looking for a username in the field.
+> Warning: Before the handover to the agent, the bot might give a [**Smart Assist**](https://docs.haptik.ai/bot-builder/basic/smart-assist) message. In cases where you do not want this to happen, the Smart Assist can be disabled from the backend.
 
-Adding agents on a team -
+You can combine the rules too, i.e., add the integration function on the user journeys and also enable the human assistance from the Business Manager.
 
-![Team Creation3](assets/HO4.png)
+- If a Business is **Bot + Human Assisted** 
 
-Searching for an agent to be added in the team
+![image](https://user-images.githubusercontent.com/75118325/111911168-62a48080-8a8a-11eb-9e63-575c1674b895.png)
 
-![Team Creation4](assets/HO5.png)
+- If a Business is **Completely Human Assisted**
 
-4. After the agent's name has been added, you can customize the messages that will be sent to users when agents are busy or are not online. For this, we need to understand the difference between the delay message, message sent when no agent is online and message sent when users are not replying. You can read more about it [here](https://docs.haptik.ai/agent-chat/teams#how-to-create-a-team).
+_Note: If a Business is **Completely Bot Assisted**, the chat will never be assigned to a team._
 
-5. Configure Teams on Business Manager - Once a team is created, it should be added to the Business Manager on the General Settings page, as follows.
-
-- A list of created teams appears in the Default Team. Select the one which was created.
-- Once the Team is added to Default Team, Click on Save.
-
-![image](https://user-images.githubusercontent.com/75118325/111908484-78f90f00-8a7f-11eb-9167-3d0fbc119ae0.png)
-
- ## Queue Position Indicator
-
-This helps us to set correct expectation and smoothen the transition from bot to agent for end users. We engage the end users in queue by sending a message with their position in the queue. With this we inform our end users on Whatsapp, Facebook, Web or any other platform about how many people are currently ahead of them in the queue and thus they can decide if they want to abandon chat or stay.
-
-We send the below messages before an agent could respond back to the user when they are waiting in the queue. When the user is first in the pending queue, we send the 1st message indicating that the user is next. Post that, for the position in queue ranging from 2-5 we send the 2nd message and replace the <X> with the number of users ahead of them in the queue. Post the position of 5, we send out the 3rd message.
-
-1. You are next! We'll be reviewing your query right away.
-2. We're assigning someone to you. You will receive a reply as soon as we close <X> conversations
-3. You are in line. I'll send you a message as soon as we review your query. Just don't close this window.
-
-This message is only sent if the chat is in the **Queue state**. We need to draft the Bot Break message or Agent Transfer message in a way that, post which when the user is still in queue, they will get this **Queue Time Indicator** message. Also, a **Delay message** is sent as configured in Team settings.
-
-In most scenarios, delay messages are sent after 60 seconds or the time you have configued in the Team Settings screen, so this is generally the order in which the user gets messages -
-
-1. Bot Break or Agent Transfer message
-(Example - Sorry, the bot cannot handle this. This conversation will be transferred to an agent)
-
-2. Queue Time Indicator message (as shared in the points above)
-
-3. Delay message (Sorry, our agents are busy. Please try again after some time)
-
-If the user still stays, user sees the agent entering the chat.
-
-------
+Once you have configured the rules to transfer a chat from a bot to a human assistant (also referred to as **agent**), you can start with the Smart Agent Chat setup to handle the incoming chats.
