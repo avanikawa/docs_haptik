@@ -5,16 +5,17 @@ title: Chat Screen
 The centre of the screen comprises of the message composer. An agent can - 
 
   * Exchange messages with the user
-  * Check history of user's conversation with the bot and other agents
-  * **Reassign chat** to a person or a team
-  * Mark chat as **Complete** and **Waiting for user** 
-  * Use **Smart Actions**
-  * Take down **notes** during a conversation
-  * **Report** a user as inappropriate
   * Send **canned responses** to users
+  * Use **Smart Actions**
+  * **Report** a user as inappropriate
+  * Take down **notes** during a conversation
   * Share a chat link with others
+  * Mark chat as **Complete** and **Waiting for user** 
+  * **Reassign chat** to a person or a team
   
 ![MyChatsScreen7](assets/centrescreen.png)
+
+> When a new chat is assigned to an agent, the agents are able to check the history of the user's conversation with the bot i.e., the messages which user sent to the bot before an agent stepped into the conversation.
 
 ## Send messages to the user
 
@@ -118,3 +119,4 @@ Once you click on the **Reassign Chat** button, a modal opens up on the right ha
 3. In case the agent is offline (red dot) or logged out (grey dot), the "Assign" button will not be active and chat's can't be assigned to that particular agent
 
 > When an agent is offline, he would not get the option of **Waiting for user** but only **Reassigning Chat** and **Closing Category** as compared to online state, where agents get to see all controls mentioned above.
+
