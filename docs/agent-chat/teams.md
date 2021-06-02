@@ -6,31 +6,25 @@ title: Teams
 
 A team is a group of agents who are trained to handle user queries related to a specific topic. The team can be divided based on the subject matter/location of a user/expertise of agents. The logic for team routing can be defined as per the business requirement. 
 
-## Chat assignment to a team
-
-There are three ways in which a chat can be assigned to a team -
-
-1. Routing a chat from a bot's node
-2. Manually assigning a chat to a team
-3. Team routing from Business Manager
-
 ## How to create a team?
 
 Navigate to **Teams** section of **Smart Agent Chat** tool to create a new Team.
 
 ![image](https://user-images.githubusercontent.com/75118325/120099718-b4d4e280-c15a-11eb-8736-8a86044273dc.png)
 
-**Step 1 - Provide a Team name**
+### Step 1 - Provide a Team name
 
 The team name is used for internal purpose for the Team Leaders & Agents. A user will never be able to see the team name on the chat window.
 
-**Step 2 - Select Team Owner (Client)**
+### Step 2 - Select Team Owner (Client)
 
 Select the Partner(Client) to which the team belongs.
 
 ![image](https://user-images.githubusercontent.com/75118325/120099783-08473080-c15b-11eb-8773-d73babb71dc0.png)
 
-Click on **Save**. Now your Team has been created. You can select this Team as the **Default Team** in the **Business Manager**.
+### Step 3 - Click on _Save_ 
+
+Now your Team has been created. You can select this Team as the **Default Team** in the **Business Manager**.
 
 ## How to Manage Agents of a Team?
 
@@ -86,40 +80,7 @@ To see the chats handled by a particular agent, you can click on the **View Chat
 
 ![image](https://user-images.githubusercontent.com/75118325/120191076-15d1e880-c237-11eb-9f39-da5c0ae44cf8.png)
 
-## How to understand Team capacity?
-
-### Chat handling Capacity and Online Agent slots
-
-![Queue capacity 1](assets/case_1.png)
-
-The Chat handling capacity for a Team here helps figure the required number for agents at any given instant i.e. for under capacity scenario, the TLs can let some agents go offline. And in case a Team goes over capacity, TLs can call upon agents to be online.
-
-Check the image above. Here, you get 2 values in the Capacity card - 
-
-1. **Chat handling capacity:** This is a %age value that signifies if your team capacity is ideal or your team cannot handle the current incoming chat volume. For example, if the number value is in red and the copy states `over capacity`, it means the chat volume supercedes the available online agents' capacity 
-
-2. **Chats waiting to be taken:** Total number of chats in queue + chats in waiting i.e. all users who might need an agent at any given instant
-
-3. **Total Slots:** Total concurrency of each online agent in the team. Say, if a team had 4 agents with each having a concurrency of 3. The total available slots for the team would be 12. 
-
-> Note: The Online agents' ratio tells you the number of agents online by total number of agents in a given team. 
-
-### How is Team capacity calculated?
-
-![Queue capacity 2](assets/case_2.png)
-
-Let's understand the formula to get Chat handling capacity by a example -
-
-i. Total concurrency for online agents in the team = A
-
-ii. Queued + Assigned Chats total for all agents in the shown team = B
-
-iii. Availability is calculated as = (A-B) / A x 100
-
-The point `iii` above gives the availability %age value. This value in green means the team can handle the incoming chat volume. 
-
-
-## How to make changes in the Team Settings?
+## Change Team Settings
 
 ### **Step 1 - Select a language (Optional)**
 
@@ -158,9 +119,3 @@ Similar to the Delay message, you can configure the recall message to get the us
 ![Recall message](assets/Teams3.png)
 
 After making all the adjustments, Don't forget to Save all the changes which you have done.
-
-## Managing Offline Hour chats
-
-In the Team settings, you can turn the toggle to complete all chats when no agent is online. But there can be an edge case as mentioned below. We need to understand when this edge case occurs, and assign a specific permission to all agents.
-
-A chat would get assigned first to the last agent who took this user's chat. Assuming the agent is available. We mandate agents to go offline before 30 minutes of their shift closure time, and then logout on shift end. This works in sync with our assignment so that logged out agents are not considered for assignment. For when agents are going offline, but not actively logging out, the chats that come in offline hours get assigned but the agents in reality are not available. We should use the `Inactivity_logout` permission that logs out agents on no activity for 15 minutes. 
