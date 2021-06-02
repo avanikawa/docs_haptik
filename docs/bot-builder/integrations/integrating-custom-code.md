@@ -422,7 +422,7 @@ This context variable should be used for storing permanent details about the use
 
 The default value for user details is {'language_code': 'en', 'name': 'Guest User'}
 
-> For logged-in bots, the custom data that is passed in the `HaptikSDK.signup()`, is stored in the **user_details** variable for code node. Click [**here**](https://docs.haptik.ai/web-sdk/feature-user-signup#custom-client-sign-up) to know more abour custom sign up.
+> For logged-in bots, the custom data that is passed in the `HaptikSDK.signup()`, is stored in the **user_details** variable for code node. Click [**here**](https://docs.haptik.ai/web-sdk/feature-user-signup#custom-client-sign-up) to know more about custom sign up.
 
 **Why use user_details?**
 We collect information from the user such as PAN number, Aadhar number etc which is stored in the entity, but when the user journey hits an end node on the IVA, the entities get flushed away.
