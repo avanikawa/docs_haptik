@@ -3,18 +3,9 @@ title: Introduction
 ---
 
 As the Team Lead you can -
-* Analyze the ongoing chats
 * Analyze closing categories
 * Analyze time and chat statistics
 * Analyze agent performance
-* Add/remove agents from a team
-* Mark the agents as online/offline
-
-## Monitor Chats
-
-Team Leads can monitor chats from both **Business** and **Teams** sections. The chats present in **Business** section are the overall conversations going on with the bot, whereas the chats present in the **Teams** sections are the conversations which agents are handling.
-
-> Click [**here**](https://docs.haptik.ai/agent-chat/businesses) to know more about monitoring the chats.
 
 ## Closing Categories
 
