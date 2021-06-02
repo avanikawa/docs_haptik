@@ -8,7 +8,7 @@ FAQ nodes are like graph nodes and follow the same principle of **User Says**, *
 
 However, there are certain differences between FAQ Nodes and graph nodes which make them ideal for certain use cases like FAQs to answer general queries that a bot is usually asked in the category of the bot. Ex: ‘Who made you’ or ‘Are you a bot or Human’ which help in giving a personality to the bot.
 
-![General Nodes](assets/general_nodes_open.png 'Where to find General Nodes?')
+![Screenshot 2021-06-02 at 4 45 11 PM](https://user-images.githubusercontent.com/55389979/120471240-1b0f6e80-c3c2-11eb-9fa6-02bd5dbd16a9.png)
 
 ## Related Terms
 
