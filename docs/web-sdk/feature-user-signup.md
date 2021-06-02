@@ -178,6 +178,8 @@ A custom signup example. Read the full documentation in the custom signup sectio
 ```
 > Read this document to know [**View Credentails**](https://docs.haptik.ai/bot-builder/basic/sharebot#what-does-the-share-option-do).
 
+> For logged-in bots, the custom data that is passed in the `HaptikSDK.signup()`, is stored in the **user_details** variable for code node on Conversation Studio. You can read more about it [**here**](https://docs.haptik.ai/bot-builder/integrations/integrating-custom-code#user-details).
+
 ## **Expiring Tokens**
 
 Often, tokens expire, and must be renewed. The SDK exposes a **renewSignupToken** method for this exact purpose. This method must be explicitly called whenever the authentication token expires so that the server has the most up to date valid token.
