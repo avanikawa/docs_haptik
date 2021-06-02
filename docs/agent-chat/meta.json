@@ -14,11 +14,12 @@
             "newmychats",
             "left-hs",
             "centre-screen",
-            "right-hs"
+            "right-hs",
+            "manage-team-capacity",
+            "businesses"
         ],
         "How to analyze chats?": [
             "analyze-intro",
-            "businesses",
             "monitor-closing-categories",
             "analytics",
             "agent-reports"
@@ -26,7 +27,7 @@
         "Miscellaneous": [  
             "adding-custom-tools",
             "integrating-external-bot",
-            "adding-canned-responses"
+            "sac-faq"
         ]
     },
     "headerLink": {
