@@ -2,7 +2,7 @@
 title: Introduction
 ---
 
-In real-time, agents receive the chats on **MyChats** Page of the Smart Agent Chat. Once they receive the chats they can start responding back to the users. Along with responding back to the user, agents can check the different chats they are handling, agents can raise a tickets in your CRM system and so on.
+In real-time, agents receive the chats on **MyChats** Page of the Smart Agent Chat. Once they receive the chats they can start responding back to the users. Along with responding back to the user, agents can check the live statistics around the chats they are handling, can raise tickets in your CRM system, etc.
 
 ## How to use My Chats?
 
