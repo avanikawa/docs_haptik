@@ -2,6 +2,29 @@
 title: Understanding a Raw Chat Link
 ---
 
+## What is Raw Chat Link?
+
+Raw Chat Links are type of Chat links which contain all the details about a chat which was transferred from the bot to an agent.
+
+These Raw Chat Links will help you analyse the events that occured from the time when the user says `I want to chat with an agent` till the time when agent closes the chat and marks it as Complete.
+
+## Where to find the Raw Chat Links?
+
+When you share a **User Info Link**, a user having access to the partner will be able to see the Chat Link as follows - 
+
+![image](https://user-images.githubusercontent.com/75118325/120475093-92df9800-c3c6-11eb-9484-b1322dc4fec2.png)
+
+To check the Raw Chat Link, click on the **Raw Chat** button.
+
+![image](https://user-images.githubusercontent.com/75118325/120476001-b48d4f00-c3c7-11eb-8774-e283a39d070b.png)
+
+You will now see the conversation as follows - 
+
+![image](https://user-images.githubusercontent.com/75118325/120476527-4b5a0b80-c3c8-11eb-94b6-c41db48748ae.png)
+
+
+Let's understand all the different states and events that occur while a chat is being transferred from the bot to an agent.
+
 ## What is a Chat State?
 
 One can think of chat states as a condition of a users interaction with a business at any given point of time. A user and business will always share a single state for a chat, i.e., there is no scenario in which the same user of a business has a chat in Bot state and in Assigned State.
@@ -28,7 +51,7 @@ One can think of chat states as a condition of a users interaction with a busine
 - When the bot breaks, we move the chat to queued if human assistance is enabled on Business Manager and the default team is set.
 - When the bot has requested that this chat should be taken up by a specific team or ECT via an integration function, we move the chat to queued state and add it to the specific team queue
 
-### Assigned
+### Assigned State
 
 **This indicates that a chat is currently being handled by an agent.**
 
@@ -43,7 +66,7 @@ One can think of chat states as a condition of a users interaction with a busine
   
 - If there are chats assigned to an agent, and he/she marks himself as taking a break, the chats remain in the assigned state and are expected to be completed by the agent.
 
-### Completed
+### Completed State
 
 **This state signifies that the conversation is completed.**
 
@@ -81,7 +104,7 @@ This event indicates that a brand new conversation has started, it is available 
 
 ![image](https://user-images.githubusercontent.com/75118325/116323642-157ba300-a7dc-11eb-993b-42e5c95d52c5.png)
 
-### 2. Coll_ended
+### 2. coll_ended
 
 This event indicates that a conversation has ended, it is available in the user_info link.
 
