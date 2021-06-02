@@ -24,8 +24,6 @@ There are multiple scenarios that relate to agents not receiving the chat on the
 If your agents are not able to recieve chats then please contact Haptik to get the list of IPs to be whitelisted. 
 ```
 
-> If there is partial connectivity observed, then whitelist all IPs with <b>ap-south-1</b>, mentioned here, [**https://ip-ranges.amazonaws.com/ip-ranges.json**](https://ip-ranges.amazonaws.com/ip-ranges.json)
-
 ### 3. How to manage offline hour chats?
 
 In the Team settings, you can turn the toggle to complete all chats when no agent is online. 

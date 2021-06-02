@@ -31,7 +31,7 @@ Chat flows are designed to guide the user through a specific problem and to ensu
 
     Tip: "Agents" are people who chat with users on the tool.
 
-**Businesses** and **Teams** are sections to analyse your business/team data and configure respective settings for incoming chats. You can read more about it [**here**](https://docs.haptik.ai/agent-chat/for-team-leads).
+**Businesses** and **Teams** are sections to analyse your business/team data and configure respective settings for incoming chats. You can read more about it [**here**](https://docs.haptik.ai/agent-chat/setup-intro).
 
 
 ## Sidebar
