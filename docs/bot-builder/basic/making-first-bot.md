@@ -6,15 +6,21 @@ To start building your first bot, log in to the Haptik platform using credential
 
 ![Menu](assets/conversationstudiohomescreen.png)
 
-### **Step 1**: Click the "*+ New Bot*" button, located in the upper left hand corner of the page
+## Steps to create your first bot
+
+Following is a step by step guide to successfully create your first bot.
+
+### **Step 1**: Click the "*+ New Bot*" button
+
+It is located in the upper left hand corner of the page.
 
 ![createbot_header_may](/assets/createbot_header_may.png)
 
-### **Step 2**: Now, a pop-up will appear with prompts to configure your bot's basic details
+### **Step 2**: Fill the bot details according to the instructions given here
+
+A pop up will appear with prompts to configure your bot's basic details.
 
 ![image](https://user-images.githubusercontent.com/75118325/111914848-c2565800-8a99-11eb-8a39-0bfb8f2717f9.png)
-
-### **Step 3**: Fill the bot details according to the instructions given here
 
 - **Bot Name (in chatflow)**: Give your bot a name. This is visible on the chat window for the end users. 
 
@@ -24,11 +30,15 @@ To start building your first bot, log in to the Haptik platform using credential
 
 - **Select Languages**: Select the languages you want to create the bot in. The default is **English**.
 
-### **Step 4**: Click on **Create Bot** to successfully create your bot. The below pop up would come showing the success message
+### **Step 3**: Click on **Create Bot** to successfully create your bot. 
+
+The below pop up would come showing the success message
 
 ![image](https://user-images.githubusercontent.com/75118325/111914967-2a0ca300-8a9a-11eb-9d06-11f76aae4738.png)
 
-### **Step 5**: Clicking on **View Bot** would take you to the bot page, where you'll be prompted to input the stories, sub-stories and nodes that will make up your conversation flow
+### **Step 4**: Clicking on **View Bot**
+
+This would take you to the bot page, where you'll be prompted to input the skill sets, skills and nodes that will make up your conversation flow.
 
 ![viewbot](/assets/ViewBot.png)
 
@@ -60,7 +70,7 @@ The Haptik Conversation Studio platform has a three-tiered organizational system
 
 You can open the Business page of a bot as shown in the image below -
 
-![bot_skeleton](/assets/OpenBusiness.png)
+![Screenshot 2021-06-02 at 4 42 58 PM](https://user-images.githubusercontent.com/55389979/120470838-a5a39e00-c3c1-11eb-8e19-5ef2dab152c6.png)
 
 ### 2. Inside a Bot 
 
