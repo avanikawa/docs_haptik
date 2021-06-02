@@ -1,5 +1,5 @@
 ---
-title: Chat Screen
+title: Message Composer
 ---
 
 The centre of the screen comprises of the message composer. An agent can - 
