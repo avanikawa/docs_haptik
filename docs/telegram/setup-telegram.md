@@ -1,14 +1,16 @@
 ---
-title: Setup Telegram Bot
+title: Setup and Implementation
 ---
  
-Setting up a Telegram is a simple 2 step process. This guide will help you create a new bot on Telegram and user journeys on the Haptik Platform.
- 
+Setting up a Telegram bot is a simple 2 step process followed by connecting it to a Haptik bot that you create.
+
+This guide will help you create a new bot on Telegram and user journeys on the Haptik Platform.
+
 ## Step 1: Start creating a new bot on Telegram
  
 To get started with the Telegram bot, you will first need to create a new bot on Telegram.
  
-To create a new bot on Telegram, open your Telegram account and search for **BotFather** in the search bar. **BotFather** will ask you some questions about the new bot want to create.
+Open your Telegram account and search for **BotFather** in the search bar. **BotFather** will ask you some questions about the new bot want to create.
  
 ![image](https://user-images.githubusercontent.com/75118325/119954966-2bd47480-bfbd-11eb-8706-97cdb5be0511.png)
  
