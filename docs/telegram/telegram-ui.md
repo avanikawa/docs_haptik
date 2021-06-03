@@ -15,13 +15,7 @@ Conversation Studio tool has various rich chat elements to show different types 
     <td align="center"><img src="https://user-images.githubusercontent.com/75118325/119966519-02214a80-bfc9-11eb-99b4-2080f56d248b.png" height=150 width=300/></td>
     <td align="center"><img src="https://user-images.githubusercontent.com/75118325/119966613-1d8c5580-bfc9-11eb-8f5b-5d0a28d36b17.png" height=150 width=300></img></td>
   </tr>
-  
-  <tr>
-    <td><b>Text with Quick Replies</b></td>
-    <td align="center"><img src="https://user-images.githubusercontent.com/75118325/119967698-46611a80-bfca-11eb-8dc4-28b9b04debda.png"/></td>
-    <td align="center"><img src="https://user-images.githubusercontent.com/75118325/119967791-5b3dae00-bfca-11eb-91e9-9a67024843ff.png"/></td>
-  </tr>
-  
+    
   <tr>
     <td><b>Carousels</b></td>
   <td colspan=2 align="center">Carousels are not supported on Telegram</td>
