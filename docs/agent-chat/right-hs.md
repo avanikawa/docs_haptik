@@ -16,6 +16,8 @@ On the right hand screen of the screen, agents can -
 
 Understanding the basic details of the user like Name, Phone Number, Email, etc, help agents understand the background of the user and help users better. This section gives us all those details about the user.
 
+You can read more about this [**here**](https://docs.haptik.ai/agent-chat/adding-user-details).
+
 ## Custom Tool 
 
 ![MyChatsScreen10](assets/toolsscreen.png)
@@ -33,6 +35,8 @@ If there are more than 2 or 3 tools, they will come stacked in a list as shown i
 Depending on the permissions and features assigned to a Chat agent user, more actions could become accessible. 
   
 > We also have a system to enforce Data level permissioning i.e. an agent user is allowed to view/edit data for which business can be controlled using this.
+
+If you want to know how to add a custom tool, you can refer [**here**](https://docs.haptik.ai/agent-chat/adding-custom-tools).
 
 ## Previous Conversations
 
