@@ -1,5 +1,5 @@
 ---
-title: Adding User Details
+title: User Details
 ---
 
 On the **MyChats** page, agents can check the **User Details** tab on the right hand side of the screen. These details are collected from the user in the user journey on the bot.
