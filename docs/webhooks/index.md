@@ -1,22 +1,25 @@
 ---
-title: What is a Webhook
+title: Introduction
 ---
 
 ## What is Bot as an API?
 
-Whenever you want to capture the events happening on the bot such as what message is the bot sending, if the chat is being handed over to an agent and so on  you can user the Bot as an API. Bot as an API uses webhooks to deliver these events to mentioned URL.
+Whenever you want to capture the events happening on the bot such as, what message is the bot sending, you can use **Bot as an API**. You can also use **Bot as an API** to connect to a channel which is not cuurently supported on Haptik Platform. Bot as an API uses webhooks to deliver these events to mentioned URL.
 
-```
 Example use case - 
 
-1. When you want to generate a ticket in your CRM after the conversation between the user and bot is complete,
+1. When you want to generate a ticket in your CRM (Customer Relationship Management software) **after** the conversation between the user and bot is complete,
 the webhook event will deliver this event to your mentioned endpoint.
 
 2. When you already have a bot and you want to redirect the user to Smart Agent Chat tool of Haptik Platform.
-```
 
-![image](https://user-images.githubusercontent.com/75118325/120746319-8ff6bb80-c51c-11eb-873e-5e7f87cd1ff4.png)
+Briefly, this is how the integration works:
+1. Your application receives the message from the user.
+2. It then sends a POST request with that message to the callback URL of Conversation Studio tool of Haptik Platform.
+3. Conversation Studio tool processes the message and sends a response to the webhook URL of your application.
+4. Your application listens to the webhook and responds to the user.
 
+![Diagrams](https://user-images.githubusercontent.com/75118325/120749290-f5997680-c521-11eb-9859-7ffc339b8434.png)
 
 ## What is Webhook?
 
