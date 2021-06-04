@@ -8,6 +8,9 @@
         ],
         "Zendesk Messaging": [
             "zenchat"
+        ],
+        "Miscellaneous": [
+            "zendesk-ui"
         ]
     }
 }
