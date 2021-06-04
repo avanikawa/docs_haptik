@@ -55,6 +55,6 @@ So to quickly create a Bot that can answer all your FAQs:
 
 ### Sample Uploader
 
-You can download the sample uploader [**here**](asset/tsvuploader.tsv).
+You can download the sample uploader [**here**](assets/tsvuploader.tsv).
 
 And you're done!
