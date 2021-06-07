@@ -115,6 +115,60 @@ The Bot Prompt visual consists of the following components:
 
 <hr>
 
+## Bot Prompt using _prompt()_
+
+You can use the `prompt()` to display the bot prompt trigger. Add the method in the `HTML` page. The method will allow you to trigger the Bot Prompt on various custom events.
+
+`prompt(title, userMessage)`
+
+**Params:**
+
+- `title <String>`
+*The text that's displayed on the bot prompt.*
+- `userMessage <String>`
+*The message that's sent if the user taps on the bot prompt.*
+
+Try out the following example to add a Bot prompt using prompt() - 
+
+```
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Haptik JS SDK Custom Sign Up Demo</title>
+    <meta charset="UTF-8">
+    <meta content="width=device-width; initial-scale=1.0;" name="viewport">
+</head>
+<body>
+    <div style="width: 100%; padding-top: 100px;">
+        <div style="max-width: 7000px; margin: 0 auto; padding: 0 40px; text-align: left; font-family: Calibri;">
+            <h3>Bot Prompt using <i>prompt()</i></h3>
+        </div>
+    </div>
+</body>
+<script type="text/javascript">
+    window.haptikInitSettings = {
+        "business-id": "<BUSINESS_ID>", # Refer the document below to know more
+        "client-id": "<CLIENT_ID>",     # Refer the document below to know more
+        "base-url": "https://staging.hellohaptik.com/"
+    };
+</script>
+<script type="text/javascript" charset="UTF-8"
+    src="https://toolassets.haptikapi.com/platform/javascript-xdk/production/loader.js"></script>
+<script> 
+    document.addEventListener('haptik_sdk', function () {
+        HaptikSDK.prompt("How can I help you with? 👇", "", [{"title": "Track my order", "userMessage": "Track my order"}, 
+        {"title": "Refund and replacement", "userMessage": "Refund and Replacement"}])
+    });
+</script>
+</html>
+```
+
+> Replace `<BUSINESS_ID>` and `<CLIENT_ID>` in the sample. Click [**here**](https://docs.haptik.ai/bot-builder/basic/sharebot#how-can-we-share-our-iva) to know more about bot credentials.
+
+![image](https://user-images.githubusercontent.com/75118325/121005121-16c1c780-c7ad-11eb-818e-b2ec8839bd79.png)
+
+<hr>
+
 ## Dynamic Bot Prompt Triggers
 
 ![dynamic bot prompt](https://user-images.githubusercontent.com/75118325/117744190-d3b01b00-b225-11eb-819f-52615df64ecc.gif)
