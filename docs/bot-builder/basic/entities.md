@@ -4,6 +4,8 @@ title: Entities
 
 Before you start how to create entities and understand how to use them in bots, you can start with understanding what are entities by referring to this [**documentation**](https://docs.haptik.ai/bot-builder/basic/intent).  
 
+<iframe width="560" height="315" src="https://www.youtube.com/embed/videoseries?list=PLhaS6DyIPxWGpCxX6G3bFv4xEW9FafmFQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
 ## How to add an entity?
 
 After selecting the node on which the entity is to be added, click on "*Add an Entity*":
