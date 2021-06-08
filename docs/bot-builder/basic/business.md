@@ -180,6 +180,14 @@ You can apply customized settings on your bot for any channel where it is deploy
 
 - **JS Configurations**: You can change the look and feel of your bot using these options the GDPR pop-up on your bot by enabling this toggle.
 
+    The let's chat button has 5 options - 
+    
+    * The _Let's Chat icon_ (default): Currently this is default chat button.
+    * The _smile icon_: This icon has a smile animation, it changes when you hover over it.
+    * The _help icon_: It is a simple icon to represent Help.
+    * The _custom text icon_: You can set any custom text here.
+    * The _image/GIF icon_: You can have custom image icons or GIF which will keep animating within the chat icon.
+
 ![JSConfig](assets/Business11.png)
 
 - **Langauge Specific SDK Configurations**: You can make your SDK basic configurations like Chat Icon, Typing Box Text, etc.
