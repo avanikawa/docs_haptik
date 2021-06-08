@@ -132,7 +132,9 @@ As you can see in the image below, there are 3 Tasks that users can initiate - *
 
 - **User Says**: This will be the content which you want as a user text to be sent on the bot once user clicks on Task title. Example - If **User Says** is given as **I want to choose a plan** for the above Task title **Choose a plan**, the text will go as **I want to choose a plan** once the user clicks on **Choose a plan** task.
 
-- **Upload the icon**: You can set the icon for each task by clicking the icon image present beside the “New Task” text. You can always change the image for the existing task by clicking the same image.
+- **Upload the icon**: You can set the icon for each task by clicking the icon image present beside the “New Task” text. You can always change the image for the existing task by clicking the same image. 
+
+    _There are various resources to find the task icons, for example, [**flaticon**](https://www.flaticon.com/)._
 
 - **Visible on Task Box**: Check this box to make this task active on the taskbox associated with this channel. If you want to deactivate a task at any point, uncheck this box, and it will be removed from the taskbox.
 
@@ -179,6 +181,14 @@ You can apply customized settings on your bot for any channel where it is deploy
 - **Enfore Per Message User Feedback**: You can get the per message level feedback by enabling this toggle. You can also provide customised questions and tags for the same.
 
 - **JS Configurations**: You can change the look and feel of your bot using these options the GDPR pop-up on your bot by enabling this toggle.
+
+    The let's chat button has 5 options - 
+    
+    * The _Let's Chat icon_ (default): Currently this is default chat button.
+    * The _smile icon_: This icon has a smile animation, it changes when you hover over it.
+    * The _help icon_: It is a simple icon to represent Help.
+    * The _custom text icon_: You can set any custom text here.
+    * The _image/GIF icon_: You can have custom image icons or GIF which will keep animating within the chat icon.
 
 ![JSConfig](assets/Business11.png)
 
