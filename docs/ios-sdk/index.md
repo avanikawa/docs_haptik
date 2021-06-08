@@ -14,6 +14,8 @@ To Integrate Haptik iOS SDK, you must obtain following credentials to get starte
 
 With the Haptik SDK for iOS, you can build apps that target native 64-bit devices running iOS 9.0 and later. Developing an application with the Haptik SDK requires the latest version of Xcode. The SDK works with the iPhone device family and supports the **Portrait** device orientation.
 
+> iOS SDK is not supported on **iPad**.
+
 ---
 
 ## Getting Started
