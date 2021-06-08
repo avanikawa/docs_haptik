@@ -23,13 +23,13 @@ Agent can type the responses in the message composer and send them to the user.
 
 ![image](https://user-images.githubusercontent.com/75118325/119291664-76c45400-bc6c-11eb-98a8-e1c2aeff9395.png)
 
-## Canned Responses
+## Use Canned Responses
 
 ![MyChatsScreen88](assets/cannedresponses.png)
 
 Canned Responses are predefined responses uploaded prior, which can easily used by agents to reduce response time. They are ready-made responses which agents can customise according to the situation and need before sending it to the user.
 
-## Smart Actions
+## Use Smart Actions
 
 Smart Actions help the agents to send media attachments to the users. To open smart action, click on the icon at the left hand side of the action toolbar
 
@@ -53,7 +53,7 @@ Use external link smart action to send links to the user. In *URL* field you hav
 
 Pasting a link without using the smart action automatically converts it to one without the custom text.
 
-## Toolbar Actions
+## Use Toolbar Actions
 
 ### Report a user as inappropriate
 
@@ -92,7 +92,7 @@ As an agent clicks on this button, a modal opens up showing few options like **c
 
 You can read more about closing categories [**here**](https://docs.haptik.ai/agent-chat/closing-categories).
 
-## Waiting for user
+## Use Waiting for user
 
 As we know, an agent can take only a certain number of chats at once. We call that number **concurrency of chats**. This is specific to an agent. 
 
