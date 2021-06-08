@@ -145,6 +145,13 @@ module.exports = () => (
           ctaLink: '/shopify',
         },
         {
+          title: 'Telegram',
+          description:
+            'Documentation to help you build conversational experiences on Telegram',
+          ctaText: 'Get Started',
+          ctaLink: '/telegram',
+        },
+        {
           title: 'Bot API',
           description:
             'API docs to help you build powerful chatbot solutions with great customisations',
