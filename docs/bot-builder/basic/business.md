@@ -132,7 +132,9 @@ As you can see in the image below, there are 3 Tasks that users can initiate - *
 
 - **User Says**: This will be the content which you want as a user text to be sent on the bot once user clicks on Task title. Example - If **User Says** is given as **I want to choose a plan** for the above Task title **Choose a plan**, the text will go as **I want to choose a plan** once the user clicks on **Choose a plan** task.
 
-- **Upload the icon**: You can set the icon for each task by clicking the icon image present beside the “New Task” text. You can always change the image for the existing task by clicking the same image.
+- **Upload the icon**: You can set the icon for each task by clicking the icon image present beside the “New Task” text. You can always change the image for the existing task by clicking the same image. 
+
+    _There are various resources to find the task icons, for example, [**flaticon**](https://www.flaticon.com/)._
 
 - **Visible on Task Box**: Check this box to make this task active on the taskbox associated with this channel. If you want to deactivate a task at any point, uncheck this box, and it will be removed from the taskbox.
 
