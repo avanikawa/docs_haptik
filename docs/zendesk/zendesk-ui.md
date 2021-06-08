@@ -55,7 +55,7 @@ The following table will help you understand the UI compatibility of different C
   <tr>
     <td><b>Location</b></td>
     <td align="center">✔️</td>
-    <td align="center">❌</td>
+    <td align="center">✔️</td>
     <td align="center">❌</td>
     <td align="center">✔️</td>
   </tr>
