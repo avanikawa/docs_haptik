@@ -30,7 +30,7 @@ When the bot is created, a **Bot ID** and **App Password** are generated. You wi
 
 ## Step 3: Create a bot on Conversation Studio tool of Haptik platform
 
-On Conversation Studio tool, you can create the AI powered user journeys. Click [**here**] to know more about creating a bot on Haptik platform.
+On Conversation Studio tool, you can create the AI powered user journeys. Click [**here**](https://docs.haptik.ai/teams/on-cs) to know more about creating a bot on Haptik platform.
 
 ## Step 3: Provide Platform Depployment Keys
 
