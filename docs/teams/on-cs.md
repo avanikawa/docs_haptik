@@ -42,8 +42,6 @@ Bot Says is where a Node stores the replies that are sent in response to the use
  
 To know more about Bot Says, click [**here**](https://docs.haptik.ai/bot-builder/basic/bot-says)
  
-> Click [**here**](docs.haptik.ai/telegram/telegram-ui) to see how different types of messages will get rendered on Telegram bot.
- 
 ## 6. Add Entities
  
 An entity represents values that are collected from the user in a conversation. Depending on the context of the conversation, the required response can either be a single value or a group of specific values.
