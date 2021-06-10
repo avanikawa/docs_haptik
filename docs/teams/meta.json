@@ -1,0 +1,13 @@
+{
+    "sidebar": {
+        "Getting Started": [
+            "index"
+        ],
+        "Setup": [
+            "setup-teams"
+        ],
+        "Implementation": [
+            "on-cs"
+        ]
+    }
+}
