@@ -20,3 +20,11 @@ You should not add more than **150** entities on the bot.
 ### 3. Does spell checker work on entity?
 
 For Words and Phrases entity, entities follow pattern matching i.e., the bot tries to find the same variant added in the dictionary. Hence, the spell checker does not work entity.
+
+### 4. What are the dimensions for the custom icons to be followed so that they fit perfectly in the chat icon?
+
+These are the dimensions for the custom icons to be followed so that they fit perfectly in the chat icon.
+
+For an image of 100 px X 100 px, the `circular section of the chat icon` is a circle of diameter 75px, which is 11px from the X axis and 10 px on the Y axis.
+
+![image](https://user-images.githubusercontent.com/75118325/121814030-85f75a00-cc8c-11eb-869e-1262e6d2f277.png)
