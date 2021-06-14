@@ -47,3 +47,16 @@ Here is a workaround:
 
 This problem has been faced by lots of Windows users. If you open the zip file with some third-party tools such as 7-zip or WinRAR, every file could be opened without error.
 
+### 5. How do the users know when an agent has entered the chat and when the chat has ended?
+
+Once the chat is assigned to an agent, the user can see the handover to the agent on the SDK UI.
+
+![image](https://user-images.githubusercontent.com/75118325/121811569-6c511500-cc82-11eb-8435-44015ea2a11c.png)
+
+Once the chat is marked as complete/closed, the user can see the completion message on the SDK UI.
+
+![image](https://user-images.githubusercontent.com/75118325/121811627-96a2d280-cc82-11eb-97ed-aae2d6471adc.png)
+
+Chats are automatically closed if:
+- No messages are exchanged between the agent and the user and the chat is either with the bot or is in **Waiting for user** state for **8 minutes**.
+- If all agents were offline, and [**chat auto-complete**](https://docs.haptik.ai/agent-chat/teams#step-2---setup-team-offline-message) setting was enabled for the team.
