@@ -315,3 +315,21 @@ The default state of the voice bot. Should it by default have the text composer 
 - `VOICE`: *Show the voice composer by default*
 
 **default: VOICE**
+
+### `onChatWindowHide`
+
+In case you want to be notified whenever the chat window is closed/hidden, you can pass a callback function to this parameter. This callback function will now be called every time the chat window is closed. 
+
+```js
+<script>
+    const hideEventCallback = function () {
+        console.log("Haptik JS SDK is now hidden.");
+    }
+    window.haptikInitSettings = {
+        'business-id': YOUR_BUSINESS_ID,
+        'client-id': YOUR_CLIENT_ID,
+        'base-url': BASE_URL,
+        onChatWindowHide : hideEventCallback
+    }
+</script>
+```
