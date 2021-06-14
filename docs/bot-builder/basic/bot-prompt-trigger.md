@@ -117,9 +117,11 @@ The Bot Prompt visual consists of the following components:
 
 ## Bot Prompt using _prompt()_
 
-You can use the `prompt()` to display the bot prompt trigger. Add the method in the `HTML` page. The method will allow you to trigger the Bot Prompt on various custom events.
+Bot Prompts can also be added using the `prompt()` function while integrating the Haptik SDK. You can add the method in the `HTML` page as shown below in the example. 
 
 `prompt(title, userMessage)`
+
+The method will allow you to trigger the Bot Prompt on various custom events.
 
 **Params:**
 
