@@ -46,7 +46,7 @@ The following table will help you understand the UI compatibility of different C
   
   <tr>
     <td><b>GIFs</b></td>
-    <td align="center">❌</td>
+    <td align="center">✔️</td>
     <td align="center">❌</td>
     <td align="center">❌</td>
     <td align="center">❌</td>
@@ -86,7 +86,7 @@ The following table will help you understand the UI compatibility of different C
   
   <tr>
     <td><b>Read Receipts</b></td>
-    <td align="center">❌</td>
+    <td align="center">✔️</td>
     <td align="center">❌</td>
     <td align="center">❌</td>
     <td align="center">❌</td>
@@ -94,7 +94,7 @@ The following table will help you understand the UI compatibility of different C
   
   <tr>
     <td><b>Quick Replies</b></td>
-    <td align="center">❌</td>
+    <td align="center">✔️</td>
     <td align="center">- Text more than 40 characters will be truncated on Web Messenger, iOS, and Android. <br>- Text longer than 20 characters will be truncated on Facebook Messenger</td>
     <td align="center">Add only 11 quick replies and text should be less than 20 characters</td>
     <td align="center">✔️</td>
