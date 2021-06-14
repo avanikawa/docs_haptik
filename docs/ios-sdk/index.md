@@ -22,6 +22,8 @@ With the Haptik SDK for iOS, you can build apps that target native 64-bit device
 
 The following document contains chronological steps and information regarding the Haptik iOS SDK Integration.
 
+> You can read [**here**](https://docs.haptik.ai/web-sdk/sdk-comparison) to know about the comparison between Haptik's Native SDK and Web SDK.
+
 ---
 
 ## 1. Install Git LFS

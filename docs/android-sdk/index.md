@@ -6,7 +6,10 @@ title: Quick Start
 
 ## Introduction
 
-Here we will walk you thru the steps to quickly set up the Haptik SDK.
+Here we will walk you through the steps to quickly set up the Haptik SDK.
+
+> You can read [**here**](https://docs.haptik.ai/web-sdk/sdk-comparison) to know about the comparison between Haptik's Native SDK and Web SDK.
+
 
 ## Get your gear
 
