@@ -96,20 +96,20 @@ Depending on which state the chat is, TLs can take different action for a partic
 
 If the chat is in **Completed** or **Waiting for User** state, the TLs can choose to either - 
 * Reassign chat
-       * The TL can reassign the chat to themselves or to a specific agent from a team.
+  * The TL can reassign the chat to themselves or to a specific agent from a team.
 * Open chat
-       * When the TL opens a chat, the chat will be added in the team queue and the chat will be assigned to a random agent from the team.
+  * When the TL opens a chat, the chat will be added in the team queue and the chat will be assigned to a random agent from the team.
 
 ![image](https://user-images.githubusercontent.com/75118325/120464953-1d21ff00-c3bb-11eb-8571-dd86b3ed2b57.png)
 
 If the chat is in **Queue** or **Active** or **BOT** state, the TLs can choose to either - 
 
 * Reassign chat
-       * The TL can reassign the chat to themselves or to a specific agent from a team.
+  * The TL can reassign the chat to themselves or to a specific agent from a team.
 * Send to waiting
-       * This will send the user to **Waiting of User** state. If the user does not reply back within 8 mins, then the chat will be auto completed.
+  * This will send the user to **Waiting of User** state. If the user does not reply back within 8 mins, then the chat will be auto completed.
 * Close chat
-       * This will close the chat and mark the chat as **Complete**
+  * This will close the chat and mark the chat as **Complete**
 
 ![image](https://user-images.githubusercontent.com/75118325/120465407-928dcf80-c3bb-11eb-9890-8a93a47d9505.png)
 
