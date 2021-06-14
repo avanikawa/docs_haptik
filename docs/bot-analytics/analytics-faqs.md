@@ -18,9 +18,3 @@ You can view upto **90** days of data from the present date on the tool.
 ### 4. If the customer is using a third-party agent chat tool (e.g. Salesforce, Zendesk, etc), is there a possibility to get a Conversation Split in that case?
 
 If the implementation to the third party is done using [**TRACT**](https://docs.haptik.ai/external-chat-tool/), then Conversation Split number should be visible.
-
-### 5. If we have Enabled Human Assistance, the broken messages section will always be zero?
-
-Yes, it will be 0. 
-
-_Enable Human Assistance hands over a chat to an agent after the bot breaks._ 
