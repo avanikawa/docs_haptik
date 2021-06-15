@@ -20,6 +20,7 @@ Once you arrive at the Bot Says page, you'll see the above interface. This inter
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/ByccYrTuBA0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
+
 Depending on how the node is built, the Bot Says section can have three types of responses:
 
 ### Bot Says
@@ -57,7 +58,7 @@ Once all the entities have been collected, the bot finally replies with the resp
 
 In cases where the node is a Start node or an Intermediate node, the **Final Response** section is useful to send a response to continue the user to the next part of the flow.
 
-> **Note: Final Response isn't applicable if the node doesn't have any entities as the Initial Response itself acts like the Final Response.**
+> Final Response isn't applicable if the node doesn't have any entities as the Bot Says itself acts like the Final Response.
 
 ![image](https://user-images.githubusercontent.com/75118325/113373482-88822d00-9388-11eb-9243-ffe4b9ac0948.png)
 
@@ -89,7 +90,7 @@ As explained above, the Response to be sent is chosen from a **Top to Down order
 <hr>
 
 ## Structure of a Response
-Each of the above response (Initial Response, Entity Response, Final Response, and Follow Up Response) are composed of the following:
+Each of the above response (Bot Says, Entity Response, Final Response, and Follow Up Response) are composed of the following:
 - Variants
 - Message
 - Quick replies
