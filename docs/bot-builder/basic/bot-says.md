@@ -17,44 +17,39 @@ To get started with adding some Bot Says responses, navigate to a specific node 
 Once you arrive at the Bot Says page, you'll see the above interface. This interface might differ slightly depending on the state of the node and the responses added to it.
 
 ## Types of Responses
-Depending on how the node is built, the Bot Says section can have four types of responses:
 
-### Initial Response
+<iframe width="560" height="315" src="https://www.youtube.com/embed/ByccYrTuBA0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+Depending on how the node is built, the Bot Says section can have three types of responses:
+
+### Bot Says
 
 This is the first message that the bot sends out when the node is detected and it doesn't know about any entity on the node.
 
 ![image](https://user-images.githubusercontent.com/75118325/113371542-3e974800-9384-11eb-96a7-ca387f98ea5f.png)
 
-### Entity Responses
+### Entity Response
 
 If you have Entities present on a node, then **Entity Response** is the response that the bot will send when it doesn't know that Entity's value.
 
 For example, if you want to collect the User's name, you could ask *"What is your name?"* in the Entity Response. Now If the User replies back with *"My name is Bruce Wayne"*, then "Bruce Wayne" will be extracted as an entity by our [NER](https://github.com/hellohaptik/chatbot_ner). These entities can then be used to create personalized and advanced flows for every user and hence, build better bots.
 
-1. When there is only one entity present, the **Initial Response** section is disabled as it is the same as **Entity Response** of the first Entity on the node. For Example, if you want to collect the answer to a question, your Bot Says would look something like below:
+1. When there is only one entity present, the **Bot Says** section is disabled as it is the same as **Entity Response** of the first Entity on the node. For Example, if you want to collect the answer to a question, your Bot Says would look something like below:
 
 ![image](https://user-images.githubusercontent.com/75118325/113371946-1cea9080-9385-11eb-8b5a-5c12c4bd9bf3.png)
 
-2. When you have multiple entities, consider the **Initial Response** to be the opening message for the node. In some cases, this can be the same as the response in **Entity Response** of the first Entity on the node.
+2. When you have multiple entities, consider the **Bot Says** to be the opening message for the node. In some cases, this can be the same as the response in **Entity Response** of the first Entity on the node.
 
 ![multiple](https://user-images.githubusercontent.com/75118325/113372764-00e7ee80-9387-11eb-9be1-13be6cd42b4a.gif)
 
-> **Tip:** You can create your own Entities or use System Entities provided as a part of the Haptik Platform.
+If the bot knows the Entity's value, then it will skip the response and move to the next Entity Response or Final Responses.
 
-> If the bot knows the Entity's value, then it will skip the response and move to the next Entity Response or Final Responses.
-
-#### Mandatory vs Non-Mandatory Entities
-Depending on your flow, some entities could be required to move to the next step and some could be optional. To allow for this requirement, you can use the concept of Mandatory and Non-Mandatory entities.
-
-For example, in a Lead Generation Bot, Phone Number may be optional but Email could be compulsory. To handle such scenario, you can mark the *phone_number* entity as Non-Mandatory by clicking on the Star Icon.
-
-What that would mean is, if the User provided the phone number, it will be captured under the *phone_number* entity. But if it wasn't provided, the user will still be able to continue with the flow as long as the other Mandatory entities are provided.
-
-> **Note:** You can set an Entity Response only for Mandatory Entities. To know more about the difference between Mandatory and Non-Mandatory entities, refer [this](https://docs.haptik.ai/bot-builder/basic/entities).
-
-Since Non-Mandatory entities are not compulsory for the node, you don't need to add a specific response for this entity. And the request to collect the answer can be combined with responses for other Mandatory Entities by using [Chat Forms](https://docs.haptik.ai/bot-builder/basic/chat-elements#forms) or other [HSLs](https://docs.haptik.ai/hsl/)
-
-![image](https://user-images.githubusercontent.com/75118325/113373357-45c05500-9388-11eb-90b9-c5b4d0303bcf.png)
+> You can set an Entity Response only for Mandatory Entities. To know more about the difference between Mandatory and Non-Mandatory entities, refer [this](https://docs.haptik.ai/bot-builder/basic/entities#mandatory-and-optional-entities).
+>
+> Since Non-Mandatory entities are not compulsory for the node, you don’t need to add a specific response for this entity. And the request to collect the answer can be combined with responses for other Mandatory Entities by using [Chat Forms](https://docs.haptik.ai/bot-builder/basic/chat-elements#forms) or other [HSLs](https://docs.haptik.ai/hsl/)
+>
+> ![image](https://user-images.githubusercontent.com/75118325/113373357-45c05500-9388-11eb-90b9-c5b4d0303bcf.png)
+> 
 
 ### Final Response
 
@@ -68,7 +63,9 @@ In cases where the node is a Start node or an Intermediate node, the **Final Res
 
 In case you want to skip this message and directly continue the user's journey in the flow, add **{}** as the **Final Response**. Click [**here**](https://docs.haptik.ai/bot-builder/basic/bot-says#smart-actions-for-bot-says) to know more about Smart Actions on Bot Says.
 
-### Follow Up Message
+## Follow Up Message
+
+This is an interesting section under Bot Says. Sometimes we need to follow up with users as they stop replying, you can achieve that by using **Follow up message**. 
 
 If the user is inactive for a specific interval, then the the bot replies with the Follow Up message. The delay interval for this message can be set using the slider, and can be set between 20 seconds to 20 minutes.
 
@@ -79,8 +76,9 @@ If the user is inactive for a specific interval, then the the bot replies with t
 > **Note:** Follow up message will be sent only if the user has not replied back after reaching that node and the chat is in Bot state.
 
 ## Priority of Responses:
+
 As explained above, the Response to be sent is chosen from a **Top to Down order** i.e.
-1. If no entity value is known, then the response **Initial Response** is sent.
+1. If no entity value is known, then the response **Bot Says** is sent.
 2. Depending on the order of Mandatory Entities, the response will be sent from the **Entity Response**, for the entities whose value is not known.
 3. Once value of all Mandatory entities is known, the **Final Response** is sent, if applicable.
 
