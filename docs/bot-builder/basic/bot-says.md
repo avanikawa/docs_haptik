@@ -18,10 +18,11 @@ Once you arrive at the Bot Says page, you'll see the above interface. This inter
 
 ## Types of Responses
 
+Depending on how the node is built, the Bot Says section can have three types of responses - **Bot Says**, **Entity Response**, **Final Response**.
+
+You can check out the video below to understand this.
+
 <iframe width="560" height="315" src="https://www.youtube.com/embed/ByccYrTuBA0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-
-
-Depending on how the node is built, the Bot Says section can have three types of responses:
 
 ### Bot Says
 
