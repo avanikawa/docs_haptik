@@ -767,6 +767,9 @@ Step 2: Add an entity **bot_flush_exception_list** on the start node where you w
 
 - Do not add this function on Context Clear nodes.
 
-- Adding the entity flusher on nodes which have other mandatory entities will clear those as well.
+- Please ensure that there are no mandatory entities on the node where entity flusher is being called as they will also be cleared when integration is called (also integration won’t be called before all these entities are collected or if you have kept a transition based on 1 of these entities).
 
-- System entities will not be flushed by using entity flusher.
+- Public entities will not be flushed by using entity flusher.
+
+- Quick replies would not work on nodes where Entity Flusher is being called.
+
