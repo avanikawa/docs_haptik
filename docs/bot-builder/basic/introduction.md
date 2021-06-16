@@ -6,7 +6,7 @@ Welcome to **Conversation Studio**, Haptik's tool for making bots! Once you've m
 
 You can go through the below introductory video of **Conversation Studio** to take a birds eye-view of the tool.
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/vEuc4za39hk" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/mcqmKlLJwcI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 ## Key Concepts
 

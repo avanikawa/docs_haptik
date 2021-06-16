@@ -17,7 +17,7 @@ This tool consists of multiple sections with each section containing metrics and
 
 Through this document, we shall explore the different types of metrics available for tracking and analyzing the IVA using the real-time Intelligent Analytics tool. You can go through the below introductory video of **Intelligent Analytics** to take a birds eye-view of the tool.
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/0xodi9IC5eg" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/lgCipCKobxg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 ## Getting Credentials
 The first step in starting to use the Intelligent Analytics tool is to get the credentials from the Haptik team.
