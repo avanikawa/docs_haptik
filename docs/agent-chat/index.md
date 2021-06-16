@@ -6,7 +6,7 @@ Chat Solutions at Haptik can be powered entirely by Artificial Intelligence (AI)
 
 You can go through the below introductory video of **Smart Agent Chat** to take a birds eye-view of the tool.
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/B4WJSLETlvI" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/Ry0sAtIS7MU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 ## Using *Smart Agent Chat*
 
