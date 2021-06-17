@@ -24,7 +24,7 @@ Here’s how you can do it for WhatsApp bots:
 
 **Type 0 to go to the main menu or enter your query below!**
 
-- Ask users whether they need more help. Here’s a sample flow. 
+- Ask users whether they need more help. Here’s a sample flow 
 
 Is there anything else I can help you with? The possible answers could be Yes and No. 
 
