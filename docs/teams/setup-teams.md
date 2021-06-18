@@ -2,9 +2,10 @@
 title: Create a bot on Teams
 ---
 
-Creating a bot on Microsoft Team is a simple 2 step process. This guide will help you create a new bot in Microsoft Teams and deploy the Haptik bot in Teams.
+Creating a bot on Microsoft Team is a simple process. This guide will help you create a new bot in Microsoft Teams and deploy the Haptik bot on Microsoft Teams.
 
-What you'll need - 
+**Pre-requisites -**
+
 * Microsoft account for Teams
 * Access to Haptik Platform
 
