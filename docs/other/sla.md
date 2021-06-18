@@ -25,10 +25,9 @@ The SLA does not apply to
 5. That result from your failure to adhere to any required configurations, use supported platforms, follow any policies for acceptable use, or your use of the Service in a manner inconsistent with the features and functionality of the Service.
 6. In the event of a scheduled maintenance window (Intimation of which, will be provided atleast 1 week in advance.)
 
-## Technical Support
+## Support
 
-Technical support is provided for the Haptik Service offering during the subscription period and is not
-available as a separate offering.
+Support is provided for the Haptik Service offering during the subscription period and is not available as a separate offering.
 
 You can read about it [**here**](https://docs.haptik.ai/other/support).
 
