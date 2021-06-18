@@ -21,7 +21,7 @@ You can access the documentation [**here**](https://docs.haptik.ai/). You can al
 - Send us an email at **support@haptik.ai**
 - Reach out through our **Help section** on the platform. It will capture every detail of the issue along with the severity. You can read more about how to access Help section [**here**](https://docs.haptik.ai/other/supportbot).
  
-## Support SLA
+## Support - Severity vs RTO
 
 <table>
   <th>Severity</th>
