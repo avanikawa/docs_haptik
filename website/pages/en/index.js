@@ -159,6 +159,13 @@ module.exports = () => (
           ctaLink: '/telegram',
         },
         {
+          title: 'Microsoft Teams',
+          description:
+            'Documentation to help you build conversational experiences on Microsoft Teams',
+          ctaText: 'Get Started',
+          ctaLink: '/teams',
+        },
+        {
           title: 'Bot API',
           description:
             'API docs to help you build powerful chatbot solutions with great customisations',
