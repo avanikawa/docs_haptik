@@ -65,11 +65,9 @@ Chats are automatically closed if:
 
 By default, the **Close Chat** button is visible for all the agents in the Message Composer section. 
 
-There are cases when you might want to disable the **Close Chat** button. For example - 
+![image](https://user-images.githubusercontent.com/55389979/122763349-db9aba80-d2bb-11eb-88fe-a0ba569c5ddf.png)
 
-```
-When you want the agent to take some action before closing the chat on the RHS tool such as creating a ticket, the tool then calls close chat webhook to complete the chat.
-```
+There are cases when you might want to disable the **Close Chat** button for agents. For example - when agents should be closing the chat only after creating a ticket for the user on the External Tool. Close chat button could be present on the External tool directly.
 
 To disable the **Close Chat** button, you can edit the flag under Businesses > Business Settings > Show close chat button.
 
