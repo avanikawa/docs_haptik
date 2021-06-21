@@ -2,7 +2,7 @@
 title: Overview
 ---
 
-## Introduction
+## ***Introduction***
 
 The first section in the `Intelligent Analytics` tool is the **Overview** section. As the name suggests, this section helps you get a quick overview of the important metrics to measure the IVA's performance.
 
@@ -63,7 +63,7 @@ _What are New vs. Repeat users?_
 
 Eg. If Mary visits the bot on Tuesday for the first time, then comes on Wednesday again, the repeat user count will be displayed as 1.
 
-## _CSAT_
+## ***CSAT***
 
 ![image](https://user-images.githubusercontent.com/75118325/120091424-a4a40f80-c128-11eb-8ab9-d46da9d3fa5f.png)
 
@@ -177,7 +177,7 @@ You can view data by hovering over the graph at the selected point of date-time.
 
 Bot Transfers are shown on the graph too with a vertical line along with a toggle filter to see the details with and without. Checking these lines on the graph will help us understand if there have been any changes in the bot's performance due to bot transfers.
 
-## Language Usage
+## ***Language Usage***
 
 **Language Usage** shows the split of languages, conversations and bot automation percentage for all the languages user are interacting in, on the IVA. This section helps in understanding capabilities that should be added to support end-users who reach out in different languages.
 
@@ -205,7 +205,7 @@ When you hover over the Conversation %, you can see the conversation count as sh
 
 Formula = No of conversations (in that language) that didn’t have a bot break or agent response / Total number of conversations (in that same language) X 100
 
-## Conversation Split
+## ***Conversation Split***
 
 The Conversation Split metrics will help you understand which conversations are being handed over to agents for live support.
 
