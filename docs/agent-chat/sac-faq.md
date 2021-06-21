@@ -60,3 +60,17 @@ Once the chat is marked as complete/closed, the user can see the completion mess
 Chats are automatically closed if:
 - No messages are exchanged between the agent and the user and the chat is either with the bot or is in **Waiting for user** state for **8 minutes**.
 - If all agents were offline, and [**chat auto-complete**](https://docs.haptik.ai/agent-chat/teams#step-2---setup-team-offline-message) setting was enabled for the team.
+
+### 6. How to disbale the `Close Chat` button?
+
+By default, the **Close Chat** button is visible for all the agents in the Message Composer section. 
+
+There are cases when you might want to disable the **Close Chat** button. For example - 
+
+```
+When you want the agent to take some action before closing the chat on the RHS tool such as creating a ticket, the tool then calls close chat webhook to complete the chat.
+```
+
+To disable the **Close Chat** button, you can edit the flag under Businesses > Business Settings > Show close chat button.
+
+![image](https://user-images.githubusercontent.com/75118325/122753362-cb7cde00-d2af-11eb-9ee0-45a68539c0a7.png)
