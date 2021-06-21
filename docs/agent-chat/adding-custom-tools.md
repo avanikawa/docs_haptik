@@ -1,8 +1,6 @@
 ---
-title: Adding your own custom tool
+title: Adding your own external tool
 ---
-
-## Adding Custom Tools
 
 ### Steps
 
