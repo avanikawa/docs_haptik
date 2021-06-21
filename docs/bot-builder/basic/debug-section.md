@@ -68,25 +68,25 @@ The `entities` section will show you the list of all entities with their values 
  
 ### `node_list`
  
-The `node_list` section provides information about how the node was triggered i.e. whether the node was triggered on the basis of user says or entity value, this is mentioned in the `node_detection_method` parameter.
+The `node_list` section provides information about how the node was triggered i.e. whether the node was triggered on the basis of user says or entity value.
  
 ![image](https://user-images.githubusercontent.com/75118325/122743034-388a7680-d2a4-11eb-99f8-0d45bd8fcc7c.png)
+
+`connecting_node_name` represents the node from which the transition was made. If it is NULL then the node was detected directly instead of some connection.
+
+- When `transition_entity_name` is NULL and `transition_entity_value` is NULL, then node was detected using **user says**
+- When `transition_entity_name` is not NULL and `transition_entity_value` is NULL, then node was detected using **entity presence** connection type
+- When `transition_entity_name` is not NULL and not `transition_entity_value` is NULL, then node was detected using **entity value** connection type
  
 ### `response_list`
  
 The `response_list` section mentions the response details which was sent to the user.
  
 ![image](https://user-images.githubusercontent.com/75118325/122743752-e9911100-d2a4-11eb-9786-4471d6b9229e.png)
- 
-### `stop_logic`
- 
-The value in `stop_logic` will be **true** if the bot is not replying from the graph nodes created on the bot. It will help you to identify if the message is coming from the Small Talk module or giving a response from the Entity-Reprompt section. 
 
-![image](https://user-images.githubusercontent.com/75118325/122749162-9e79fc80-d2aa-11eb-8977-7fb31cebc75a.png)
-
-### `response_component`
+### `response_components`
  
-This section will you understand which component is the bot replying from i.e. is the bot responding from the small talk module or the graph nodes created on the bot.
+This section will help you understand which component is the bot replying from i.e. is the bot responding from the small talk module or the graph nodes created on the bot.
  
 ![image](https://user-images.githubusercontent.com/75118325/122749097-8efab380-d2aa-11eb-804d-460bc36aaa27.png)
  
