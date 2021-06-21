@@ -50,7 +50,7 @@ Example: If sentence is "Benefits of SIP", then test your bot on:
 * cricket benefits (Gibberish/noise + Phrase)
 * benefits (Phrase)
  
-### **How to examine the Test Set? **
+### How to examine the Test Set?
 
 #### 1. Using Test and Debug
 
@@ -74,7 +74,9 @@ On the Conversation Studio tool, you will see a **Log** icon near the messages y
 
 This information is useful to understand why a bot is behaving in a certain way and how to fix the bot to get the desired results. You can read more about it [**here**](https://docs.haptik.ai/bot-builder/advanced/debugging-guidelines).
 
-> Training data is tested during the development phase of the lifecycle. This ensures whether the bot is able to understand user's query and if the bot is taking the user through the right conversation flow.
+Training data is tested during the development phase of the lifecycle. This ensures whether the bot is able to understand user's query and if the bot is taking the user through the right conversation flow.
+
+> Click [**here**](https://docs.haptik.ai/bot-builder/basic/debug-section) to know more about the **Debug** section.
 
 #### 2. ORACLE Feedback Module
 
