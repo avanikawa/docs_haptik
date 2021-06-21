@@ -4,7 +4,7 @@ title: User Details and External Tool
 
 On the right hand screen of the screen, agents can - 
   * View User Details
-  * Use Custom tools
+  * Use External tools
   * View Previous Conversations
   * View Notes
 
@@ -18,11 +18,11 @@ Understanding the basic details of the user like Name, Phone Number, Email, etc,
 
 You can read more about this [**here**](https://docs.haptik.ai/agent-chat/adding-user-details).
 
-## Custom Tool 
+## External Tool 
 
 ![MyChatsScreen10](assets/toolsscreen.png)
 
-Custom tools like ticketing system, CRM, search fields, etc. can be used by agents in this section to solve users queries further, while they continue to have conversations with users.
+External tools like ticketing system, CRM, search fields, etc. can be used by agents in this section to solve users queries further, while they continue to have conversations with users.
 
 These external tools can also be expanded for better usability as shown in the image below -
 
@@ -36,7 +36,7 @@ Depending on the permissions and features assigned to a Chat agent user, more ac
   
 > We also have a system to enforce Data level permissioning i.e. an agent user is allowed to view/edit data for which business can be controlled using this.
 
-If you want to know how to add a custom tool, you can refer [**here**](https://docs.haptik.ai/agent-chat/adding-custom-tools).
+If you want to know how to add a external tool, you can refer [**here**](https://docs.haptik.ai/agent-chat/adding-custom-tools).
 
 ## Previous Conversations
 
