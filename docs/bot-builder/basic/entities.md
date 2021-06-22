@@ -8,6 +8,8 @@ Before you start how to create entities and understand how to use them in bots, 
 
 ## How to add an entity?
 
+<iframe width="560" height="315" src="https://www.youtube.com/embed/Yqo4boCA9I8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
 After selecting the node on which the entity is to be added, click on "*Add an Entity*":
 
 ![entities open node](assets/entities_open_node.png)
@@ -17,6 +19,10 @@ On the popup below, one can search for an entity, from the already existing list
 ![entities add](assets/entities_add.png)
 
 Simply click select on one of the existing entities to add it to your node.
+
+If your entities are not getting captured, you can refer to the below video
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/vUasXxKYyIc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 **Public Entities**
 
@@ -212,11 +218,15 @@ You can view this by clickin on `More` in the top navigation bar and selecting `
 
 ## Entity Types
 
+<iframe width="560" height="315" src="https://www.youtube.com/embed/tx4vnHiSlQU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
 There are multiple types of entities supported on the Platform. Below image showcases those various types -
 
 ![Entity Types](assets/EntityType.png)
 
 ### Words & Phrases Entity
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/xmnnnvzrf7o" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 **Words & Phrases** entity is meant to extract "specific" text values e.g. name of a person, name of a city, etc. from user utterances.
 
@@ -261,6 +271,8 @@ In the above image, you can see a number type entity. Following image shows the 
 
 ### Regex Entity
 
+<iframe width="560" height="315" src="https://www.youtube.com/embed/mGUZ0-0LKXI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
 **Regex** entity is meant for **detecting patterns** like email ID, phone number etc. and collect relevent information from user says. 
 
 > To check if the regex is accepting the pattern, you can test the pattern using the **Regex Pattern** tab. If the value entered is according to the regex pattern, it will be highlighted, as shown below -
@@ -291,6 +303,8 @@ You can refer https://regex101.com/ to learn more about regular expression.
 </table>
 
 ### Attachment Entity
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/EpzxuUXZ5Nc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 **Attachment** entity is meant for collecting attachments from the user message.
 
@@ -743,6 +757,8 @@ You can delete an entity from the a particular node by clicking on the **delete 
 > Note: Even if the entity is deleted it would still appear in the debug logs section since the entity is not permanently deleted from the IVA.
 
 ## Using Entity Flusher
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/f-LBZcl0MgI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 When the user switches context by typing something in free form in between some conversational flow which has not ended, the old entities are not cleared. In such scenarios you can use **entity flusher function**.
  
