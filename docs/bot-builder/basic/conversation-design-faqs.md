@@ -82,6 +82,10 @@ When we talk about UI elements for an FAQ bot we mean that the links that will b
 
 Guided flows help users reach and discover an intent easily. Guided flows should be built for all the FAQ bots. Ask your client for top intents their users ask on their website currently. Make those tops intents easy to discover and navigate on the bot by designing a guided flow. Each top intent becomes your unique use case. It’ll be similar to designing any other bot for Web, In-App, or WhatsApp.
 
+Watch the video below for a detailed understanding of how to convert your FAQs into a guided journey
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/9ZX4YGzD374" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
 ## Phase 5: Development
 In this phase you handover your design to a bot builder to develop and train on our **Conversation Studio**.
 
