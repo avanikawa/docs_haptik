@@ -24,8 +24,8 @@
             "analytics",
             "agent-reports"
         ],
-        "user-search",
         "Miscellaneous": [  
+            "user-search",
             "adding-custom-tools",
             "integrating-external-bot",
             "agent-stats-email",
