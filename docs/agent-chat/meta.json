@@ -15,6 +15,7 @@
             "left-hs",
             "centre-screen",
             "right-hs",
+            "user-search",
             "manage-team-capacity",
             "businesses"
         ],
@@ -24,8 +25,7 @@
             "analytics",
             "agent-reports"
         ],
-        "Miscellaneous": [  
-            "user-search",
+        "Miscellaneous": [
             "adding-custom-tools",
             "integrating-external-bot",
             "agent-stats-email",
