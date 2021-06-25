@@ -13,6 +13,8 @@ Select your **Partner name** from the dropdown as shown below -
 In the **Search Bar**, you can type the relevant information about the user, either the users email address or phone number.
 
 > Provide the exact information you want to search, for example if you want to search the user with an email _abc@test.com_ then type the exact email address in the **Search Bar**.
+>
+> Avoid using irregular search terms such as 'abc' and so on.
 
 Once you have provided the information, the table will is populated with the relevant information retrieved from the database.
 
