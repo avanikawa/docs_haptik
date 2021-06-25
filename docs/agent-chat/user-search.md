@@ -12,6 +12,8 @@ Select your **Partner name** from the dropdown as shown below -
 
 In the **Search Bar**, you can type the relevant information about the user, either the users email address or phone number.
 
+> Provide the exact information you want to search, for example if you want to search the user with an email _abc@test.com_ then type the exact email address in the **Search Bar**.
+
 Once you have provided the information, the table will is populated with the relevant information retrieved from the database.
 
 ![image](https://user-images.githubusercontent.com/75118325/123371311-23ad2c00-d59f-11eb-8abc-4e0083254f79.png)
@@ -42,5 +44,5 @@ The table contains following information -
 
 When there no relevant information found related to the information provided in the **Search Bar**, you will a screen a shown below - 
 
-![image](https://user-images.githubusercontent.com/75118325/123371939-4724a680-d5a0-11eb-872c-8639472d102b.png)
+![image](https://user-images.githubusercontent.com/75118325/123394468-ccb64f80-d5bc-11eb-80e3-32435121bf7f.png)
 
