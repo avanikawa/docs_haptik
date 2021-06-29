@@ -85,7 +85,7 @@ Sample 2 -
 
   Check if there is an existing brand mascot. If there isn’t, start creating one! 
 
-  **First**, fill this 🗝 [Bot Personality Builder](/assets/Bot_Personality_Builder.docx) with all the attributes of the bot that define its personality. You can download the template by clicking on the link.
+  **First**, fill this 🗝 [Bot Personality Builder](Bot Personality Builder.docx)(https://github.com/hellohaptik/docs_haptik/files/6731620/Bot.Personality.Builder.docx)with all the attributes of the bot that define its personality. You can download the template by clicking on the link.
   
   **Second**, make sure that you give it a name. The name could be generic like Crisco Virtual Assistant but clearly labeling it as a virtual assistant is important   to set the right expectations with the user. Just so that the user can recollect your bot and say hi! 
 
